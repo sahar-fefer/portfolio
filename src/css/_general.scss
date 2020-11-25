@@ -1,0 +1,37 @@
+@import "./variables";
+
+body {
+  color: $text;
+  width: 100%;
+  font-family: 'Cairo', sans-serif;
+
+
+  li {
+    list-style: none;
+  }
+
+  button,
+  button:hover,
+  a,
+  a:hover {
+    color: $text;
+    outline: none !important;
+  }
+
+  button:hover,
+  a:hover {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
