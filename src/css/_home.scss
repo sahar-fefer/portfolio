@@ -1,0 +1,23 @@
+@import "./variables";
+
+#home {
+    display: grid;
+    place-items: center;
+
+    .header-wrapper {
+        flex-direction: column;
+
+        .name {
+            color: $primary;
+        }
+    }
+
+    .logo {
+        font-family: "Major Mono Display", monospace;
+        font-size: 4vw;
+        padding: 1vw;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
