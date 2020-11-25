@@ -5,22 +5,22 @@ const SideNav = () => {
     return (
         <nav id={'side-nav'}>
             <ul>
-                <li>
+                <li className={'link-li'}>
                     <Link>
                         Project
                     </Link>
                 </li>
-                <li>
+                <li className={'link-li'}>
                     <Link>
                         About
                     </Link>
                 </li>
-                <li>
+                <li className={'link-li'}>
                     <Link>
                         Contact
                     </Link>
                 </li>
-                <li>
+                <li className={'leng-li'}>
                     <button>
                         EN
                     </button>
