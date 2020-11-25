@@ -1,6 +1,18 @@
 #side-nav {
     position: absolute;
-    top: 35vh;
+    top: 40vh;
     left: 10px;
-    font-size: 3vh;
+
+    li {
+        font-size: 3vh;
+        transition: all 0.3s;
+    }
+
+    .link-li:hover {
+        font-size: 3.5vh;
+    }
+    
+    .leng-li {
+        margin-top: 3vh;
+    }
 }

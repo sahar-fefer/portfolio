@@ -3,6 +3,7 @@
 #home {
     display: grid;
     place-items: center;
+    background-color: $home-background;
 
     .header-wrapper {
         flex-direction: column;

@@ -6,7 +6,6 @@ import background from '../media/background11.jpg';
 const Home = () => {
     const homeStyle = {
         height: '100vh',
-        background: 'rgb(150, 153, 158)',
         backgroundImage: `url(${background})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -27,9 +26,9 @@ const Home = () => {
                 <Typical
                     loop={Infinity}
                     steps={[
-                        `text text`, 
+                        `text text`,
                         5000,
-                        `text blabla`, 
+                        `text blabla`,
                         5000
                     ]}
                     wrapper="h2"
