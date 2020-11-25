@@ -1,18 +1,10 @@
 import React from 'react';
 import Typical from 'react-typical';
 
-import background from '../media/background11.jpg';
-
 const Home = () => {
-    const homeStyle = {
-        height: '100vh',
-        backgroundImage: `url(${background})`,
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-    }
     return (
-        <div id={'home'} className={'container-fluid'} style={homeStyle}>
+        // <div id={'home'} className={'container-fluid'} style={homeStyle}>
+        <div id={'home'} className={'container-fluid'}>
             <div className={'logo'}>
                 SF
             </div>

@@ -5,8 +5,9 @@ import {
   Redirect
 } from "react-router-dom";
 
-import Home from './components/home';
 import SideNav from './components/sideNav';
+import Home from './components/home';
+import About from "./components/about";
 
 function App() {
   return (
@@ -14,7 +15,11 @@ function App() {
       <SideNav />
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Home/>
+            <About/>
+          </Route>
+
           {/* <Route path='/404' component={PageNotFound} /> */}
           <Redirect from='*' to='/404' />
         </Switch>

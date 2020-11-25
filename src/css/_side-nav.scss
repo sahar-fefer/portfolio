@@ -1,18 +1,32 @@
 #side-nav {
-    position: absolute;
+    position: fixed;
     top: 40vh;
     left: 10px;
 
-    li {
-        font-size: 3vh;
-        transition: all 0.3s;
-    }
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // background: #000000;
 
-    .link-li:hover {
-        font-size: 3.5vh;
-    }
-    
-    .leng-li {
-        margin-top: 3vh;
+
+    ul {
+        // padding: 20px;
+        // margin-left: 20px;
+        // background: #72727299;
+        // border-radius: 15px;
+
+        li {
+            font-size: 3vh;
+            transition: all 0.3s;
+        }
+
+        .link-li:hover {
+            font-size: 3.5vh;
+        }
+
+        .leng-li {
+            margin-top: 3vh;
+        }
     }
 }
