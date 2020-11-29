@@ -377,21 +377,8 @@ html {
 
 #about {
   background: #f8f8f8;
-  background-image: url("../media/1.jpg");
+  background-image: url("../media/11.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
-  #about .wrapper {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #about .wrapper .main-image {
-      height: 50vh;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      z-index: 1; }

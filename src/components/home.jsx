@@ -5,9 +5,9 @@ const Home = () => {
     return (
         // <div id={'home'} className={'container-fluid'} style={homeStyle}>
         <div id={'home'} className={'container-fluid'}>
-            <div className={'logo'}>
-                SF
-            </div>
+                <div className={'logo'}>
+                    SF
+                </div>
             <div className={'header-wrapper'}>
                 <h1 className={'header'}>
                     Hey! I'm <span className={'name'}>Sahar Feferovich</span>
@@ -21,11 +21,7 @@ const Home = () => {
                         `text text`,
                         5000,
                         `text blabla`,
-                        3000,
-                        `text blabla blabli blooooo`,
-                        4000,
-                        `text nigeria`,
-                        3000
+                        5000
                     ]}
                     wrapper="h2"
                 />

@@ -3,19 +3,34 @@ import React from 'react';
 const About = () => {
     return (
         <div id={'about'} className={'container-fluid'}>
-            <div className={'wrapper row'}>
-                <div className={'header col'}>
+            <div className={'container'}>
+                <div className={'header'}>
                     <h1>
                         So How I Am?
                     </h1>
                     <h2>
-                        simply dummy text of the printing and typesetting
+                        I'm Sahar Feferovich Web Developer
                     </h2>
+                    <h4>
+                    Full Stack developer, capable of developing web platforms from scratch to production, with full responsiveness and preformance.
+I focus on planning, designing and developing both Back-End and Front-End.
+Hands-on a wide range of technologies and platforms: JaveScript, CSS, HTML, React, MySQL and Node.js.
+                    </h4>
                     <h2>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                        skills
                     </h2>
+                    <ul>
+                        <li>
+                            js
+                        </li>
+                        <li>
+                            react
+                        </li>
+                        <li>
+                            sass
+                        </li>
+                    </ul>
                 </div>
-                {/* <img src={"./images/sahar.png"} alt={"Sahar Feferovich"} className={'main-image col-auto'} /> */}
             </div>
         </div>
     );
