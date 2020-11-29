@@ -1,18 +1,8 @@
 #about {
     background: rgb(248, 248, 248);
-    background-image: url("../media/1.jpg");
+    background-image: url("../media/11.jpg");
     height: 100vh;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
-
-    .wrapper {
-        justify-content: space-between;
-        align-items: center;
-        .main-image {
-            height: 50vh;
-            justify-content: flex-end;
-            z-index: 1;
-        }
-    }
 }
