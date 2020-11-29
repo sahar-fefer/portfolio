@@ -11,6 +11,7 @@ import SideNav from './components/sideNav';
 import Home from './components/home';
 import About from "./components/about";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const App = () => {
   const [loading, setLoading] = useState(true)
@@ -32,6 +33,7 @@ const App = () => {
             <Home />
             <About />
             <Contact />
+            <Footer />
           </Route>
           {/* <Route path='/404' component={PageNotFound} /> */}
           <Redirect from='*' to='/404' />
