@@ -12,9 +12,13 @@ const About = () => {
                         I'm Sahar Feferovich Web Developer
                     </h2>
                     <h4>
-                    Full Stack developer, capable of developing web platforms from scratch to production, with full responsiveness and preformance.
-I focus on planning, designing and developing both Back-End and Front-End.
-Hands-on a wide range of technologies and platforms: JaveScript, CSS, HTML, React, MySQL and Node.js.
+                        Full Stack developer, capable of developing web platforms from scratch to production, with full responsiveness and preformance.
+                    </h4>
+                    <h4>
+                        I focus on planning, designing and developing both Back-End and Front-End.
+                    </h4>
+                    <h4>
+                        Hands-on a wide range of technologies and platforms: JaveScript, CSS, HTML, React, MySQL and Node.js.
                     </h4>
                     <h2>
                         skills

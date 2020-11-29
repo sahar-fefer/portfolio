@@ -1,0 +1,49 @@
+@import './variables';
+
+#contact {
+    background: rgba(248, 248, 248, .2);
+    border-radius: 35px;
+    // background-image: url("../media/21.jpg");
+    // height: 100vh;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+
+    .header {
+
+    }
+
+    .form {
+        input, textarea {
+            opacity: .9;
+            background: $light;
+            border-radius: 25px;
+            border: 2px solid $text-light;
+            outline: none;
+            padding: 1.3vh;
+            margin: 5px;
+            width: 20vw;
+        }
+        textarea {
+            border-radius: 30px;
+        }
+
+        .submit {
+            background: $secondary-light;
+            padding-top: .2vh;
+            padding-bottom: .2vh;
+            margin-top: 0;
+            width: 20vw;
+            transition: all .3s;
+
+            &:hover {
+                background: $secondary;
+            }
+        }
+
+        lable {
+
+        }
+    }
+} 
