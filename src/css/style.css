@@ -354,7 +354,7 @@ html {
   display: grid;
   place-items: center;
   background-color: #f8f8f8;
-  background-image: url("../media/background11.jpg");
+  background-image: url("../media/home_background.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -363,7 +363,8 @@ html {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: 8vh; }
     #home .header-wrapper .name {
       color: #910667; }
   #home .logo {
