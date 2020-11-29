@@ -21,7 +21,11 @@ const Home = () => {
                         `text text`,
                         5000,
                         `text blabla`,
-                        5000
+                        3000,
+                        `text blabla blabli blooooo`,
+                        4000,
+                        `text nigeria`,
+                        3000
                     ]}
                     wrapper="h2"
                 />
