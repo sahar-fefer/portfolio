@@ -20,7 +20,7 @@
 body {
   color: #333;
   width: 100%;
-  font-family: 'Cairo', sans-serif; }
+  font-family: "Cairo", sans-serif; }
   body li {
     list-style: none; }
   body button,
@@ -46,6 +46,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  body .name {
+    color: #910667; }
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
@@ -365,8 +367,6 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 8vh; }
-    #home .header-wrapper .name {
-      color: #910667; }
   #home .logo {
     font-family: "Major Mono Display", monospace;
     font-size: 4vw;
@@ -431,3 +431,18 @@ html {
     transition: all .3s; }
     #contact .form .submit:hover {
       background: #00d99d; }
+
+#footer {
+  background: #9f9f9f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #footer .icon {
+    font-size: 3vw;
+    margin: 1vw; }

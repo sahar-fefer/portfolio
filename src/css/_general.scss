@@ -3,8 +3,7 @@
 body {
   color: $text;
   width: 100%;
-  font-family: 'Cairo', sans-serif;
-
+  font-family: "Cairo", sans-serif;
 
   li {
     list-style: none;
@@ -33,5 +32,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .name {
+    color: $primary;
   }
 }
