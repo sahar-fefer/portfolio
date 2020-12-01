@@ -1,22 +1,5 @@
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
-/* /////////////////////////    buttons    /////////////////////////// */
-.button-style {
-  padding: .375rem .75rem;
-  color: #333;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #9f9f9f;
-  border-radius: .25rem;
-  margin: 2.5px 5px;
-  position: relative;
-  outline: none !important;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s; }
-  .button-style:hover {
-    background-color: #f7f5f5; }
-
 body {
   color: #333;
   width: 100%;
@@ -51,42 +34,8 @@ body {
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
-/* /////////////////////////    buttons    /////////////////////////// */
-.button-style {
-  padding: .375rem .75rem;
-  color: #333;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #9f9f9f;
-  border-radius: .25rem;
-  margin: 2.5px 5px;
-  position: relative;
-  outline: none !important;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s; }
-  .button-style:hover {
-    background-color: #f7f5f5; }
-
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
-/* /////////////////////////    buttons    /////////////////////////// */
-.button-style {
-  padding: .375rem .75rem;
-  color: #333;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #9f9f9f;
-  border-radius: .25rem;
-  margin: 2.5px 5px;
-  position: relative;
-  outline: none !important;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s; }
-  .button-style:hover {
-    background-color: #f7f5f5; }
-
 .infinity {
   width: 120px;
   height: 60px;
@@ -334,23 +283,6 @@ html {
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
-/* /////////////////////////    buttons    /////////////////////////// */
-.button-style {
-  padding: .375rem .75rem;
-  color: #333;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #9f9f9f;
-  border-radius: .25rem;
-  margin: 2.5px 5px;
-  position: relative;
-  outline: none !important;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s; }
-  .button-style:hover {
-    background-color: #f7f5f5; }
-
 #home {
   display: -ms-grid;
   display: grid;
@@ -385,23 +317,6 @@ html {
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
-/* /////////////////////////    buttons    /////////////////////////// */
-.button-style {
-  padding: .375rem .75rem;
-  color: #333;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #9f9f9f;
-  border-radius: .25rem;
-  margin: 2.5px 5px;
-  position: relative;
-  outline: none !important;
-  -webkit-transition: background-color .3s;
-  -o-transition: background-color .3s;
-  transition: background-color .3s; }
-  .button-style:hover {
-    background-color: #f7f5f5; }
-
 #contact {
   background: rgba(248, 248, 248, 0.2);
   border-radius: 35px;
@@ -442,6 +357,8 @@ html {
       #contact .form .submit:hover {
         background: #00d99d; }
 
+/* /////////////////////////    colors    /////////////////////////// */
+/* /////////////////////////    card    /////////////////////////// */
 #footer {
   background: #9f9f9f;
   display: -webkit-box;
@@ -456,3 +373,21 @@ html {
   #footer .icon {
     font-size: 3vw;
     margin: 1vw; }
+  #footer .github {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    #footer .github:hover {
+      color: #24292e; }
+  #footer .linkedin {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    #footer .linkedin:hover {
+      color: #0a66c2; }
+  #footer .download {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    #footer .download:hover {
+      color: #027e5b; }
