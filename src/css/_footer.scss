@@ -1,3 +1,5 @@
+@import './variables';
+
 #footer {
     background: $text-light;
     display: flex;
@@ -7,5 +9,29 @@
     .icon {
         font-size: 3vw;
         margin: 1vw;
+    }
+
+    .github {
+        transition:  all .3s;
+
+        &:hover {
+            color: $github-color;
+        }
+    }
+
+    .linkedin {
+        transition: all .3s;
+
+        &:hover {
+            color: $linkedin-color;
+        }
+    }
+
+    .download {
+        transition:  all .3s;
+
+        &:hover {
+            color: $secondary-dark;
+        }
     }
 }
