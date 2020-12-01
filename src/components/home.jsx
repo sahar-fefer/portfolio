@@ -5,9 +5,6 @@ const Home = () => {
     return (
         // <div id={'home'} className={'container-fluid'} style={homeStyle}>
         <div id={'home'} className={'container-fluid'}>
-                <div className={'logo'}>
-                    SF
-                </div>
             <div className={'header-wrapper'}>
                 <h1 className={'header'}>
                     Hey! I'm <span className={'name'}>Sahar Feferovich</span>
