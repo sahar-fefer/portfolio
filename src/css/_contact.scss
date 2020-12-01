@@ -13,9 +13,9 @@
     }
 
     .form {
-        margin-left: auto;
-        margin-right: auto;
         width: 100%;
+        display: grid;
+        place-items: center;
 
         input, textarea {
             opacity: .9;
@@ -25,7 +25,7 @@
             outline: none;
             padding: 1.3vh;
             margin: 5px;
-            width: 100%;
+            width: 80%;
         }
         textarea {
             border-radius: 30px;
@@ -38,7 +38,7 @@
             margin-top: 0;
             width: 20vw;
             transition: all .3s;
-            width: 100%;
+            width: 80%;
 
             &:hover {
                 background: $secondary;

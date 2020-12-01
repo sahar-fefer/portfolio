@@ -414,9 +414,10 @@ html {
     -ms-flex-align: center;
     align-items: center; }
   #contact .form {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; }
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    place-items: center; }
     #contact .form input, #contact .form textarea {
       opacity: .9;
       background: #f7f5f5;
@@ -425,7 +426,7 @@ html {
       outline: none;
       padding: 1.3vh;
       margin: 5px;
-      width: 100%; }
+      width: 80%; }
     #contact .form textarea {
       border-radius: 30px; }
     #contact .form .submit {
@@ -437,7 +438,7 @@ html {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
-      width: 100%; }
+      width: 80%; }
       #contact .form .submit:hover {
         background: #00d99d; }
 
