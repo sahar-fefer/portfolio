@@ -16,6 +16,7 @@
         width: 100%;
         display: grid;
         place-items: center;
+        z-index: -1;
 
         input, textarea {
             opacity: .9;

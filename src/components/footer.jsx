@@ -7,7 +7,7 @@ import pdf from '../media/Sahar Feferovich - Resume.pdf'
 
 const Footer = () => {
     return (
-        <div id={'footer'} className={'container-fluid'}>
+        <footer id={'footer'} className={'container-fluid'}>
             {/* <div className={'arrow'}>
                 <IoIosArrowDropup className={'arrow icon'} />
             </div> */}
@@ -19,7 +19,7 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/sahar-feferovich-895a76190/" target='_blank'><FaLinkedinIn className={'icon linkedin'} /></a>
                 <a href={pdf} target='_blank'><HiOutlineDocumentDownload className={'icon download'} /></a>
             </div>
-        </div>
+        </footer>
     );
 };
 

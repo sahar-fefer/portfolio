@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 
 import Loader from "./components/loader";
-import SideNav from './components/sideNav';
+import Header from "./components/header";
+// import SideNav from './components/sideNav';
 import Home from './components/home';
 import About from "./components/about";
 import Contact from "./components/contact";
@@ -29,7 +30,7 @@ const App = () => {
         ? <Loader />
         : <Switch>
           <Route exact path="/">
-            <SideNav />
+            <Header />
             <Home />
             <About />
             <Contact />
