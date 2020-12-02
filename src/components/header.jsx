@@ -3,11 +3,17 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDropup } from 'react-icons/io';
 
 const Header = () => {
+    // const [headerHeight, setHeaderHeight] = useState(0)
+    // const cheackHeaderHeight = (e) => {
+    //     console.log('e.target.clientHeight', e.target.clientHeight);
+    //     setHeaderHeight(e.target.clientHeight);
+    // }
+
     const [headerBackground, setHeaderBackground] = useState(false)
     const checkHeaderBackground = () => {
-        if (!headerBackground && window.pageYOffset > 750) {
+        if (!headerBackground && window.pageYOffset > window.innerHeight) {
             setHeaderBackground(true)
-        } else if (headerBackground && window.pageYOffset <= 750) {
+        } else if (headerBackground && window.pageYOffset <= window.innerHeight) {
             setHeaderBackground(false)
         }
     };
@@ -16,10 +22,10 @@ const Header = () => {
 
     const [showScroll, setShowScroll] = useState(false)
     const checkScrollTop = () => {
-        if (!showScroll && window.pageYOffset > 400) {
+        if (!showScroll && window.pageYOffset > window.innerHeight / 2) {
             setShowScroll(true)
             setHeaderBackground(true)
-        } else if (showScroll && window.pageYOffset <= 400) {
+        } else if (showScroll && window.pageYOffset <= window.innerHeight / 2) {
             setShowScroll(false)
             setHeaderBackground(false)
         }
@@ -38,7 +44,7 @@ const Header = () => {
                 onClick={scrollTop}
                 style={{ height: 40, display: showScroll ? 'flex' : 'none' }} />
             <nav>
-                <ul className={'row'}  style={{ background: headerBackground ? ' #f8f8f8' : 'none' }}>
+                <ul className={'row'} style={{ background: headerBackground ? ' rgba(248, 248, 248, .6)' : 'none' }}>
                     <li className={'logo col'}>
                         SF
                     </li>
