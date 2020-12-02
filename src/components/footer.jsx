@@ -8,9 +8,6 @@ import pdf from '../media/Sahar Feferovich - Resume.pdf'
 const Footer = () => {
     return (
         <footer id={'footer'} className={'container-fluid'}>
-            {/* <div className={'arrow'}>
-                <IoIosArrowDropup className={'arrow icon'} />
-            </div> */}
             <div className={'c col-auto'}>
                 © 2020 <span className={'name'}>Sahar Feferovich</span>
             </div>
