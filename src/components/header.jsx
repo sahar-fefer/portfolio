@@ -3,12 +3,25 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDropup } from 'react-icons/io';
 
 const Header = () => {
+    const [headerBackground, setHeaderBackground] = useState(false)
+    const checkHeaderBackground = () => {
+        if (!headerBackground && window.pageYOffset > 750) {
+            setHeaderBackground(true)
+        } else if (headerBackground && window.pageYOffset <= 750) {
+            setHeaderBackground(false)
+        }
+    };
+
+    window.addEventListener('scroll', checkHeaderBackground)
+
     const [showScroll, setShowScroll] = useState(false)
     const checkScrollTop = () => {
         if (!showScroll && window.pageYOffset > 400) {
             setShowScroll(true)
+            setHeaderBackground(true)
         } else if (showScroll && window.pageYOffset <= 400) {
             setShowScroll(false)
+            setHeaderBackground(false)
         }
     };
 
@@ -25,7 +38,7 @@ const Header = () => {
                 onClick={scrollTop}
                 style={{ height: 40, display: showScroll ? 'flex' : 'none' }} />
             <nav>
-                <ul className={'row'}>
+                <ul className={'row'}  style={{ background: headerBackground ? ' #f8f8f8' : 'none' }}>
                     <li className={'logo col'}>
                         SF
                     </li>
