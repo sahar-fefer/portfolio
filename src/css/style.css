@@ -423,9 +423,6 @@ html {
   #header .nav-bar ul {
     z-index: 2;
     font-size: 30px;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -436,17 +433,14 @@ html {
     -ms-flex-pack: center;
     justify-content: center; }
     #header .nav-bar ul .logo {
-      -webkit-transition: all ease 0.3s;
-      -o-transition: all ease 0.3s;
-      transition: all ease 0.3s;
       cursor: pointer;
       font-family: "Major Mono Display", monospace;
       font-size: 55px; }
     #header .nav-bar ul .link-li {
-      display: none;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
+      -webkit-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+      display: none; }
       #header .nav-bar ul .link-li:hover {
         font-size: 35px; }
     #header .nav-bar ul .leng-li {
@@ -504,92 +498,25 @@ html {
       left: 20px; }
 
 @media (min-width: 600px) {
-  #header .scrollTop {
-    position: fixed;
-    width: 100%;
-    bottom: 20px;
+  #header li {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 20px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    font-size: 6vh;
-    z-index: 1000;
-    cursor: pointer;
-    -webkit-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s;
-    -webkit-transition: opacity 0.4s;
-    -o-transition: opacity 0.4s;
-    transition: opacity 0.4s;
-    opacity: 0.5; }
-  #header .scrollTop:hover {
-    opacity: 1; }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 0.5; } }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0; }
-    100% {
-      opacity: 0.5; } }
-  #header .nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    -webkit-transition: all ease 0.3s;
-    -o-transition: all ease 0.3s;
-    transition: all ease 0.3s;
-    color: #333;
-    -webkit-box-shadow: 0px 0px 0px 0px #333;
-    box-shadow: 0px 0px 0px 0px #333;
-    background-color: transparent;
-    padding: 0 25px; }
-    #header .nav-bar ul {
-      z-index: 2;
-      font-size: 30px;
-      -webkit-transition: all ease 0.3s;
-      -o-transition: all ease 0.3s;
-      transition: all ease 0.3s; }
-      #header .nav-bar ul li {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-      #header .nav-bar ul .logo {
-        -webkit-transition: all ease 0.3s;
-        -o-transition: all ease 0.3s;
-        transition: all ease 0.3s;
-        cursor: pointer;
-        font-family: "Major Mono Display", monospace;
-        font-size: 55px; }
-      #header .nav-bar ul .link-li {
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        display: block; }
-        #header .nav-bar ul .link-li:hover {
-          font-size: 35px; }
-      #header .nav-bar ul .leng-li {
-        margin-left: 20px;
-        display: block; }
-  #header .nav-bar-scroll {
-    -webkit-box-shadow: 0px 2px 11px 0px #333;
-    box-shadow: 0px 2px 11px 0px #333;
-    background-color: #a9a9a9; }
-    #header .nav-bar-scroll .ul-scroll {
-      font-size: 27px; }
-      #header .nav-bar-scroll .ul-scroll .logo-scroll {
-        font-size: 50px; } }
+    justify-content: center; }
+  #header .link-li {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    #header .link-li .leng-li {
+      display: block !important; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */
