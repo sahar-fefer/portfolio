@@ -9,11 +9,15 @@ const Home = () => {
                 <h1 className={'header'}>
                     Hey! I'm <span className={'name'}>Sahar Feferovich</span>
                 </h1>
-                <h2 className={'header'}>
+                <h2 className={'presentation'}>
                     I'm A Fullstack Developer
                 </h2>
-                <Typical
+                <h2 className={'typing'}>
+                    I'm A Fullstack Developer blblblbl
+                </h2>
+                {/* <Typical
                     loop={Infinity}
+                    className={'typing'}
                     steps={[
                         `text text`,
                         5000,
@@ -21,7 +25,7 @@ const Home = () => {
                         5000
                     ]}
                     wrapper="h2"
-                />
+                /> */}
             </div>
         </div>
     );
