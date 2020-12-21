@@ -560,13 +560,15 @@ html {
   @media only screen and (min-width: 630px) {
     #home {
       background-image: url("../media/home_background.jpg"); }
-      #home .header-wrapper .header {
-        margin: 0.6rem 0;
-        font-size: 1.7rem; }
-      #home .header-wrapper .presentation {
-        font-size: 1.4rem; }
-      #home .header-wrapper .typing {
-        font-size: 1.4rem; } }
+      #home .header-wrapper {
+        margin-top: 2vw; }
+        #home .header-wrapper .header {
+          margin: 0.6rem 0;
+          font-size: 1.7rem; }
+        #home .header-wrapper .presentation {
+          font-size: 1.4rem; }
+        #home .header-wrapper .typing {
+          font-size: 1.4rem; } }
 
 #about {
   background: #f8f8f8;
