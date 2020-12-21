@@ -55,22 +55,20 @@
     }
 
     @media only screen and (min-width: 630px) {
-        #home {
-            background-image: url("../media/home_background.jpg");
+        background-image: url("../media/home_background.jpg");
 
-            .header-wrapper {
-                .header {
-                    margin: 0.6rem 0;
-                    font-size: 1.7rem;
-                }
+        .header-wrapper {
+            .header {
+                margin: 0.6rem 0;
+                font-size: 1.7rem;
+            }
 
-                .presentation {
-                    font-size: 1.4rem;
-                }
+            .presentation {
+                font-size: 1.4rem;
+            }
 
-                .typing {
-                    font-size: 1.4rem;
-                }
+            .typing {
+                font-size: 1.4rem;
             }
         }
     }

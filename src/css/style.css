@@ -558,14 +558,14 @@ html {
       margin-top: 5px;
       margin-bottom: 5px; } }
   @media only screen and (min-width: 630px) {
-    #home #home {
+    #home {
       background-image: url("../media/home_background.jpg"); }
-      #home #home .header-wrapper .header {
+      #home .header-wrapper .header {
         margin: 0.6rem 0;
         font-size: 1.7rem; }
-      #home #home .header-wrapper .presentation {
+      #home .header-wrapper .presentation {
         font-size: 1.4rem; }
-      #home #home .header-wrapper .typing {
+      #home .header-wrapper .typing {
         font-size: 1.4rem; } }
 
 #about {
