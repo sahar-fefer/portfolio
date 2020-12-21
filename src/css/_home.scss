@@ -4,7 +4,7 @@
     display: grid;
     place-items: center;
     background-color: $home-background;
-    background-image: url("../media/home_background_mobile_short.jpg");
+    background-image: url("../media/home_background_mobile.jpg");
     height: 100vh;
     // width: 100vw;
     background-repeat: no-repeat;
@@ -13,11 +13,66 @@
 
     .header-wrapper {
         flex-direction: column;
-        margin-top: 8vh;
+        margin-top: 3vh;
+
+        .header {
+            font-size: 3vh;
+        }
+
+        .presentation {
+            font-size: 2.5vh;
+        }
+
+        .typing {
+            font-size: 2.5vh;
+            display: none;
+        }
     }
 
-    @media (min-width: 900px) {
-        background-image: url("../media/home_background.jpg");
+    @media only screen and (min-width: 400px) {
+        .header-wrapper {
+            margin-top: 2.7vw;
+
+            .header {
+                margin: 1.4vw 0;
+                font-size: 4.2vw;
+            }
+
+            .presentation {
+                font-size: 3.5vw;
+            }
+
+            .typing {
+                font-size: 3.5vw;
+                display: block;
+            }
+        }
+
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media only screen and (min-width: 630px) {
+        #home {
+            background-image: url("../media/home_background.jpg");
+
+            .header-wrapper {
+                .header {
+                    margin: 0.6rem 0;
+                    font-size: 1.7rem;
+                }
+
+                .presentation {
+                    font-size: 1.4rem;
+                }
+
+                .typing {
+                    font-size: 1.4rem;
+                }
+            }
+        }
     }
 
     // Medium devices (tablets, 768px and up)
