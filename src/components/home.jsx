@@ -11,10 +11,7 @@ const Home = () => {
                 <h2 className={'presentation'}>
                     I'm A Fullstack Developer
                 </h2>
-                <h2 className={'presentation'}>
-                    I'm A Fullstack Developer
-                </h2>
-                {/* <Typical
+                <Typical
                     loop={Infinity}
                     className={'typing'}
                     steps={[
@@ -24,7 +21,7 @@ const Home = () => {
                         5000
                     ]}
                     wrapper="h2"
-                /> */}
+                />
             </div>
         </div>
     );
