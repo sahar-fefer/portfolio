@@ -1,8 +1,77 @@
 #about {
-    background: rgb(248, 248, 248);
-    background-image: url("../media/11.jpg");
-    height: 100vh;
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
+    // background: rgb(248, 248, 248);
+    // background-image: url("../media/11.jpg");
+    // height: 100vh;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    margin: 10vw 0;
+
+    .img-wrapper {
+        display: flex;
+        align-items: center;
+        
+        .my-img {
+            border-radius: 50%;
+            width: 18vw;
+            height: 18vw;
+            background-image: url("../media/square.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 4vw;
+        }
+    }
+
+    .skills-wrapper {
+        margin: 4vw 0;
+
+        .img-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .skill-img {
+                height: 3.5vw;
+                margin: 0.5rem;
+
+                // &.javascript {
+                //     width: 3.5vw;
+                // }
+                // &.html {
+                //     width: 3.5vw;
+                // }
+                // &.css {
+                //     width: 3.5vw;
+                // }
+                // &.sass {
+                //     width: 4.5vw;
+                // }
+                // &.react {
+                //     width: 4.5vw;
+                // }
+                // &.bootstrap {
+                //     width: 4.5vw;
+                // }
+                // &.node {
+                //     width: 4.5vw;
+                // }
+                // &.express {
+                //     width: 4.5vw;
+                // }
+                // &.mySQL {
+                //     width: 4.5vw;
+                // }
+                // &.postman {
+                //     width: 4.5vw;
+                // }
+                // &.python {
+                //     width: 4.5vw;
+                // }
+                // &.flask {
+                //     width: 4.5vw;
+                // }
+            }
+        }
+    }
 }
