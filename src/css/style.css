@@ -535,40 +535,30 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 3vh; }
+    margin-top: 3.5vw; }
     #home .header-wrapper .header {
-      font-size: 3vh; }
+      margin: 1.5vw 0;
+      font-size: 4.2vw; }
     #home .header-wrapper .presentation {
-      font-size: 2.5vh; }
+      font-size: 3.5vw; }
     #home .header-wrapper .typing {
-      font-size: 2.5vh;
+      font-size: 3.5vw;
       display: none; }
-  @media only screen and (min-width: 400px) {
-    #home .header-wrapper {
-      margin-top: 2.7vw; }
-      #home .header-wrapper .header {
-        margin: 1.4vw 0;
-        font-size: 4.2vw; }
-      #home .header-wrapper .presentation {
-        font-size: 3.5vw; }
-      #home .header-wrapper .typing {
-        font-size: 3.5vw;
-        display: block; }
-    #home h2 {
-      margin-top: 5px;
-      margin-bottom: 5px; } }
+    #home .header-wrapper h2 {
+      margin: 1vw 0; }
   @media only screen and (min-width: 630px) {
+    #home .header-wrapper {
+      margin-top: 2.5vh; } }
+  @media only screen and (min-width: 992px) {
     #home {
       background-image: url("../media/home_background.jpg"); }
-      #home .header-wrapper {
-        margin-top: 2vw; }
-        #home .header-wrapper .header {
-          margin: 0.6rem 0;
-          font-size: 1.7rem; }
-        #home .header-wrapper .presentation {
-          font-size: 1.4rem; }
-        #home .header-wrapper .typing {
-          font-size: 1.4rem; } }
+      #home .header-wrapper .header {
+        margin: 1.4vh 0;
+        font-size: 4.5vh; }
+      #home .header-wrapper .presentation {
+        font-size: 3.8vh; }
+      #home .header-wrapper .typing {
+        font-size: 3.8vh; } }
 
 #about {
   margin: 50px 0; }
