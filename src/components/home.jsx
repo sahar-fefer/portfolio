@@ -3,7 +3,6 @@ import Typical from 'react-typical';
 
 const Home = () => {
     return (
-        // <div id={'home'} className={'container-fluid'} style={homeStyle}>
         <div id={'home'} className={'container-fluid'}>
             <div className={'header-wrapper'}>
                 <h1 className={'header'}>
@@ -12,7 +11,10 @@ const Home = () => {
                 <h2 className={'presentation'}>
                     I'm A Fullstack Developer
                 </h2>
-                <Typical
+                <h2 className={'presentation'}>
+                    I'm A Fullstack Developer
+                </h2>
+                {/* <Typical
                     loop={Infinity}
                     className={'typing'}
                     steps={[
@@ -22,7 +24,7 @@ const Home = () => {
                         5000
                     ]}
                     wrapper="h2"
-                />
+                /> */}
             </div>
         </div>
     );
