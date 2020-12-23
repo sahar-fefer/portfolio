@@ -57,7 +57,7 @@ const Header = () => {
                     </li>
                     <li className={'link-li col-auto'}>
                         <Link>
-                            Protfolio
+                            Portfolio
                     </Link>
                     </li>
                     <li className={'link-li col-auto'}>
