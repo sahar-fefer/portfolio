@@ -11,15 +11,14 @@ const About = () => {
             'react',
             'bootstrap',
             'mySQL',
-            'express-small',
+            'express',
             'node',
             'postman',
             'python',
             'flask']
         for (const skillName of skills) {
-            console.log('skillName', skillName);
             setSkillsLi(old => [...old,
-            < li className={'col-4 col-md-3 col-lg-2 img-wrapper perfect-center'} >
+            < li className={`img-wrapper perfect-center col-4 col-md-3 col-lg-2`} >
                 <img src={`/media/skills/${skillName}.png`} alt={skillName} className={`skill-img ${skillName}`} />
             </li >
             ])
@@ -53,16 +52,6 @@ const About = () => {
                         <ul className={'skills-wrapper row d-sm-none'}>
                             {skillsLi}
                         </ul>
-                        {/* <div className="row">
-                            <div className="col-auto mt-auto mb-auto">
-                                <Linkedin />
-                            </div>
-                            <div className="col d-flex">
-                                <ul className={'row skills-wrapper'}>
-                                    {skillsLi}
-                                </ul>
-                            </div>
-                        </div> */}
                     </div>
                     <ul className={'skills-wrapper row d-none d-sm-flex'}>
                         {skillsLi}
