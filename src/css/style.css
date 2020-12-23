@@ -572,17 +572,30 @@ html {
 
 #about {
   margin: 10vw 0; }
+  #about .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   #about .img-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     #about .img-wrapper .my-img {
       border-radius: 50%;
-      width: 18vw;
-      height: 18vw;
+      width: 50vw;
+      height: 50vw;
       background-image: url("../media/square.jpg");
       background-repeat: no-repeat;
       background-position: center;
@@ -603,6 +616,58 @@ html {
       #about .skills-wrapper .img-wrapper .skill-img {
         height: 3.5vw;
         margin: 0.5rem; }
+
+/* /////////////////////////    colors    /////////////////////////// */
+/* /////////////////////////    card    /////////////////////////// */
+#linkedin {
+  border: 1px solid gray;
+  border-radius: 2vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 35vw; }
+  #linkedin .linkedin-cover-img {
+    background-image: url(https://cdn.lawrencemcdaniel.com/wp-content/uploads/2020/06/05215543/linkedin-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15vw;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit; }
+  #linkedin .linkedin-profile-img {
+    background-image: url(../media/square.jpg);
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -10vw auto; }
+  #linkedin .linkedin-name {
+    font-size: 1.2rem;
+    margin-top: 11vw; }
+  #linkedin .linkedin-info {
+    color: gray; }
+  #linkedin .link-wrapper {
+    width: 100%; }
+    #linkedin .link-wrapper .link-linkedin-profile {
+      border-radius: 20px;
+      width: 28vw;
+      padding: 1vw;
+      border: 1.3px solid #0a66c2;
+      margin-bottom: 1.5vw;
+      text-align: center;
+      color: #0a66c2;
+      font-weight: 200; }
+  #linkedin .linkedin-footer {
+    background-color: cadetblue;
+    width: 100%;
+    height: 8vw;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit; }
+    #linkedin .linkedin-footer .linkedin-logo {
+      height: 7vw; }
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    card    /////////////////////////// */

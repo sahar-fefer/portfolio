@@ -7,14 +7,21 @@
     // background-size: cover;
     margin: 10vw 0;
 
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .img-wrapper {
         display: flex;
         align-items: center;
-        
+        justify-content: center;
+
         .my-img {
             border-radius: 50%;
-            width: 18vw;
-            height: 18vw;
+            width: 50vw;
+            height: 50vw;
             background-image: url("../media/square.jpg");
             background-repeat: no-repeat;
             background-position: center;
@@ -74,4 +81,12 @@
             }
         }
     }
+}
+
+@media only screen and (min-width: 400px) {
+
+}
+
+@media only screen and (min-width: 630px) {
+
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Linkedin from './linkedin';
 const About = () => {
     const [skillsLi, setSkillsLi] = useState([]);
 
@@ -19,8 +19,8 @@ const About = () => {
         for (const skillName of skills) {
             console.log('skillName', skillName);
             setSkillsLi(old => [...old,
-            < li className={'col-2 img-wrapper'} >
-                <img src={`/skills/${skillName}.png`} alt={skillName} className={`skill-img ${skillName}`} />
+            < li className={'col-4 col-md-2 img-wrapper'} >
+                <img src={`/media/skills/${skillName}.png`} alt={skillName} className={`skill-img ${skillName}`} />
             </li >
             ])
         }
@@ -33,10 +33,25 @@ const About = () => {
     return (
         <div id={'about'} className={'container-fluid'}>
             <div className={'container'}>
+                <h1 className="header">About</h1>
                 <div className="row">
-                    <div className="col-auto img-wrapper">
+                    {/* <div className="col-md-auto img-wrapper">
                         <div className="my-img" />
+                    </div> */}
+                    <div className="row">
+                    <div className="col-auto">
+                            <Linkedin />
+                        </div>
+                        <div className="col">
+                            <ul className={'row skills-wrapper'}>
+                                {skillsLi}
+                            </ul>
+                        </div>
                     </div>
+
+                    {/* <div className="col-md-auto linkedin-wrapper">
+                        <Linkedin />
+                    </div> */}
                     <div className="introduc col">
                         <h1>
                             So How I Am?
@@ -45,20 +60,17 @@ const About = () => {
                             I'm Sahar Feferovich Web Developer
                         </h2>
                         <h4>
-                            Full Stack developer, capable of developing web platforms from scratch to production, with full responsiveness and preformance.
+                            Full Stack developer,
+                            capable of developing web platforms from scratch to production,
+                            with full responsiveness and preformance.
                         </h4>
                         <h4>
-                            I focus on planning, designing and developing both Back-End and Front-End.
+                            I focus on planning,
+                            designing and developing both Back-End and Front-End.
                         </h4>
-                        <h4>
-                            Hands-on a wide range of technologies and platforms: JaveScript, CSS, HTML, React, MySQL and Node.js.
-                        </h4>
-                        {/* <h2 className={'mt-4 mb-4'}>
-                            skills
-                        </h2> */}
-                        <ul className={'row skills-wrapper'}>
+                        {/* <ul className={'row skills-wrapper'}>
                             {skillsLi}
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
             </div>
