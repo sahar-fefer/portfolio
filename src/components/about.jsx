@@ -11,7 +11,7 @@ const About = () => {
             'react',
             'bootstrap',
             'mySQL',
-            'express',
+            'express-small',
             'node',
             'postman',
             'python',
@@ -19,7 +19,7 @@ const About = () => {
         for (const skillName of skills) {
             console.log('skillName', skillName);
             setSkillsLi(old => [...old,
-            < li className={'col-4 col-md-2 img-wrapper'} >
+            < li className={'col-4 col-md-3 col-lg-2 img-wrapper perfect-center'} >
                 <img src={`/media/skills/${skillName}.png`} alt={skillName} className={`skill-img ${skillName}`} />
             </li >
             ])
@@ -35,43 +35,38 @@ const About = () => {
             <div className={'container'}>
                 <h1 className="header">About</h1>
                 <div className="row">
-                    {/* <div className="col-md-auto img-wrapper">
-                        <div className="my-img" />
-                    </div> */}
-                    <div className="row">
-                    <div className="col-auto">
-                            <Linkedin />
-                        </div>
-                        <div className="col">
-                            <ul className={'row skills-wrapper'}>
-                                {skillsLi}
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* <div className="col-md-auto linkedin-wrapper">
+                    <div className="col-sm-auto linkedin-wrapper perfect-center">
                         <Linkedin />
-                    </div> */}
+                    </div>
                     <div className="introduc col">
-                        <h1>
-                            So How I Am?
-                        </h1>
-                        <h2>
-                            I'm Sahar Feferovich Web Developer
-                        </h2>
+                        <h1 className={'d-none d-md-block'}>So How Am I?</h1>
+                        
+                        <h2 className={'d-none d-md-block'}>I'm <span className="name">Sahar Feferovich</span>, Full Stack Developer</h2>
                         <h4>
-                            Full Stack developer,
-                            capable of developing web platforms from scratch to production,
-                            with full responsiveness and preformance.
+                            As A Full Stack Developer, I enjoy thinking, learning, and building in creative and unique ways.
+                            Programming is my playground and where I get to execute my visions.
                         </h4>
                         <h4>
                             I focus on planning,
                             designing and developing both Back-End and Front-End.
                         </h4>
-                        {/* <ul className={'row skills-wrapper'}>
+                        <ul className={'skills-wrapper row d-sm-none'}>
                             {skillsLi}
-                        </ul> */}
+                        </ul>
+                        {/* <div className="row">
+                            <div className="col-auto mt-auto mb-auto">
+                                <Linkedin />
+                            </div>
+                            <div className="col d-flex">
+                                <ul className={'row skills-wrapper'}>
+                                    {skillsLi}
+                                </ul>
+                            </div>
+                        </div> */}
                     </div>
+                    <ul className={'skills-wrapper row d-none d-sm-flex'}>
+                        {skillsLi}
+                    </ul>
                 </div>
             </div>
         </div>
