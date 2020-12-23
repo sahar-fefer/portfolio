@@ -1,8 +1,46 @@
 #about {
-    background: rgb(248, 248, 248);
-    background-image: url("../media/11.jpg");
-    height: 100vh;
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
+    margin: 50px 0;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .introduc {
+        margin: auto 0;
+    }
+
+    .skills-wrapper {
+        margin: 5vw 0;
+
+        .img-wrapper {
+
+            .skill-img {
+                height: 8vw;
+                margin: 0.5rem;
+
+                // &.express {
+                //     width: 4.5vw;
+                // }
+            }
+        }
+    }
 }
+
+@media (min-width: 576px) { 
+    .skill-img {
+        height: 6.5vw !important;
+    }
+ }
+
+@media (min-width: 768px) { 
+    .skill-img {
+    height: 5.5vw !important;
+}
+}
+
+@media (min-width: 992px) { 
+    .skill-img {
+        height: 4.5vw !important;
+    }
+ }
