@@ -542,8 +542,7 @@ html {
     #home .header-wrapper .presentation {
       font-size: 3.5vw; }
     #home .header-wrapper .typing {
-      font-size: 3.5vw;
-      display: none; }
+      font-size: 3.5vw; }
     #home .header-wrapper h2 {
       margin: 1vw 0; }
   @media only screen and (min-width: 630px) {
