@@ -1,0 +1,59 @@
+@import "./variables";
+
+#portfolio {
+    // background-color: #e2e2e2;
+    // background-image: url(https://www.transparenttextures.com/patterns/rocky-wall.png);
+
+    .website {
+        margin: 15px;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: $shadow-card-dark;
+
+        // &:hover {
+        //     box-shadow: $shadow-card-light;
+        // }
+
+        &.contact4 {
+            background-image: url("../media/contact4.jpg");
+        }
+
+        &.sahar-estate {
+            background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
+        }
+
+        .hover-website {
+            background-color: $opacity-background;
+            padding: 5vw;
+            transition: all ease-in-out .3s;
+            border-radius: inherit;
+
+            &.show {
+                opacity: 1;
+            }   
+
+            &.hidden {
+                opacity: 0;
+            }   
+
+            .tech-pills {
+                border: $text solid 1px;
+                background-color: $text-light;
+                border-radius: 10px;
+                margin: 5px;
+            }
+
+            .link-button {
+                border: $text solid 1px;
+                background-color: $opacity-dark;
+                border-radius: 5px;
+                margin: 20px 5px 10px;
+                padding: 5px 10px;
+                color: $light;
+            }
+        }
+    }
+}

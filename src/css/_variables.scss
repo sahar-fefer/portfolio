@@ -18,15 +18,11 @@ $secondary-hover: #02a174;
 $light: #f7f5f5;
 $home-background: #f8f8f8;
 $opacity-background: rgba(200, 200, 200, 0.8);
+$opacity-dark: rgba(50, 50, 50, 0.9);
 
 $github-color: #24292e;
 $dribbble-color: #ea4c89;
 $linkedin-color: #0a66c2;
 
-/* /////////////////////////    card    /////////////////////////// */
-$shadow-card: 0 2px 15px -2px #a8a8a8;
-$shadow-card-hover: 0 2px 15px 2px #a8a8a8;
-$border-radius: 0.25rem;
-$position-inside-card: 16px;
-$padding-status: 2px 5px;
-$fill-heart-hover: rgba(225, 0, 0, 0.5);
+$shadow-card-light: 0 2px 15px -2px #a8a8a8;
+$shadow-card-dark: 0 2px 15px 2px #a8a8a8;
