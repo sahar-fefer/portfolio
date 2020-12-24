@@ -3,7 +3,6 @@ import Typical from 'react-typical';
 
 const Home = () => {
     return (
-        // <div id={'home'} className={'container-fluid'} style={homeStyle}>
         <div id={'home'} className={'container-fluid'}>
             <div className={'header-wrapper'}>
                 <h1 className={'header'}>

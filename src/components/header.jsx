@@ -52,12 +52,12 @@ const Header = () => {
                     </li>
                     <li className={'link-li col-auto'}>
                         <Link>
-                            Project
+                            About
                     </Link>
                     </li>
                     <li className={'link-li col-auto'}>
                         <Link>
-                            About
+                            Portfolio
                     </Link>
                     </li>
                     <li className={'link-li col-auto'}>
