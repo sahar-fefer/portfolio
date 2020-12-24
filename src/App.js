@@ -11,6 +11,7 @@ import Header from "./components/header";
 // import SideNav from './components/sideNav';
 import Home from './components/home';
 import About from "./components/about";
+import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 
@@ -33,6 +34,7 @@ const App = () => {
             <Header />
             <Home />
             <About />
+            <Portfolio/>
             <Contact />
             <Footer />
           </Route>
