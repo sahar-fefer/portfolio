@@ -1,5 +1,4 @@
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 body {
   color: #333;
   width: 100%;
@@ -37,9 +36,7 @@ body {
     color: #910667; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 .infinity {
   width: 120px;
   height: 60px;
@@ -286,7 +283,6 @@ html {
     margin-top: 3vh; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 .burger-nav {
   position: fixed;
   top: 20px;
@@ -370,7 +366,6 @@ html {
     display: none; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 #header .scrollTop {
   position: fixed;
   width: 100%;
@@ -520,7 +515,6 @@ html {
       display: block !important; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 #home {
   display: -ms-grid;
   display: grid;
@@ -590,7 +584,6 @@ html {
     height: 4.5vw !important; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 #linkedin {
   border: 1px solid gray;
   border-radius: 10px;
@@ -644,7 +637,44 @@ html {
       height: 45px; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
+#portfolio .website {
+  margin: 15px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 15px 2px #a8a8a8;
+  box-shadow: 0 2px 15px 2px #a8a8a8; }
+  #portfolio .website.contact4 {
+    background-image: url("../media/contact4.jpg"); }
+  #portfolio .website.sahar-estate {
+    background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg); }
+  #portfolio .website .hover-website {
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 5vw;
+    -webkit-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    border-radius: inherit; }
+    #portfolio .website .hover-website.show {
+      opacity: 1; }
+    #portfolio .website .hover-website.hidden {
+      opacity: 0; }
+    #portfolio .website .hover-website .tech-pills {
+      border: #333 solid 1px;
+      background-color: #9f9f9f;
+      border-radius: 10px;
+      margin: 5px; }
+    #portfolio .website .hover-website .link-button {
+      border: #333 solid 1px;
+      background-color: rgba(50, 50, 50, 0.9);
+      border-radius: 5px;
+      margin: 20px 5px 10px;
+      padding: 5px 10px;
+      color: #f7f5f5; }
+
+/* /////////////////////////    colors    /////////////////////////// */
 #contact {
   background: rgba(248, 248, 248, 0.2);
   border-radius: 35px;
@@ -687,7 +717,6 @@ html {
         background: #00d99d; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-/* /////////////////////////    card    /////////////////////////// */
 #footer {
   background: #9f9f9f;
   display: -webkit-box;
