@@ -4,9 +4,10 @@ const About = () => {
     const [skillsLi, setSkillsLi] = useState([]);
 
     const skillsGenerator = () => {
+        setSkillsLi([])
         const skills = ['javascript',
             'html',
-            'css',
+            'css', 
             'sass',
             'react',
             'bootstrap',
