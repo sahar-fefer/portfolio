@@ -43,4 +43,48 @@ body {
   .name {
     color: $primary;
   }
+
+  .component-header {
+    font-size: 12vw;
+    padding: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+  body {
+    .component-header {
+      font-size: 10vw;
+      padding: 8vw;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    .component-header {
+      font-size: 8vw;
+      padding: 6vw;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    .component-header {
+      font-size: 6vw;
+      padding: 4vw;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    .component-header {
+      font-size: 5rem;
+      padding: 6rem 0 5rem;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import Website from './website';
 const Portfolio = () => {
     return (
         <div id={'portfolio'} className={'container-fluid'}>
-            <h1 className="portfolio-header perfect-center">Portfolio</h1>
+            <h1 className="component-header">Portfolio</h1>
             <div className="container-fluid">
                 <div className="row justify-content-center">
                     <Website className={'col col-md-6'}

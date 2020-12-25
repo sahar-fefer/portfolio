@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from "react-scroll";
 import { IoIosArrowDropup } from 'react-icons/io';
 
 const Header = () => {
@@ -33,63 +33,107 @@ const Header = () => {
     window.addEventListener('scroll', checkScrollTop)
     return (
         <header id={'header'} className={'container-fluid'}>
-            <IoIosArrowDropup
-                className={"arrow icon scrollTop"}
-                onClick={scrollTop}
-                style={{ height: 40, display: showHeader ? 'flex' : 'none' }} />
+            <div className={'scroll-up-button'}>
+                <IoIosArrowDropup
+                    className={"scrollTop"}
+                    onClick={scrollTop}
+                    style={{ height: 40, display: showHeader ? 'flex' : 'none' }} />
+            </div>
             <div className={`burger-nav ${isBurgerOpen ? 'open' : ''}`} onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
-                <ul className={`row  ${headerBackground && 'ul-scroll'}`}>
-                    <li className={'col justify-content-start'}>
+                <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
+                    <div className={'col justify-content-start'}>
                         <div className={`logo ${headerBackground && 'logo-scroll'}`}
                             onClick={scrollTop}>
                             SF
                         </div>
-                    </li>
-                    <li className={'link-li col-auto'}>
-                        <Link>
+                    </div>
+                    <div className={'link-wrapper col-auto'}>
+                        <Link activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-50}
+                            duration={500}>
                             About
-                    </Link>
-                    </li>
-                    <li className={'link-li col-auto'}>
-                        <Link>
+                        </Link>
+                    </div>
+                    <div className={'link-wrapper col-auto'}>
+                        <Link activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-50}
+                            duration={500}>
                             Portfolio
-                    </Link>
-                    </li>
-                    <li className={'link-li col-auto'}>
-                        <Link>
+                        </Link>
+                    </div>
+                    <div className={'link-wrapper col-auto'}>
+                        <Link activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-50}
+                            duration={500}>
                             Contact
-                    </Link>
-                    </li>
-                    <li className={'leng-li col-auto'}>
+                        </Link>
+                    </div>
+                    <div className={'leng col-auto'}>
                         <button>
                             EN
                     </button>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </nav >
-            <div className={`menu-screen ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
-                <ul>
-                    <li>
-                        <Link>
-                            Project
-                    </Link>
-                    </li>
-                    <li>
-                        <Link>
+            <div className={`mobile-bar ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
+                <div className={'bar'}>
+                    <button className={"section leng"}>
+                        EN
+                    </button>
+                    <div className={'section'}>
+                        <Link activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-75}
+                            duration={500}
+                            onSetActive={() => setIsBurgerOpen(false)}>
                             About
-                    </Link>
-                    </li>
-                    <li>
-                        <Link>
+                        </Link>
+                    </div>
+                    <div className={'section'}>
+                        <Link activeClass="active"
+                            to="portfolio"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-75}
+                            duration={500}
+                            onSetActive={() => setIsBurgerOpen(false)}>
+                            Portfolio
+                        </Link>
+                    </div>
+                    <div className={'section'}>
+                        <Link activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-75}
+                            duration={500}
+                            onSetActive={() => setIsBurgerOpen(false)} >
                             Contact
-                    </Link>
-                    </li>
-                </ul>
+                        </Link>
+                    </div>
+                </div>
             </div>
         </header>
     );

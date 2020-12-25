@@ -16,9 +16,9 @@ const Contact = () => {
 
     return (
         <div id={'contact'} className={'container'}>
-            <h1 className="header perfect-center">Contact</h1>
+            <h1 className="component-header">Contact</h1>
             <div className="container">
-                <div className={'row align-items-center'}>
+                <div className={'wrapper row align-items-center'}>
                     <div className={'col-sm-4 col-md ml-4 mr-4 ml-sm-0 mr-sm-0'}>
                         <h2>
                             IT WOULD BE A PLEASURE
