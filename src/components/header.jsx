@@ -58,7 +58,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={0}
+                            offset={-50}
                             duration={500}>
                             About
                         </Link>
@@ -69,7 +69,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={0}
+                            offset={-50}
                             duration={500}>
                             Portfolio
                         </Link>
@@ -80,7 +80,7 @@ const Header = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={0}
+                            offset={-50}
                             duration={500}>
                             Contact
                         </Link>
