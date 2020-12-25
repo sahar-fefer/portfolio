@@ -33,7 +33,7 @@ const About = () => {
     return (
         <div id={'about'} className={'container-fluid'}>
             <div className={'container'}>
-                <h1 className="header">About</h1>
+                <h1 className="component-header">About</h1>
                 <div className="row">
                     <div className="col-sm-auto linkedin-wrapper perfect-center">
                         <Linkedin />

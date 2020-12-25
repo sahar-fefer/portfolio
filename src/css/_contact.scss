@@ -6,49 +6,52 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10px;
 
-    h2 {
-        font-size: x-large;
-    }
+    .wrapper {
+        margin-bottom: 10px;
 
-    .form {
-        width: 100%;
-        display: grid;
-        place-items: center;
-        background-color: #e2e2e2;
-        border-radius: 15px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-        input,
-        textarea {
-            opacity: 0.9;
-            background: $light;
-            border: 2px solid $text-light;
-            outline: none;
-            padding: 7px;
-            margin: 2px;
-            width: 80%;
+        h2 {
+            font-size: x-large;
         }
-        input {
+
+        .form {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            // background-color: #e2e2e2;
             border-radius: 15px;
-        }
-        textarea {
-            border-radius: 30px;
-            border-radius: 13px;
-        }
-        .submit {
-            background: $secondary-light;
-            padding: 0.2vh 0;
-            margin-top: 0;
-            width: 20vw;
-            transition: all 0.3s;
-            width: 80%;
-            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
-            &:hover {
-                background: $secondary;
+            input,
+            textarea {
+                opacity: 0.9;
+                background: $light;
+                border: 2px solid $text-light;
+                outline: none;
+                padding: 7px;
+                margin: 2px;
+                width: 80%;
+            }
+            input {
+                border-radius: 15px;
+            }
+            textarea {
+                border-radius: 30px;
+                border-radius: 13px;
+            }
+            .submit {
+                background: $secondary-light;
+                padding: 0.2vh 0;
+                margin-top: 0;
+                width: 20vw;
+                transition: all 0.3s;
+                width: 80%;
+                border-radius: 10px;
+
+                &:hover {
+                    background: $secondary;
+                }
             }
         }
     }
@@ -56,21 +59,26 @@
 
 @media (min-width: 576px) {
     #contact {
-        h2 {
-            font-size: 5vw;
+        .wrapper {
+            h2 {
+                font-size: 5vw;
+            }
         }
     }
 }
 
 @media (min-width: 768px) {
-    #contact {
-        h2 {
-            font-size: 5vw;
-        }
-    }
+    
 }
 
 @media (min-width: 992px) {
+    #contact {
+        .wrapper {
+            h2 {
+                font-size: 4vw;
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {

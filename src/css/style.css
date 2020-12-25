@@ -34,6 +34,38 @@ body {
     align-items: center; }
   body .name {
     color: #910667; }
+  body .component-header {
+    font-size: 12vw;
+    margin: 24vw 0 10vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+@media (min-width: 576px) {
+  body .component-header {
+    font-size: 10vw;
+    margin: 8vw; } }
+
+@media (min-width: 768px) {
+  body .component-header {
+    font-size: 8vw;
+    margin: 6vw; } }
+
+@media (min-width: 992px) {
+  body .component-header {
+    font-size: 6vw;
+    margin: 4vw; } }
+
+@media (min-width: 1200px) {
+  body .component-header {
+    font-size: 5rem;
+    margin: 6rem; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 /* /////////////////////////    colors    /////////////////////////// */
@@ -551,25 +583,14 @@ html {
       #home .header-wrapper .typing {
         font-size: 3.8vh; } }
 
-#about {
-  margin: 50px 0; }
-  #about .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  #about .introduc {
-    margin: auto 0; }
-  #about .skills-wrapper {
-    margin: 5vw 0; }
-    #about .skills-wrapper .img-wrapper .skill-img {
-      height: 8vw;
-      margin: 0.5rem; }
+#about .introduc {
+  margin: auto 0; }
+
+#about .skills-wrapper {
+  margin: 5vw 0; }
+  #about .skills-wrapper .img-wrapper .skill-img {
+    height: 8vw;
+    margin: 0.5rem; }
 
 @media (min-width: 576px) {
   .skill-img {
@@ -680,53 +701,53 @@ html {
   border-radius: 35px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  padding: 10px; }
-  #contact h2 {
-    font-size: x-large; }
-  #contact .form {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    background-color: #e2e2e2;
-    border-radius: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px; }
-    #contact .form input,
-    #contact .form textarea {
-      opacity: 0.9;
-      background: #f7f5f5;
-      border: 2px solid #9f9f9f;
-      outline: none;
-      padding: 7px;
-      margin: 2px;
-      width: 80%; }
-    #contact .form input {
-      border-radius: 15px; }
-    #contact .form textarea {
-      border-radius: 30px;
-      border-radius: 13px; }
-    #contact .form .submit {
-      background: #00ffbf;
-      padding: 0.2vh 0;
-      margin-top: 0;
-      width: 20vw;
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-      width: 80%;
-      border-radius: 10px; }
-      #contact .form .submit:hover {
-        background: #00d99d; }
+  background-size: cover; }
+  #contact .wrapper {
+    margin-bottom: 10px; }
+    #contact .wrapper h2 {
+      font-size: x-large; }
+    #contact .wrapper .form {
+      width: 100%;
+      display: -ms-grid;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      #contact .wrapper .form input,
+      #contact .wrapper .form textarea {
+        opacity: 0.9;
+        background: #f7f5f5;
+        border: 2px solid #9f9f9f;
+        outline: none;
+        padding: 7px;
+        margin: 2px;
+        width: 80%; }
+      #contact .wrapper .form input {
+        border-radius: 15px; }
+      #contact .wrapper .form textarea {
+        border-radius: 30px;
+        border-radius: 13px; }
+      #contact .wrapper .form .submit {
+        background: #00ffbf;
+        padding: 0.2vh 0;
+        margin-top: 0;
+        width: 20vw;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        width: 80%;
+        border-radius: 10px; }
+        #contact .wrapper .form .submit:hover {
+          background: #00d99d; }
 
 @media (min-width: 576px) {
-  #contact h2 {
+  #contact .wrapper h2 {
     font-size: 5vw; } }
 
-@media (min-width: 768px) {
-  #contact h2 {
-    font-size: 5vw; } }
+@media (min-width: 992px) {
+  #contact .wrapper h2 {
+    font-size: 4vw; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 #footer {
