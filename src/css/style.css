@@ -700,8 +700,7 @@ html {
   border-radius: 35px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  height: 100vh; }
+  background-size: cover; }
   #contact .wrapper {
     margin-bottom: 10px; }
     #contact .wrapper h2 {
@@ -744,6 +743,10 @@ html {
 @media (min-width: 576px) {
   #contact .wrapper h2 {
     font-size: 5vw; } }
+
+@media (min-width: 600px) {
+  #contact {
+    min-height: 93vh; } }
 
 @media (min-width: 992px) {
   #contact .wrapper h2 {

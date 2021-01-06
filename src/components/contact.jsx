@@ -19,7 +19,7 @@ const Contact = () => {
             <h1 className="component-header">Contact</h1>
             <div className="container">
                 <div className={'wrapper row align-items-center'}>
-                    <div className={'col-sm-4 col-md ml-4 mr-4 ml-sm-0 mr-sm-0'}>
+                    <div className={'col-md-4 col-lg ml-4 mr-4 ml-sm-0 mr-sm-0'}>
                         <h2>
                             IT WOULD BE A PLEASURE
                         </h2>
