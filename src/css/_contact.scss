@@ -6,14 +6,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
 
     .wrapper {
         margin-bottom: 10px;
 
         h2 {
             font-size: x-large;
-        }
+        } 
 
         .form {
             width: 100%;
@@ -67,6 +66,12 @@
         }
     }
 }
+
+@media (min-width: 600px) {
+    #contact {
+        min-height: 93vh;
+    }
+}        
 
 @media (min-width: 768px) {
     
