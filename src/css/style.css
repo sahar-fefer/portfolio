@@ -784,3 +784,43 @@ html {
     transition: all .3s; }
     #footer .download:hover {
       color: #027e5b; }
+
+#page-not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh; }
+  #page-not-found .page-not-found-img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 95vw; }
+  #page-not-found .link-to-home {
+    background-color: #ca5c7a;
+    border: 7px solid #fd89a5;
+    border-radius: 15px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 35px;
+    font-size: 15px;
+    margin: 35px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+    #page-not-found .link-to-home:hover {
+      border: 10px solid #fd89a5; }
+
+@media (min-width: 576px) {
+  #page-not-found .link-to-home {
+    font-size: 20px; } }
