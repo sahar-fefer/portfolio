@@ -5,6 +5,7 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import translate from './languages.json';
 
@@ -31,48 +32,28 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    let lang = navigator.language || navigator.userLanguage;
-    if (lang.includes("en") || lang !== "he") {
-      setLanguage("en")
-    } else {
-      setLanguage("he");
-    }
-  }, []);
-
-  useEffect(() => {
-    let lang = navigator.language || navigator.userLanguage;
-    if (lang.includes("en") || lang !== "he") {
-      setLanguage("en")
-    } else {
-      setLanguage("he");
-    }
     setContent(translate[language])
-  }, []);
+  }, [language]);
 
   const handleChangeLanguage = () => {
     setLanguage(language === 'en' ? 'he' : 'en');
-    setContent(translate[language])
-    HEADER = content[HEADER];
-    HOME = content[HOME];
-    ABOUT = content[ABOUT];
-    PROJECTS = content[PROJECTS];
-    CONTACT = content[CONTACT];
-    FOOTER = content[FOOTER];
   }
 
-  let { HEADER, HOME, ABOUT, PROJECTS, CONTACT, FOOTER } = content;
   return (
     <Router>
+      <Helmet>
+        <html lang={language} />
+      </Helmet>
       { loading
         ? <Loader />
         : <Switch>
           <Route exact path="/">
-            <Header handleChangeLanguage={handleChangeLanguage} HEADER={HEADER} />
-            <Home HOME={HOME} />
-            <About ABOUT={ABOUT} />
-            <Portfolio PROJECTS={PROJECTS} />
-            <Contact CONTACT={CONTACT} />
-            <Footer FOOTER={FOOTER} />
+            <Header handleChangeLanguage={handleChangeLanguage} HEADER={content.HEADER} />
+            <Home HOME={content.HOME} />
+            <About ABOUT={content.ABOUT} />
+            <Portfolio PROJECTS={content.PROJECTS} />
+            <Contact CONTACT={content.CONTACT} />
+            <Footer FOOTER={content.FOOTER} />
           </Route>
           <Route path='/404' component={PageNotFound} />
           <Redirect from='*' to='/404' />

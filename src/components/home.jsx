@@ -33,8 +33,8 @@
 import React from 'react';
 import Typical from 'react-typical';
 
-const Home = ({HOME}) => {
-    const {TITLE, NAME, ABOUT, TYPING} = HOME;
+const Home = ({ HOME }) => {
+    const { TITLE, NAME, ABOUT, TYPING } = HOME;
 
     return (
         <div id={'home'} className={'container-fluid'}>
