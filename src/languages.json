@@ -1,0 +1,48 @@
+{
+    "en": {
+        "HEADER": {
+            "ABOUT": "About",
+            "PROJECTS": "Projects",
+            "CONTACT": "Contact",
+            "LANGUAGE": "HE"
+        },
+        "HOME": {
+            "TITLE": "Hey! I'm ",
+            "NAME": "Sahar Feferovich",
+            "ABOUT": "I'm A Fullstack Developer",
+            "TYPING": [
+                "text text",
+                5000,
+                "text blabla",
+                5000
+            ]
+        },
+        "ABOUT": {},
+        "PROJECTS": {},
+        "CONTACT": {},
+        "FOOTER": {}
+    },
+    "he": {
+        "HEADER": {
+            "ABOUT": "קצת עלי",
+            "PROJECTS": "פרוייקטים",
+            "CONTACT": "צור קשר",
+            "LANGUAGE": "EN"
+        },
+        "HOME": {
+            "TITLE": "היי! אני ",
+            "NAME": "סהר פפרוביץ",
+            "ABOUT": "ואני Fullstack Developer",
+            "TYPING": [
+                "טקסט טקסט",
+                5000,
+                "טקסט בלהבלה",
+                5000
+            ]
+        },
+        "ABOUT": {},
+        "PROJECTS": {},
+        "CONTACT": {},
+        "FOOTER": {}
+    }
+}
