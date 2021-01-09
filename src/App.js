@@ -48,12 +48,12 @@ const App = () => {
         ? <Loader />
         : <Switch>
           <Route exact path="/">
-            <Header handleChangeLanguage={handleChangeLanguage} HEADER={content.HEADER} />
-            <Home HOME={content.HOME} />
-            <About ABOUT={content.ABOUT} />
-            <Portfolio PROJECTS={content.PROJECTS} />
-            <Contact CONTACT={content.CONTACT} />
-            <Footer FOOTER={content.FOOTER} />
+            <Header handleChangeLanguage={handleChangeLanguage} language={language} HEADER={content.HEADER} />
+            <Home HOME={content.HOME}  language={language}/>
+            <About ABOUT={content.ABOUT}  language={language}/>
+            <Portfolio PROJECTS={content.PROJECTS}  language={language}/>
+            <Contact CONTACT={content.CONTACT}  language={language}/>
+            <Footer FOOTER={content.FOOTER}  language={language}/>
           </Route>
           <Route path='/404' component={PageNotFound} />
           <Redirect from='*' to='/404' />

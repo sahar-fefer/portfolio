@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import { IoIosArrowDropup } from 'react-icons/io';
 
-const Header = ({handleChangeLanguage, HEADER}) => {
+const Header = ({ handleChangeLanguage, HEADER, language }) => {
     const [showHeader, setShowHeader] = useState(false)
     const [headerBackground, setHeaderBackground] = useState(false)
     const [isBurgerOpen, setIsBurgerOpen] = useState(false)
@@ -32,7 +32,7 @@ const Header = ({handleChangeLanguage, HEADER}) => {
     window.addEventListener('scroll', checkHeaderBackground)
     window.addEventListener('scroll', checkScrollTop)
 
-    const {ABOUT, PROJECTS, CONTACT, LANGUAGE} = HEADER;
+    const { ABOUT, PROJECTS, CONTACT, LANGUAGE } = HEADER;
     return (
         <header id={'header'} className={'container-fluid'}>
             <div className={'scroll-up-button'}>
@@ -48,12 +48,14 @@ const Header = ({handleChangeLanguage, HEADER}) => {
             </div>
             <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
                 <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
-                    <div className={'col justify-content-start'}>
-                        <div className={`logo ${headerBackground && 'logo-scroll'}`}
-                            onClick={scrollTop}>
-                            SF
+                    {language === 'en' &&
+                        <div className={'col justify-content-start'}>
+                            <div className={`logo ${headerBackground && 'logo-scroll'} `}
+                                onClick={scrollTop}>
+                                SF
                         </div>
-                    </div>
+                        </div>
+                    }
                     <div className={'link-wrapper col-auto'}>
                         <Link activeClass="active"
                             to="about"
@@ -87,11 +89,28 @@ const Header = ({handleChangeLanguage, HEADER}) => {
                             {CONTACT}
                         </Link>
                     </div>
-                    <div className={'leng col-auto'}>
-                        <button onClick={handleChangeLanguage}>
-                            {LANGUAGE}
-                        </button>
-                    </div>
+                    {language === 'en' &&
+                        <div className={'leng col-auto'}>
+                            <button onClick={handleChangeLanguage}>
+                                {LANGUAGE}
+                            </button>
+                        </div>
+                    }
+                    {language === 'he' &&
+                        <div className={'col'}>
+                            <div className={`logo ml-auto ${headerBackground && 'logo-scroll'} `}
+                                onClick={scrollTop}>
+                                SF
+                            </div>
+                        </div>
+                    }
+                    {language === 'he' &&
+                        <div className={'leng col-auto ml-0'}>
+                            <button onClick={handleChangeLanguage}>
+                                {LANGUAGE}
+                            </button>
+                        </div>
+                    }
                 </div>
             </nav >
             <div className={`mobile-bar ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
