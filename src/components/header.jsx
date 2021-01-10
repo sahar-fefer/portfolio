@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import { IoIosArrowDropup } from 'react-icons/io';
 
-const Header = () => {
+const Header = ({ handleChangeLanguage, HEADER, language }) => {
     const [showHeader, setShowHeader] = useState(false)
     const [headerBackground, setHeaderBackground] = useState(false)
     const [isBurgerOpen, setIsBurgerOpen] = useState(false)
@@ -31,6 +31,8 @@ const Header = () => {
 
     window.addEventListener('scroll', checkHeaderBackground)
     window.addEventListener('scroll', checkScrollTop)
+
+    const { ABOUT, PROJECTS, CONTACT, LANGUAGE } = HEADER;
     return (
         <header id={'header'} className={'container-fluid'}>
             <div className={'scroll-up-button'}>
@@ -46,12 +48,12 @@ const Header = () => {
             </div>
             <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
                 <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
-                    <div className={'col justify-content-start'}>
-                        <div className={`logo ${headerBackground && 'logo-scroll'}`}
-                            onClick={scrollTop}>
-                            SF
+                        <div className={'col justify-content-start'}>
+                            <div className={`logo ${headerBackground && 'logo-scroll'} `}
+                                onClick={scrollTop}>
+                                SF
                         </div>
-                    </div>
+                        </div>
                     <div className={'link-wrapper col-auto'}>
                         <Link activeClass="active"
                             to="about"
@@ -60,7 +62,7 @@ const Header = () => {
                             hashSpy={true}
                             offset={-50}
                             duration={500}>
-                            About
+                            {ABOUT}
                         </Link>
                     </div>
                     <div className={'link-wrapper col-auto'}>
@@ -71,7 +73,7 @@ const Header = () => {
                             hashSpy={true}
                             offset={-50}
                             duration={500}>
-                            Portfolio
+                            {PROJECTS}
                         </Link>
                     </div>
                     <div className={'link-wrapper col-auto'}>
@@ -82,20 +84,29 @@ const Header = () => {
                             hashSpy={true}
                             offset={-50}
                             duration={500}>
-                            Contact
+                            {CONTACT}
                         </Link>
                     </div>
-                    <div className={'leng col-auto'}>
-                        <button>
-                            EN
-                    </button>
-                    </div>
+                    {language === 'en' &&
+                        <div className={'leng col-auto'}>
+                            <button onClick={handleChangeLanguage}>
+                                {LANGUAGE}
+                            </button>
+                        </div>
+                    }
+                    {language === 'he' &&
+                        <div className={'leng col-auto ml-0'}>
+                            <button onClick={handleChangeLanguage}>
+                                {LANGUAGE}
+                            </button>
+                        </div>
+                    }
                 </div>
             </nav >
             <div className={`mobile-bar ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
                 <div className={'bar'}>
-                    <button className={"section leng"}>
-                        EN
+                    <button className={"section leng"} onClick={handleChangeLanguage}>
+                        {LANGUAGE}
                     </button>
                     <div className={'section'}>
                         <Link activeClass="active"
@@ -106,7 +117,7 @@ const Header = () => {
                             offset={-75}
                             duration={500}
                             onSetActive={() => setIsBurgerOpen(false)}>
-                            About
+                            {ABOUT}
                         </Link>
                     </div>
                     <div className={'section'}>
@@ -118,7 +129,7 @@ const Header = () => {
                             offset={-75}
                             duration={500}
                             onSetActive={() => setIsBurgerOpen(false)}>
-                            Portfolio
+                            {PROJECTS}
                         </Link>
                     </div>
                     <div className={'section'}>
@@ -130,7 +141,7 @@ const Header = () => {
                             offset={-75}
                             duration={500}
                             onSetActive={() => setIsBurgerOpen(false)} >
-                            Contact
+                            {CONTACT}
                         </Link>
                     </div>
                 </div>
