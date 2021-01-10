@@ -37,7 +37,7 @@
         "CONTACT": {
             "SECTION_TITLE" : "Contact",
             "PARAGRAF1": "IT WOULD BE A PLEASURE",
-            "PARAGRAF2": "IF YOU CONTACT ME!",
+            "PARAGRAF2": "TO LISTEN FROM YOU!",
             "NAME": "name",
             "PHONE": "phone",
             "EMAIL": "mail",
@@ -87,12 +87,12 @@
         "CONTACT": {
             "SECTION_TITLE" : "צרו קשר",
             "PARAGRAF1": "זה יהיה נפלא",
-            "PARAGRAF2": "אם תצרו איתי קשר!",
+            "PARAGRAF2": "לשמוע מכם!",
             "NAME": "שם",
             "PHONE": "טלפון",
             "EMAIL": "מייל",
             "MESSAGE": "ההודעה שלך",
-            "SUBMIT": "לשלוח"
+            "SUBMIT": "שלח"
         },
         "FOOTER": {
             "NAME": "סהר פפרוביץ",
