@@ -1,53 +1,91 @@
-@import './variables';
+@import "./variables";
 
 #contact {
-    background: rgba(248, 248, 248, .2);
+    background: rgba(248, 248, 248, 0.2);
     border-radius: 35px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 10px;
 
     .wrapper {
-        align-items: center;
-    }
+        margin-bottom: 10px;
 
-    .form {
-        width: 100%;
-        display: grid;
-        place-items: center;
-        z-index: -1;
+        h2 {
+            font-size: x-large;
+        } 
 
-        input, textarea {
-            opacity: .9;
-            background: $light;
-            border-radius: 25px;
-            border: 2px solid $text-light;
-            outline: none;
-            padding: 1.3vh;
-            margin: 5px;
-            width: 80%;
-        }
-        textarea {
-            border-radius: 30px;
-        }
+        .form {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            // background-color: #e2e2e2;
+            border-radius: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
 
-        .submit {
-            background: $secondary-light;
-            padding-top: .2vh;
-            padding-bottom: .2vh;
-            margin-top: 0;
-            width: 20vw;
-            transition: all .3s;
-            width: 80%;
+            input,
+            textarea {
+                opacity: 0.9;
+                background: $light;
+                border: 2px solid $text-light;
+                outline: none;
+                padding: 7px;
+                margin: 2px;
+                width: 80%;
+            }
+            input {
+                border-radius: 15px;
+            }
+            textarea {
+                border-radius: 30px;
+                border-radius: 13px;
+            }
+            .submit {
+                background: $secondary-light;
+                padding: 0.2vh 0;
+                margin-top: 0;
+                width: 20vw;
+                transition: all 0.3s;
+                width: 80%;
+                border-radius: 10px;
 
-            &:hover {
-                background: $secondary;
+                &:hover {
+                    background: $secondary;
+                }
             }
         }
+    }
+}
 
-        lable {
-
+@media (min-width: 576px) {
+    #contact {
+        .wrapper {
+            h2 {
+                font-size: 5vw;
+            }
         }
     }
-} 
+}
+
+@media (min-width: 600px) {
+    #contact {
+        min-height: 93vh;
+    }
+}        
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    #contact {
+        .wrapper {
+            h2 {
+                font-size: 4vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+}

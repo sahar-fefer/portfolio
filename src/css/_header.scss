@@ -1,63 +1,149 @@
+@import "./variables";
+
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-size: 3vh;
-
-    .scrollTop {
+    .nav-bar {
         position: fixed;
-        width: 100%;
-        bottom: 20px;
-        align-items: center;
-        height: 20px;
-        justify-content: center;
-        font-size: 6vh;
-        z-index: 1000;
-        cursor: pointer;
-        animation: fadeIn 0.3s;
-        transition: opacity 0.4s;
-        opacity: 0.5;
-    }
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: all ease 0.3s;
+        color: $text;
+        box-shadow: 0px 0px 0px 0px #333;
+        background-color: transparent;
+        padding: 0 20px;
 
-    .scrollTop:hover {
-        opacity: 1;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
+        .active {
+            color: $primary;
+            font-size: 35px;
         }
-        100% {
-            opacity: 0.5;
-        }
-    }
 
-    ul {
-        li {
-            font-size: 3vh;
-            transition: all 0.3s;
+        .regular-header {
+            z-index: 2;
+            font-size: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .logo {
+                cursor: pointer;
+                font-family: "Major Mono Display", monospace;
+                font-size: 55px;
+                width: fit-content;
+            }
+
+            .link-wrapper {
+                transition: all ease 0.3s;
+                display: none;
+
+                &:hover {
+                    font-size: 35px;
+                }
+            }
+
+            .leng {
+                display: none;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .nav-bar-scroll {
+        box-shadow: 0px 2px 11px 0px #333;
+        background-color: #a9a9a9;
+        z-index: 10;
+
+        .header-scroll {
+            font-size: 27px;
+
+            .logo-scroll {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .mobile-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        background-color: $opacity-background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all ease 0.3s;
+
+        &.open-screen {
+            opacity: 1 !important;
+            z-index: 1 !important;
         }
 
-        .logo {
-            font-family: "Major Mono Display", monospace;
-            font-size: 4vw;
-            justify-content: flex-start;
+        &.close-screen {
+            opacity: 0 !important;
+            z-index: -1 !important;
         }
 
-        .link-li {
-            justify-content: flex-end;
+        .bar {
+            font-size: 40px;
+
+            .section {
+                margin: 60px auto;
+                width: fit-content;
+                cursor: pointer;
+
+                &.leng {
+                    display: block;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+
+    .scroll-up-button {
+        position: fixed;
+        width: 100%;
+        bottom: 20px;
+        height: 20px;
+        font-size: 6vh;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+
+        .scrollTop {
+            cursor: pointer;
+            margin: auto;
+            opacity: 0.5;
+            animation: fadeIn 0.3s;
+            transition: opacity 0.4s;
 
             &:hover {
-                font-size: 3.5vh;
+                opacity: 1;
             }
         }
 
-        .leng-li {
-            margin-left: 2vw;
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    #header {
+        .link-wrapper {
+            display: flex !important;
+            justify-content: flex-end;
+        }
+
+        .leng {
+            display: block !important;
         }
     }
 }

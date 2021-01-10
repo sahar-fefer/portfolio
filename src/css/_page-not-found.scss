@@ -1,0 +1,35 @@
+#page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+    .page-not-found-img {
+        width: fit-content;
+        max-width: 95vw;
+    }
+
+    .link-to-home {
+        background-color: #ca5c7a;
+        border: 7px solid #fd89a5;
+        border-radius: 15px;
+        width: fit-content;
+        padding: 10px 35px;
+        font-size: 15px;
+        margin: 35px;
+        transition: all .3s;
+
+        &:hover {
+            border: 10px solid #fd89a5;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    #page-not-found {
+        .link-to-home {
+            font-size: 20px;
+        }
+    }    
+}

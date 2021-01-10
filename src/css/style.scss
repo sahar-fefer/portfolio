@@ -1,11 +1,15 @@
-@import './_general.scss';
-@import '_variables.scss';
+@import './_general';
+@import '_variables';
 
-@import './_loader.scss'; 
-@import './_side-nav.scss'; 
+@import './_loader'; 
+@import './_side-nav'; 
+@import './_burger-nav';
 
 @import './header';
-@import './_home.scss';
-@import './_about.scss'; 
-@import './_contact.scss';
-@import './_footer.scss';
+@import './_home';
+@import './_about'; 
+@import './linkedin';
+@import './portfolio';
+@import './_contact';
+@import './_footer';
+@import './_page-not-found'; 

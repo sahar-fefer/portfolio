@@ -4,7 +4,7 @@
     display: grid;
     place-items: center;
     background-color: $home-background;
-    background-image: url("../media/home_background.jpg");
+    background-image: url("../media/home_background_mobile.jpg");
     height: 100vh;
     // width: 100vw;
     background-repeat: no-repeat;
@@ -13,27 +13,47 @@
 
     .header-wrapper {
         flex-direction: column;
-        margin-top: 8vh;
+        margin-top: 3.5vw;
+
+        .header {
+            margin: 1.5vw 0;
+            font-size: 4.2vw;
+        }
+
+        .about {
+            font-size: 3.5vw;
+        }
+
+        .typing {
+            font-size: 3.5vw;
+        }
+
+        h2 {
+            margin: 1vw 0;
+        }
     }
 
-    // @media (min-width: 400) and (orientation: landscape) { /* rules */ }
-
-    // @media (min-width: 576px) {
-    
+    // @media only screen and (min-width: 630px) {
+    //     .header-wrapper {
+    //         margin-top: 2.5vh;
+    //     }
     // }
 
-    // // Medium devices (tablets, 768px and up)
-    // @media (min-width: 768px) {
-    
-    // }
+    @media only screen and (min-width: 992px) {
+        background-image: url("../media/home_background.jpg");
+        .header-wrapper {
+            .header {
+                margin: 1.4vh 0;
+                font-size: 4.5vh;
+            }
 
-    // // Large devices (desktops, 992px and up)
-    // @media (min-width: 992px) {
-    
-    // }
+            .presentation {
+                font-size: 3.8vh;
+            }
 
-    // // Extra large devices (large desktops, 1200px and up)
-    // @media (min-width: 1200px) {
-    
-    // }
+            .typing {
+                font-size: 3.8vh;
+            }
+        }
+    }
 }

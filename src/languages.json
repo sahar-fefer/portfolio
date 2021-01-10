@@ -1,0 +1,114 @@
+{
+    "en": {
+        "HEADER": {
+            "ABOUT": "About",
+            "PROJECTS": "Projects",
+            "CONTACT": "Contact",
+            "LANGUAGE": "HE"
+        },
+        "HOME": {
+            "TITLE": "Hey! I'm ",
+            "NAME": "Sahar Feferovich",
+            "ABOUT": "I'm A Fullstack Developer",
+            "TYPING": [
+                "text text",
+                5000,
+                "text blabla",
+                5000
+            ]
+        },
+        "ABOUT": {
+            "SECTION_TITLE" : "About",
+            "LINKEDIN": {
+                "NAME": "Sahar Feferovich",
+                "BUTTON": "View Profile"
+            },
+            "TITLE": "So How Am I?",
+            "ABOUT_ME_1": "I'm ",
+            "NAME": "Sahar Feferovich",
+            "ABOUT_ME_2": ", Full Stack Developer",
+            "DESCRIPTION_1": "As A Full Stack Developer, I enjoy thinking, learning, and building in creative and unique ways.",
+            "DESCRIPTION_2": "Programming is my playground and where I get to execute my visions.",
+            "DESCRIPTION_3": "I focus on planning, designing and developing both Back-End and Front-End."
+        },
+        "PROJECTS": {
+            "SECTION_TITLE" : "Projects"
+        },
+        "CONTACT": {
+            "SECTION_TITLE" : "Contact",
+            "PARAGRAF1": "IT WOULD BE A PLEASURE",
+<<<<<<< HEAD
+            "PARAGRAF2": "IF YOU CONTACT ME!",
+=======
+            "PARAGRAF2": "TO LISTEN FROM YOU!",
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
+            "NAME": "name",
+            "PHONE": "phone",
+            "EMAIL": "mail",
+            "MESSAGE": "your massege",
+            "SUBMIT": "submit"
+        },
+        "FOOTER": {
+            "NAME": "Sahar Feferovich",
+            "COPYRIGHT": "© 2020 "
+        }
+    },
+    "he": {
+        "HEADER": {
+            "ABOUT": "קצת עלי",
+            "PROJECTS": "פרוייקטים",
+            "CONTACT": "צור קשר",
+            "LANGUAGE": "EN"
+        },
+        "HOME": {
+            "TITLE": "היי! אני ",
+            "NAME": "סהר פפרוביץ",
+            "ABOUT": "ואני Fullstack Developer",
+            "TYPING": [
+                "טקסט טקסט",
+                5000,
+                "טקסט בלהבלה",
+                5000
+            ]
+        },
+        "ABOUT": {
+            "SECTION_TITLE" : "קצת עלי",
+            "LINKEDIN": {
+                "NAME": "סהר פפרוביץ",
+                "BUTTON": "מעבר לפרופיל"
+            },
+            "TITLE": "אז מי אני?",
+            "ABOUT_ME_1": "אני ",
+            "NAME": "סהר פפרוביץ",
+            "ABOUT_ME_2": ", Full Stack Developer",
+            "DESCRIPTION_1": "בתור מפתחת אני נהנת לחשוב, ללמוד ולבנות דברים יצירתיים ומעניינים.",
+            "DESCRIPTION_2": "תכנות זה עולם היצירה שלי ואיפה שאני יכולה להוציא לפועל את פירות דמיוני.",
+            "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
+        },
+        "PROJECTS": {
+            "SECTION_TITLE" : "פרוייקטים"
+        },
+        "CONTACT": {
+            "SECTION_TITLE" : "צרו קשר",
+            "PARAGRAF1": "זה יהיה נפלא",
+<<<<<<< HEAD
+            "PARAGRAF2": "אם תצרו איתי קשר!",
+=======
+            "PARAGRAF2": "לשמוע מכם!",
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
+            "NAME": "שם",
+            "PHONE": "טלפון",
+            "EMAIL": "מייל",
+            "MESSAGE": "ההודעה שלך",
+<<<<<<< HEAD
+            "SUBMIT": "לשלוח"
+=======
+            "SUBMIT": "שלח"
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
+        },
+        "FOOTER": {
+            "NAME": "סהר פפרוביץ",
+            "COPYRIGHT": "© 2020 "
+        }
+    }
+}
