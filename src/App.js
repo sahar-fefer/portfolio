@@ -43,6 +43,7 @@ const App = () => {
     <Router>
       <Helmet>
         <html lang={language} />
+        <body dir={language === 'en' ? "ltr" : "rtl"}/>
       </Helmet>
       { loading
         ? <Loader />

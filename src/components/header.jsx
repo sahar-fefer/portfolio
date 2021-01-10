@@ -48,14 +48,12 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
             </div>
             <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
                 <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
-                    {language === 'en' &&
                         <div className={'col justify-content-start'}>
                             <div className={`logo ${headerBackground && 'logo-scroll'} `}
                                 onClick={scrollTop}>
                                 SF
                         </div>
                         </div>
-                    }
                     <div className={'link-wrapper col-auto'}>
                         <Link activeClass="active"
                             to="about"
@@ -94,14 +92,6 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
                             </button>
-                        </div>
-                    }
-                    {language === 'he' &&
-                        <div className={'col'}>
-                            <div className={`logo ml-auto ${headerBackground && 'logo-scroll'} `}
-                                onClick={scrollTop}>
-                                SF
-                            </div>
                         </div>
                     }
                     {language === 'he' &&

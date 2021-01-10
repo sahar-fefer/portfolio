@@ -17,10 +17,37 @@
                 5000
             ]
         },
-        "ABOUT": {},
-        "PROJECTS": {},
-        "CONTACT": {},
-        "FOOTER": {}
+        "ABOUT": {
+            "SECTION_TITLE" : "About",
+            "LINKEDIN": {
+                "NAME": "Sahar Feferovich",
+                "BUTTON": "View Profile"
+            },
+            "TITLE": "So How Am I?",
+            "ABOUT_ME_1": "I'm ",
+            "NAME": "Sahar Feferovich",
+            "ABOUT_ME_2": ", Full Stack Developer",
+            "DESCRIPTION_1": "As A Full Stack Developer, I enjoy thinking, learning, and building in creative and unique ways.",
+            "DESCRIPTION_2": "Programming is my playground and where I get to execute my visions.",
+            "DESCRIPTION_3": "I focus on planning, designing and developing both Back-End and Front-End."
+        },
+        "PROJECTS": {
+            "SECTION_TITLE" : "Projects"
+        },
+        "CONTACT": {
+            "SECTION_TITLE" : "Contact",
+            "PARAGRAF1": "IT WOULD BE A PLEASURE",
+            "PARAGRAF2": "IF YOU CONTACT ME!",
+            "NAME": "name",
+            "PHONE": "phone",
+            "EMAIL": "mail",
+            "MESSAGE": "your massege",
+            "SUBMIT": "submit"
+        },
+        "FOOTER": {
+            "NAME": "Sahar Feferovich",
+            "COPYRIGHT": "© 2020 "
+        }
     },
     "he": {
         "HEADER": {
@@ -40,9 +67,36 @@
                 5000
             ]
         },
-        "ABOUT": {},
-        "PROJECTS": {},
-        "CONTACT": {},
-        "FOOTER": {}
+        "ABOUT": {
+            "SECTION_TITLE" : "קצת עלי",
+            "LINKEDIN": {
+                "NAME": "סהר פפרוביץ",
+                "BUTTON": "מעבר לפרופיל"
+            },
+            "TITLE": "אז מי אני?",
+            "ABOUT_ME_1": "אני ",
+            "NAME": "סהר פפרוביץ",
+            "ABOUT_ME_2": ", Full Stack Developer",
+            "DESCRIPTION_1": "בתור מפתחת אני נהנת לחשוב, ללמוד ולבנות דברים יצירתיים ומעניינים.",
+            "DESCRIPTION_2": "תכנות זה עולם היצירה שלי ואיפה שאני יכולה להוציא לפועל את פירות דמיוני.",
+            "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
+        },
+        "PROJECTS": {
+            "SECTION_TITLE" : "פרוייקטים"
+        },
+        "CONTACT": {
+            "SECTION_TITLE" : "צרו קשר",
+            "PARAGRAF1": "זה יהיה נפלא",
+            "PARAGRAF2": "אם תצרו איתי קשר!",
+            "NAME": "שם",
+            "PHONE": "טלפון",
+            "EMAIL": "מייל",
+            "MESSAGE": "ההודעה שלך",
+            "SUBMIT": "לשלוח"
+        },
+        "FOOTER": {
+            "NAME": "סהר פפרוביץ",
+            "COPYRIGHT": "© 2020 "
+        }
     }
 }
