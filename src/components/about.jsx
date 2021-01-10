@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Linkedin from './linkedin';
-const About = () => {
+const About = ({ ABOUT }) => {
     const [skillsLi, setSkillsLi] = useState([]);
 
     const skillsGenerator = () => {
         setSkillsLi([])
         const skills = ['javascript',
             'html',
-            'css', 
+            'css',
             'sass',
             'react',
             'bootstrap',
@@ -30,26 +30,21 @@ const About = () => {
         skillsGenerator()
     }, [])
 
+    const { SECTION_TITLE, LINKEDIN, TITLE, ABOUT_ME_1, NAME, ABOUT_ME_2, DESCRIPTION_1, DESCRIPTION_2, DESCRIPTION_3 } = ABOUT;
     return (
         <div id={'about'} className={'container-fluid'}>
             <div className={'container'}>
-                <h1 className="component-header">About</h1>
+                <h1 className="component-header">{SECTION_TITLE}</h1>
                 <div className="row">
                     <div className="col-sm-auto linkedin-wrapper perfect-center">
-                        <Linkedin />
+                        <Linkedin LINKEDIN={LINKEDIN} />
                     </div>
                     <div className="introduc col">
-                        <h1 className={'d-none d-md-block'}>So How Am I?</h1>
-                        
-                        <h2 className={'d-none d-md-block'}>I'm <span className="name">Sahar Feferovich</span>, Full Stack Developer</h2>
-                        <h4>
-                            As A Full Stack Developer, I enjoy thinking, learning, and building in creative and unique ways.
-                            Programming is my playground and where I get to execute my visions.
-                        </h4>
-                        <h4>
-                            I focus on planning,
-                            designing and developing both Back-End and Front-End.
-                        </h4>
+                        <h1 className={'d-none d-md-block'}>{TITLE}</h1>
+                        <h2 className={'d-none d-md-block'}>{ABOUT_ME_1}<span className="name">{NAME}</span>{ABOUT_ME_2}</h2>
+                        <h4>{DESCRIPTION_1}</h4>
+                        <h4>{DESCRIPTION_2}</h4>
+                        <h4>{DESCRIPTION_3}</h4>
                         <ul className={'skills-wrapper row d-sm-none'}>
                             {skillsLi}
                         </ul>
