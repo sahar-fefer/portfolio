@@ -37,7 +37,11 @@
         "CONTACT": {
             "SECTION_TITLE" : "Contact",
             "PARAGRAF1": "IT WOULD BE A PLEASURE",
+<<<<<<< HEAD
             "PARAGRAF2": "IF YOU CONTACT ME!",
+=======
+            "PARAGRAF2": "TO LISTEN FROM YOU!",
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
             "NAME": "name",
             "PHONE": "phone",
             "EMAIL": "mail",
@@ -87,12 +91,20 @@
         "CONTACT": {
             "SECTION_TITLE" : "צרו קשר",
             "PARAGRAF1": "זה יהיה נפלא",
+<<<<<<< HEAD
             "PARAGRAF2": "אם תצרו איתי קשר!",
+=======
+            "PARAGRAF2": "לשמוע מכם!",
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
             "NAME": "שם",
             "PHONE": "טלפון",
             "EMAIL": "מייל",
             "MESSAGE": "ההודעה שלך",
+<<<<<<< HEAD
             "SUBMIT": "לשלוח"
+=======
+            "SUBMIT": "שלח"
+>>>>>>> 9f7cea73e702126de372fa88ad19691f78894829
         },
         "FOOTER": {
             "NAME": "סהר פפרוביץ",
