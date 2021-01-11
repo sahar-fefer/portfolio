@@ -1,4 +1,4 @@
-@import './variables';
+@import "./variables";
 
 #footer {
     background: $text-light;
@@ -6,13 +6,17 @@
     justify-content: space-around;
     align-items: center;
 
-    .icon {
-        font-size: 3vw;
-        margin: 1vw;
+    .icons-wrapper {
+        z-index: 11;
+
+        .icon {
+            font-size: 5vh;
+            margin: 1vh;
+        }
     }
 
     .github {
-        transition:  all .3s;
+        transition: all 0.3s;
 
         &:hover {
             color: $github-color;
@@ -20,7 +24,7 @@
     }
 
     .linkedin {
-        transition: all .3s;
+        transition: all 0.3s;
 
         &:hover {
             color: $linkedin-color;
@@ -28,10 +32,17 @@
     }
 
     .download {
-        transition:  all .3s;
+        transition: all 0.3s;
 
         &:hover {
             color: $secondary-dark;
         }
     }
 }
+
+@media (min-width: 576px) { 
+    .icon {
+        font-size: 3vw;
+        margin: 1vw;
+    }  
+ }
