@@ -104,13 +104,15 @@
 
     .scroll-up-button {
         position: fixed;
-        width: 100%;
-        bottom: 20px;
         height: 20px;
+        bottom: 20px;
+        left: 45%;
+        right: 45%;
+        height: fit-content;
         font-size: 6vh;
-        z-index: 1000;
         align-items: center;
         justify-content: center;
+        z-index: 10;
 
         .scrollTop {
             cursor: pointer;
@@ -118,6 +120,7 @@
             opacity: 0.5;
             animation: fadeIn 0.3s;
             transition: opacity 0.4s;
+            z-index: 12;
 
             &:hover {
                 opacity: 1;

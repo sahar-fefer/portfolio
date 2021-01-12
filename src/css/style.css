@@ -500,17 +500,21 @@ html {
 
 #header .scroll-up-button {
   position: fixed;
-  width: 100%;
-  bottom: 20px;
   height: 20px;
+  bottom: 20px;
+  left: 45%;
+  right: 45%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-size: 6vh;
-  z-index: 1000;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 10; }
   #header .scroll-up-button .scrollTop {
     cursor: pointer;
     margin: auto;
@@ -519,7 +523,8 @@ html {
     animation: fadeIn 0.3s;
     -webkit-transition: opacity 0.4s;
     -o-transition: opacity 0.4s;
-    transition: opacity 0.4s; }
+    transition: opacity 0.4s;
+    z-index: 12; }
     #header .scroll-up-button .scrollTop:hover {
       opacity: 1; }
 
@@ -764,27 +769,34 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  #footer .icon {
-    font-size: 3vw;
-    margin: 1vw; }
+  #footer .icons-wrapper {
+    z-index: 11; }
+    #footer .icons-wrapper .icon {
+      font-size: 5vh;
+      margin: 1vh; }
   #footer .github {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     #footer .github:hover {
       color: #24292e; }
   #footer .linkedin {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     #footer .linkedin:hover {
       color: #0a66c2; }
   #footer .download {
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
     #footer .download:hover {
       color: #027e5b; }
+
+@media (min-width: 576px) {
+  .icon {
+    font-size: 3vw;
+    margin: 1vw; } }
 
 #page-not-found {
   display: -webkit-box;
