@@ -14,7 +14,7 @@ import Header from "./components/header";
 // import SideNav from './components/sideNav';
 import Home from './components/home';
 import About from "./components/about";
-import Portfolio from "./components/portfolio";
+import Projects from "./components/projects";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import PageNotFound from "./components/pageNotFound";
@@ -52,7 +52,7 @@ const App = () => {
             <Header handleChangeLanguage={handleChangeLanguage} language={language} HEADER={content.HEADER} />
             <Home HOME={content.HOME}  language={language}/>
             <About ABOUT={content.ABOUT}  language={language}/>
-            <Portfolio PROJECTS={content.PROJECTS}  language={language}/>
+            <Projects PROJECTS={content.PROJECTS}  language={language}/>
             <Contact CONTACT={content.CONTACT}  language={language}/>
             <Footer FOOTER={content.FOOTER}  language={language}/>
           </Route>

@@ -67,7 +67,7 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                     </div>
                     <div className={'link-wrapper col-auto'}>
                         <Link activeClass="active"
-                            to="portfolio"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             hashSpy={true}

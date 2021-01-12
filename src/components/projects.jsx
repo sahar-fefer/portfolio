@@ -1,9 +1,9 @@
 import React from 'react';
 import Website from './website';
 
-const Portfolio = () => {
+const Projects = () => {
     return (
-        <div id={'portfolio'} className={'container-fluid'}>
+        <div id={'projects'} className={'container-fluid'}>
             <h1 className="component-header">Portfolio</h1>
             <div className="container-fluid">
                 <div className="row justify-content-center">
@@ -41,4 +41,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Projects;

@@ -34,6 +34,7 @@
             .link-wrapper {
                 transition: all ease 0.3s;
                 display: none;
+                cursor: pointer;
 
                 &:hover {
                     font-size: 35px;
