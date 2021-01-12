@@ -1,34 +1,6 @@
 @import "./variables";
 
 #header {
-    .scrollTop {
-        position: fixed;
-        width: 100%;
-        bottom: 20px;
-        align-items: center;
-        height: 20px;
-        justify-content: center;
-        font-size: 6vh;
-        z-index: 1000;
-        cursor: pointer;
-        animation: fadeIn 0.3s;
-        transition: opacity 0.4s;
-        opacity: 0.5;
-    }
-
-    .scrollTop:hover {
-        opacity: 1;
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 0.5;
-        }
-    }
-
     .nav-bar {
         position: fixed;
         top: 0;
@@ -40,7 +12,12 @@
         background-color: transparent;
         padding: 0 20px;
 
-        ul {
+        .active {
+            color: $primary;
+            font-size: 35px;
+        }
+
+        .regular-header {
             z-index: 2;
             font-size: 30px;
             display: flex;
@@ -51,9 +28,10 @@
                 cursor: pointer;
                 font-family: "Major Mono Display", monospace;
                 font-size: 55px;
+                width: fit-content;
             }
 
-            .link-li {
+            .link-wrapper {
                 transition: all ease 0.3s;
                 display: none;
 
@@ -62,7 +40,7 @@
                 }
             }
 
-            .leng-li {
+            .leng {
                 display: none;
                 margin-left: 20px;
             }
@@ -74,7 +52,7 @@
         background-color: #a9a9a9;
         z-index: 10;
 
-        .ul-scroll {
+        .header-scroll {
             font-size: 27px;
 
             .logo-scroll {
@@ -83,18 +61,8 @@
         }
     }
 
-    .open-screen {
-        opacity: 1 !important;
-        z-index: 1 !important;
-    }
-
-    .close-screen {
-        opacity: 0 !important;
-        z-index: -1 !important;
-    }
-
-    .menu-screen {
-        position: absolute;
+    .mobile-bar {
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -105,20 +73,66 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         transition: all ease 0.3s;
 
-        ul {
+        &.open-screen {
+            opacity: 1 !important;
+            z-index: 1 !important;
+        }
+
+        &.close-screen {
+            opacity: 0 !important;
+            z-index: -1 !important;
+        }
+
+        .bar {
             font-size: 40px;
 
-            li {
+            .section {
                 margin: 60px auto;
                 width: fit-content;
-            }
+                cursor: pointer;
 
-            .leng-li {
-                position: absolute;
-                top: 15px;
-                left: 20px;
+                &.leng {
+                    display: block;
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+
+    .scroll-up-button {
+        position: fixed;
+        height: 20px;
+        bottom: 20px;
+        left: 45%;
+        right: 45%;
+        height: fit-content;
+        font-size: 6vh;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        .scrollTop {
+            cursor: pointer;
+            margin: auto;
+            opacity: 0.5;
+            animation: fadeIn 0.3s;
+            transition: opacity 0.4s;
+            z-index: 12;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0.5;
             }
         }
     }
@@ -126,19 +140,13 @@
 
 @media (min-width: 600px) {
     #header {
-        li {
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .link-li {
+        .link-wrapper {
             display: flex !important;
             justify-content: flex-end;
+        }
 
-            .leng-li {
-                display: block !important;
-            }
+        .leng {
+            display: block !important;
         }
     }
 }
