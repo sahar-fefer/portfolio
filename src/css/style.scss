@@ -1,5 +1,5 @@
 @import './_general';
-@import '_variables';
+@import './_variables';
 
 @import './_loader'; 
 @import './_side-nav'; 
@@ -8,8 +8,8 @@
 @import './header';
 @import './_home';
 @import './_about'; 
-@import './linkedin';
-@import './portfolio';
+@import './_linkedin';
+@import './_projects';
 @import './_contact';
 @import './_footer';
-@import './_page-not-found'; 
+@import './_page-not-found';
