@@ -438,7 +438,8 @@ html {
       -webkit-transition: all ease 0.3s;
       -o-transition: all ease 0.3s;
       transition: all ease 0.3s;
-      display: none; }
+      display: none;
+      cursor: pointer; }
       #header .nav-bar .regular-header .link-wrapper:hover {
         font-size: 35px; }
     #header .nav-bar .regular-header .leng {
@@ -663,7 +664,7 @@ html {
       height: 45px; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-#portfolio .website {
+#projects .website {
   margin: 15px;
   padding: 0;
   background-repeat: no-repeat;
@@ -672,27 +673,27 @@ html {
   border-radius: 10px;
   -webkit-box-shadow: 0 2px 15px 2px #a8a8a8;
   box-shadow: 0 2px 15px 2px #a8a8a8; }
-  #portfolio .website.contact4 {
+  #projects .website.contact4 {
     background-image: url("../media/contact4.jpg"); }
-  #portfolio .website.sahar-estate {
+  #projects .website.sahar-estate {
     background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg); }
-  #portfolio .website .hover-website {
+  #projects .website .hover-website {
     background-color: rgba(200, 200, 200, 0.8);
     padding: 5vw;
     -webkit-transition: all ease-in-out .3s;
     -o-transition: all ease-in-out .3s;
     transition: all ease-in-out .3s;
     border-radius: inherit; }
-    #portfolio .website .hover-website.show {
+    #projects .website .hover-website.show {
       opacity: 1; }
-    #portfolio .website .hover-website.hidden {
+    #projects .website .hover-website.hidden {
       opacity: 0; }
-    #portfolio .website .hover-website .tech-pills {
+    #projects .website .hover-website .tech-pills {
       border: #333 solid 1px;
       background-color: #9f9f9f;
       border-radius: 10px;
       margin: 5px; }
-    #portfolio .website .hover-website .link-button {
+    #projects .website .hover-website .link-button {
       border: #333 solid 1px;
       background-color: rgba(50, 50, 50, 0.9);
       border-radius: 5px;

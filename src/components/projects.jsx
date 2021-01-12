@@ -3,8 +3,8 @@ import Website from './website';
 
 const Portfolio = () => {
     return (
-        <div id={'portfolio'} className={'container-fluid'}>
-            <h1 className="component-header">Portfolio</h1>
+        <div id={'projects'} className={'container-fluid'}>
+            <h1 className="component-header">Projects</h1>
             <div className="container-fluid">
                 <div className="row justify-content-center">
                     <Website className={'col col-md-6'}
