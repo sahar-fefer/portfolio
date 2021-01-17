@@ -22,7 +22,7 @@ const Website = ({ name, title, description, techs, web, git, language }) => {
     }, [])
 
     return (
-        <div className={`${name} website col-auto`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}/1.PNG)` }}>
+        <div className={`${name} website col-auto`} ref={hoverRef} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/media/projects/${name}/1.PNG)` }}>
             <div className={`hover-website ${isHovered ? 'show' : 'hidden'}`}>
                 <h1 className="header perfect-center">{title}</h1>
                 <p className="description perfect-center">{description}</p>
