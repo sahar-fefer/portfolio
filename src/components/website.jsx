@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useHover from '../hooks/useHover';
 
-const Website = ({ name, title, description, techs, web, gitFront, gitBack }) => {
+const Website = ({ name, title, description, techs, web, gitFront, gitBack, language }) => {
     const [hoverRef, isHovered] = useHover();
 
     const [techLi, setTechLi] = useState([]);
@@ -22,7 +22,7 @@ const Website = ({ name, title, description, techs, web, gitFront, gitBack }) =>
     }, [])
 
     return (
-        <div className={`${name} website`} ref={hoverRef} style={{backgroundImage: `url(${window.location.origin}/media/projects/${name}/1.PNG)`}}>
+        <div className={`${name} website col-auto`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}/1.PNG)` }}>
             <div className={`hover-website ${isHovered ? 'show' : 'hidden'}`}>
                 <h1 className="header perfect-center">{title}</h1>
                 <p className="description perfect-center">{description}</p>
@@ -35,26 +35,32 @@ const Website = ({ name, title, description, techs, web, gitFront, gitBack }) =>
                     {
                         web
                             ? <a className="link-button col-auto" href={web} target="_blank" >
-                                Vieu Sise
+                                {language === 'en'
+                                    ? 'Vieu Sise'
+                                    : 'ראה אתר'
+                                }
                             </a>
                             : <div className="link-button col-auto" style={{ cursor: "context-menu" }}>
-                                Vieu Sise - soon
+                                {language === 'en'
+                                    ? 'Vieu Sise - soon'
+                                    : 'ראה אתר - בקרוב'
+                                }
                             </div>
                     }
                     {
                         gitFront
-                            ? <a className="link-button col-auto" href={gitFront} target="_blank" >
-                                {gitBack && 'Website'} GitHub
-                            </a>
-                            : <div className="link-button col-auto" style={{ cursor: "context-menu" }}>
-                                GitHub - soon
-                                </div>
+                        && <a className="link-button col-auto" href={gitFront} target="_blank" >
+                            {gitBack && language === 'en' ? 'Website GitHub' : ''}{gitBack && language === 'he' ? 'GitHub - אתר' : ''}{!gitBack && 'GitHub'}
+                        </a>
                     }
                     {
                         gitBack &&
-                             <a className="link-button col-auto" href={gitBack} target="_blank" >
-                                Server GitHub
-                            </a>
+                        <a className="link-button col-auto" href={gitBack} target="_blank" >
+                            {language === 'en'
+                                ? 'Server GitHub'
+                                : 'GitHub - שרת'
+                            }
+                        </a>
                     }
                 </div>
             </div>
