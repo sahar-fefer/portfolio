@@ -16,14 +16,14 @@
         // &:hover {
         //     box-shadow: $shadow-card-light;
         // }
+ 
+        // &.contact4 {
+        //     background-image: url("../media/contact4.jpg");
+        // }
 
-        &.contact4 {
-            background-image: url("../media/contact4.jpg");
-        }
-
-        &.sahar-estate {
-            background-image: url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg);
-        }
+        // &.sahar-estate {
+        //     background-image: url(process.env.PUBLIC_URL + "/media/projects/saharEstate/1.PNG");
+        // }
 
         .hover-website {
             background-color: $opacity-background;

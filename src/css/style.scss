@@ -1,15 +1,15 @@
-@import './_general';
-@import './_variables';
+@import 'general';
+@import 'variables';
 
-@import './_loader'; 
-@import './_side-nav'; 
-@import './_burger-nav';
+@import 'loader'; 
+@import 'side-nav'; 
+@import 'burger-nav';
 
-@import './header';
-@import './_home';
-@import './_about'; 
-@import './_linkedin';
-@import './_projects';
-@import './_contact';
-@import './_footer';
-@import './_page-not-found';
+@import 'header';
+@import 'home';
+@import 'about'; 
+@import 'linkedin';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+@import 'page-not-found';
