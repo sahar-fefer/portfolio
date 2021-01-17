@@ -3,7 +3,6 @@ import Website from './website';
 
 const Projects = ({ PROJECTS, language }) => {
     const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
-    console.log('SECTION_TITLE',SECTION_TITLE);
     return (
         <div id={'projects'} className={'container-fluid'}>
 {            <h1 className="component-header">{SECTION_TITLE}</h1>
@@ -15,7 +14,7 @@ const Projects = ({ PROJECTS, language }) => {
                         title={CONNECT4}
                         techs={['React', 'Sass', 'React-Router', 'Git']}
                         web={''}
-                        gitFront={'https://github.com/saharovich/connect-4'}
+                        git={'https://github.com/saharovich/connect-4'}
                         language={language} />
                     {/* <Website className={'col col-md-6'} */}
                     <Website 
@@ -24,8 +23,7 @@ const Projects = ({ PROJECTS, language }) => {
                         description={''}
                         techs={['React', 'Sass', 'React-Router', 'Node.JS', 'Git']}
                         web={''}
-                        gitFront={'https://github.com/saharovich/sahar-estate-web'}
-                        gitBack={'https://github.com/saharovich/sahar-estate-server'}
+                        git={'https://github.com/saharovich/sahar-estate-web'}
                         language={language} />
                     {/* <Website className={'col col-md-6'} */}
                     <Website 
@@ -34,7 +32,7 @@ const Projects = ({ PROJECTS, language }) => {
                         description={''}
                         techs={['WordPress']}
                         web={'http://www.feferovich.co.il/'}
-                        gitFront={''}
+                        git={''}
                         language={language} />
                     {/* <Website className={'col col-md-6'} */}
                     <Website 
@@ -43,7 +41,7 @@ const Projects = ({ PROJECTS, language }) => {
                         description={''}
                         techs={['WIX']}
                         web={'https://www.readmylips-mask.com/'}
-                        gitFront={''}
+                        git={''}
                         language={language} />
                     {/* <Website className={'col col-md-6'} */}
                     <Website 
@@ -52,7 +50,7 @@ const Projects = ({ PROJECTS, language }) => {
                         description={''}
                         techs={['WIX']}
                         web={'https://www.pepeimpresario.com/'}
-                        gitFront={''}
+                        git={''}
                         language={language} />
                 </div>
             </div>

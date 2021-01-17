@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useHover from '../hooks/useHover';
 
-const Website = ({ name, title, description, techs, web, gitFront, gitBack, language }) => {
+const Website = ({ name, title, description, techs, web, git, language }) => {
     const [hoverRef, isHovered] = useHover();
 
     const [techLi, setTechLi] = useState([]);
@@ -48,18 +48,9 @@ const Website = ({ name, title, description, techs, web, gitFront, gitBack, lang
                             </div>
                     }
                     {
-                        gitFront
-                        && <a className="link-button col-auto" href={gitFront} target="_blank" >
-                            {gitBack && language === 'en' ? 'Website GitHub' : ''}{gitBack && language === 'he' ? 'GitHub - אתר' : ''}{!gitBack && 'GitHub'}
-                        </a>
-                    }
-                    {
-                        gitBack &&
-                        <a className="link-button col-auto" href={gitBack} target="_blank" >
-                            {language === 'en'
-                                ? 'Server GitHub'
-                                : 'GitHub - שרת'
-                            }
+                        git
+                        && <a className="link-button col-auto" href={git} target="_blank" >
+                            GitHub
                         </a>
                     }
                 </div>
