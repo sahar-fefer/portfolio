@@ -6,7 +6,6 @@
     background-color: $home-background;
     background-image: url("../media/home_background_mobile.jpg");
     height: 100vh;
-    // width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,43 +15,52 @@
         margin-top: 3.5vw;
 
         .header {
-            margin: 1.5vw 0;
             font-size: 4.2vw;
+            margin: .5vh;
         }
 
         .about {
             font-size: 3.5vw;
+            margin: .5vh;
         }
 
         .typing {
             font-size: 3.5vw;
-        }
-
-        h2 {
-            margin: 1vw 0;
+            margin: .5vh;
         }
     }
-
-    // @media only screen and (min-width: 630px) {
-    //     .header-wrapper {
-    //         margin-top: 2.5vh;
-    //     }
-    // }
 
     @media only screen and (min-width: 992px) {
         background-image: url("../media/home_background.jpg");
         .header-wrapper {
+            margin-top: 2.5vw;
+
             .header {
-                margin: 1.4vh 0;
                 font-size: 4.5vh;
             }
 
-            .presentation {
+            .about {
                 font-size: 3.8vh;
             }
 
             .typing {
                 font-size: 3.8vh;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1300px) {
+        .header-wrapper {
+            .header {
+                font-size: 45px;
+            }
+
+            .about {
+                font-size: 35px;
+            }
+
+            .typing {
+                font-size: 35px;
             }
         }
     }
