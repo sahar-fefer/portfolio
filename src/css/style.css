@@ -480,14 +480,13 @@ html {
 
 #header .scroll-up-button {
   position: fixed;
-  height: 20px;
-  bottom: 20px;
+  bottom: 10px;
   left: 45%;
   right: 45%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 6vh;
+  font-size: 35px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -686,7 +685,7 @@ html {
 
 /* /////////////////////////    colors    /////////////////////////// */
 #contact {
-  height: 85vh;
+  min-height: 85vh;
   background: rgba(248, 248, 248, 0.2);
   border-radius: 35px;
   background-repeat: no-repeat;
@@ -746,42 +745,64 @@ html {
 /* /////////////////////////    colors    /////////////////////////// */
 #footer {
   background: #9f9f9f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  #footer .icons-wrapper {
-    z-index: 11; }
-    #footer .icons-wrapper .icon {
-      font-size: 5vh;
-      margin: 1vh; }
-  #footer .github {
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-    #footer .github:hover {
-      color: #24292e; }
-  #footer .linkedin {
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-    #footer .linkedin:hover {
-      color: #0a66c2; }
-  #footer .download {
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-    #footer .download:hover {
-      color: #027e5b; }
+  #footer .wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    #footer .wrapper .c {
+      font-size: 12px; }
+    #footer .wrapper .icons-wrapper {
+      z-index: 11;
+      margin-bottom: 15px; }
+      #footer .wrapper .icons-wrapper .icon {
+        font-size: 40px;
+        margin: 10px 5px; }
+    #footer .wrapper .github {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      #footer .wrapper .github:hover {
+        color: #24292e; }
+    #footer .wrapper .linkedin {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      #footer .wrapper .linkedin:hover {
+        color: #0a66c2; }
+    #footer .wrapper .download {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      #footer .wrapper .download:hover {
+        color: #027e5b; }
 
-@media (min-width: 576px) {
-  .icon {
-    font-size: 3vw;
-    margin: 1vw; } }
+@media (min-width: 400px) {
+  .wrapper {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important;
+    -webkit-box-orient: unset !important;
+    -webkit-box-direction: unset !important;
+    -ms-flex-direction: unset !important;
+    flex-direction: unset !important; }
+    .wrapper .c {
+      font-size: 1rem !important; }
+    .wrapper .icons-wrapper {
+      margin: 0 !important; }
+      .wrapper .icons-wrapper .icon {
+        margin: 10px !important; } }
 
 #page-not-found {
   display: -webkit-box;

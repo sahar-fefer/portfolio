@@ -2,47 +2,70 @@
 
 #footer {
     background: $text-light;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
-    .icons-wrapper {
-        z-index: 11;
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
 
-        .icon {
-            font-size: 5vh;
-            margin: 1vh;
+        .c {
+            font-size: 12px;
         }
-    }
 
-    .github {
-        transition: all 0.3s;
+        .icons-wrapper {
+            z-index: 11;
+            margin-bottom: 15px;
 
-        &:hover {
-            color: $github-color;
+            .icon {
+                font-size: 40px;
+                margin: 10px 5px;
+            }
         }
-    }
 
-    .linkedin {
-        transition: all 0.3s;
+        .github {
+            transition: all 0.3s;
 
-        &:hover {
-            color: $linkedin-color;
+            &:hover {
+                color: $github-color;
+            }
         }
-    }
 
-    .download {
-        transition: all 0.3s;
+        .linkedin {
+            transition: all 0.3s;
 
-        &:hover {
-            color: $secondary-dark;
+            &:hover {
+                color: $linkedin-color;
+            }
+        }
+
+        .download {
+            transition: all 0.3s;
+
+            &:hover {
+                color: $secondary-dark;
+            }
         }
     }
 }
 
-@media (min-width: 576px) { 
-    .icon {
-        font-size: 3vw;
-        margin: 1vw;
-    }  
- }
+@media (min-width: 400px) {
+    .wrapper {
+        justify-content: space-around !important;
+        flex-direction: unset !important;
+
+        .c {
+            font-size: 1rem !important;
+        }
+
+        .icons-wrapper {
+            margin: 0 !important;
+
+            .icon {
+                margin: 10px !important;
+            }
+        }
+    }
+}
+
