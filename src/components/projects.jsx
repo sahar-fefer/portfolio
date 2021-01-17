@@ -1,48 +1,59 @@
 import React from 'react';
 import Website from './website';
 
-const Projects = () => {
+const Projects = ({ PROJECTS, language }) => {
+    const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
+    console.log('SECTION_TITLE',SECTION_TITLE);
     return (
         <div id={'projects'} className={'container-fluid'}>
-            <h1 className="component-header">Portfolio</h1>
-            <div className="container-fluid">
+{            <h1 className="component-header">{SECTION_TITLE}</h1>
+}            <div className="container-fluid">
                 <div className="row justify-content-center">
-                    <Website className={'col col-md-6'}
+                    {/* <Website className={'col col-md-6'} */}
+                    <Website 
                         name={'connect4'}
-                        title={'Connect 4'}
-                        description={''}
+                        title={CONNECT4}
                         techs={['React', 'Sass', 'React-Router', 'Git']}
                         web={''}
-                        gitFront={'https://github.com/saharovich/connect-4'} />
-                    <Website className={'col col-md-6'}
+                        gitFront={'https://github.com/saharovich/connect-4'}
+                        language={language} />
+                    {/* <Website className={'col col-md-6'} */}
+                    <Website 
                         name={'saharEstate'}
-                        title={'Real Estate Wesite'}
+                        title={SAHAR_ESTATE}
                         description={''}
                         techs={['React', 'Sass', 'React-Router', 'Node.JS', 'Git']}
                         web={''}
                         gitFront={'https://github.com/saharovich/sahar-estate-web'}
-                        gitBack={'https://github.com/saharovich/sahar-estate-server'} />
-                    <Website className={'col col-md-6'}
+                        gitBack={'https://github.com/saharovich/sahar-estate-server'}
+                        language={language} />
+                    {/* <Website className={'col col-md-6'} */}
+                    <Website 
                         name={'salt&fefer'}
-                        title={'Catering Website'}
+                        title={SALT_FEFER}
                         description={''}
                         techs={['WordPress']}
                         web={'http://www.feferovich.co.il/'}
-                        gitFront={''} />
-                    <Website className={'col col-md-6'}
+                        gitFront={''}
+                        language={language} />
+                    {/* <Website className={'col col-md-6'} */}
+                    <Website 
                         name={'readMyLips'}
-                        title={'Clear Mask Online Shop'}
+                        title={READ_MY_LIPS}
                         description={''}
                         techs={['WIX']}
                         web={'https://www.readmylips-mask.com/'}
-                        gitFront={''} />
-                        <Website className={'col col-md-6'}
+                        gitFront={''}
+                        language={language} />
+                    {/* <Website className={'col col-md-6'} */}
+                    <Website 
                         name={'pepe'}
-                        title={'Digital event producer'}
+                        title={PEPE}
                         description={''}
                         techs={['WIX']}
                         web={'https://www.pepeimpresario.com/'}
-                        gitFront={''} />
+                        gitFront={''}
+                        language={language} />
                 </div>
             </div>
         </div>

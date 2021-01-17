@@ -18,7 +18,7 @@
             ]
         },
         "ABOUT": {
-            "SECTION_TITLE" : "About",
+            "SECTION_TITLE": "About",
             "LINKEDIN": {
                 "NAME": "Sahar Feferovich",
                 "BUTTON": "View Profile"
@@ -32,10 +32,15 @@
             "DESCRIPTION_3": "I focus on planning, designing and developing both Back-End and Front-End."
         },
         "PROJECTS": {
-            "SECTION_TITLE" : "Projects"
+            "SECTION_TITLE": "Projects",
+            "CONNECT4": "Connect 4 game",
+            "SAHAR_ESTATE": "Real Estate Platforme", 
+            "SALT_FEFER": "Catering Website", 
+            "READ_MY_LIPS": "Clear Mask Online Shop",
+            "PEPE": "Digital event producer"
         },
         "CONTACT": {
-            "SECTION_TITLE" : "Contact",
+            "SECTION_TITLE": "Contact",
             "PARAGRAF1": "IT WOULD BE A PLEASURE",
             "PARAGRAF2": "IF YOU CONTACT ME!",
             "NAME": "name",
@@ -68,7 +73,7 @@
             ]
         },
         "ABOUT": {
-            "SECTION_TITLE" : "קצת עלי",
+            "SECTION_TITLE": "קצת עלי",
             "LINKEDIN": {
                 "NAME": "סהר פפרוביץ",
                 "BUTTON": "מעבר לפרופיל"
@@ -82,10 +87,15 @@
             "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
         },
         "PROJECTS": {
-            "SECTION_TITLE" : "פרוייקטים"
+            "SECTION_TITLE": "פרוייקטים",
+            "CONNECT4": "משחק 4 בשורה",
+            "SAHAR_ESTATE":  "אתר נדלן",
+            "SALT_FEFER": "אתר לקייטרינג",
+            "READ_MY_LIPS": "חנות מסיכות שקופות",
+            "PEPE": "מפיק אירועים דיגיטלי"
         },
         "CONTACT": {
-            "SECTION_TITLE" : "צרו קשר",
+            "SECTION_TITLE": "צרו קשר",
             "PARAGRAF1": "זה יהיה נפלא",
             "PARAGRAF2": "לשמוע מכם!",
             "NAME": "שם",
