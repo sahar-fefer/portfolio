@@ -11,7 +11,6 @@ import translate from './languages.json';
 
 import Loader from "./components/loader";
 import Header from "./components/header";
-// import SideNav from './components/sideNav';
 import Home from './components/home';
 import About from "./components/about";
 import Projects from "./components/projects";
@@ -27,7 +26,7 @@ const App = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 1000);
+    }, 1300);
     return () => clearTimeout(timer);
   }, []);
 
