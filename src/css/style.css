@@ -301,20 +301,6 @@ html {
       display: block;
       height: 28px; }
 
-#side-nav {
-  position: fixed;
-  top: 40vh;
-  left: 10px; }
-  #side-nav ul li {
-    font-size: 3vh;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s; }
-  #side-nav ul .link-li:hover {
-    font-size: 3.5vh; }
-  #side-nav ul .leng-li {
-    margin-top: 3vh; }
-
 /* /////////////////////////    colors    /////////////////////////// */
 .burger-nav {
   position: fixed;
