@@ -41,19 +41,21 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                     onClick={scrollTop}
                     style={{ height: 40, display: showHeader ? 'flex' : 'none' }} />
             </div>
-            <div className={`burger-nav ${isBurgerOpen ? 'open' : ''}`} onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
+            <div className={`burger-nav ${isBurgerOpen ? 'open' : ''}`} 
+            style={language === 'en' ? { right: '30px' } : { left: '30px' }}
+            onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
                 <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
-                        <div className={'col justify-content-start'}>
-                            <div className={`logo ${headerBackground && 'logo-scroll'} `}
-                                onClick={scrollTop}>
-                                SF
+                    <div className={`col`}>
+                        <div className={`logo ${headerBackground && 'logo-scroll'}  ${language === 'en' ? 'mr-auto' : 'ml-auto'}`}
+                            onClick={scrollTop}>
+                            SF
                         </div>
-                        </div>
+                    </div>
                     <div className={'link-wrapper col-auto'}>
                         <Link activeClass="active"
                             to="about"

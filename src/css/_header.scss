@@ -64,6 +64,8 @@
 
     .mobile-bar {
         position: fixed;
+        width: 100vw;
+        height: 100vh;
         top: 0;
         left: 0;
         bottom: 0;
@@ -105,12 +107,11 @@
 
     .scroll-up-button {
         position: fixed;
-        height: 20px;
-        bottom: 20px;
+        bottom: 10px;
         left: 45%;
         right: 45%;
         height: fit-content;
-        font-size: 6vh;
+        font-size: 35px;
         align-items: center;
         justify-content: center;
         z-index: 10;
