@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useHover from '../hooks/useHover';
 
-const Website = ({ name, title, description, techs, web, git, language }) => {
+const Card = ({ name, title, techs, web, git, language }) => {
     const [hoverRef, isHovered] = useHover();
 
     const [techLi, setTechLi] = useState([]);
@@ -22,16 +22,17 @@ const Website = ({ name, title, description, techs, web, git, language }) => {
     }, [])
 
     return (
-        <div className={`${name} website col`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}/1.PNG)` }}>
-            <div className={`hover-website ${isHovered ? 'show' : 'hidden'}`}>
-                <h1 className="header perfect-center">{title}</h1>
-                <p className="description perfect-center">{description}</p>
-                <div className="ul-wrapper perfect-center">
-                    <ul className="perfect-center flex-wrap">
-                        {techLi}
-                    </ul>
+        <div className={`card col`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}.jpg)` }}>
+            <div className={`hover-card ${isHovered ? 'show' : 'hidden'}`}>
+                <div className={`text ${isHovered ? 'show' : 'hidden'}`}>
+                    <h1 className="title perfect-center">{title}</h1>
+                    {/* <div className="pills-wrapper perfect-center"> */}
+                        <ul className="pills-wrapper perfect-center flex-wrap">
+                            {techLi}
+                        </ul>
+                    {/* </div> */}
                 </div>
-                <div className="row justify-content-center">
+                <div className={`card-buttons ${isHovered ? 'show' : 'hidden'} row justify-content-center`}>
                     {
                         web
                             ? <a className="link-button col-auto" href={web} target="_blank" >
@@ -59,4 +60,4 @@ const Website = ({ name, title, description, techs, web, git, language }) => {
     );
 };
 
-export default Website;
+export default Card;
