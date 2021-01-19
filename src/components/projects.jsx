@@ -5,8 +5,8 @@ const Projects = ({ PROJECTS, language }) => {
     const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
     return (
         <div id={'projects'} className={'container-fluid'}>
-            {            <h1 className="component-header">{SECTION_TITLE}</h1>
-            }            <div className="container">
+            <h1 className="component-header">{SECTION_TITLE}</h1>
+            <div className="container">
                 <Website
                     name={'connect4'}
                     title={CONNECT4}
