@@ -5,9 +5,9 @@
     // background-image: url(https://www.transparenttextures.com/patterns/rocky-wall.png);
 
     .website {
-        // min-width: 40vw;
-        // min-height: 30vh;
-        margin: 15px;
+        width: 400px;
+        height: 250px;
+        margin: 40px auto;
         padding: 0;
         background-repeat: no-repeat;
         background-position: center;
@@ -15,31 +15,22 @@
         border-radius: 10px;
         box-shadow: $shadow-card-dark;
 
-        // &:hover {
-        //     box-shadow: $shadow-card-light;
-        // }
- 
-        // &.contact4 {
-        //     background-image: url("../media/contact4.jpg");
-        // }
-
-        // &.sahar-estate {
-        //     background-image: url(process.env.PUBLIC_URL + "/media/projects/saharEstate/1.PNG");
-        // }
-
         .hover-website {
             background-color: $opacity-background;
-            padding: 5vw;
-            transition: all ease-in-out .3s;
+            padding: 10px;
+            transition: all ease-in-out 0.3s;
             border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
 
             &.show {
                 opacity: 1;
-            }   
+            }
 
             &.hidden {
                 opacity: 0;
-            }   
+            }
 
             .tech-pills {
                 border: $text solid 1px;
@@ -55,6 +46,46 @@
                 margin: 20px 5px 10px;
                 padding: 5px 10px;
                 color: $light;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        .website {
+            width: 550px;
+            height: 300px;
+            margin: 55px auto;
+
+            .link-button {
+                margin: 20px 5px 10px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        
+    }
+
+    @media (min-width: 992px) {
+        .website {
+            width: 700px;
+            height: 400px;
+            margin: 70px auto;
+
+            .link-button {
+                margin: 20px 5px 10px;
+            }
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .website {
+            width: 850px;
+            height: 500px;
+            margin: 85px auto;
+
+            .link-button {
+                margin: 20px 5px 10px;
             }
         }
     }

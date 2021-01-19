@@ -651,7 +651,9 @@ html {
 
 /* /////////////////////////    colors    /////////////////////////// */
 #projects .website {
-  margin: 15px;
+  width: 400px;
+  height: 250px;
+  margin: 40px auto;
   padding: 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -661,11 +663,15 @@ html {
   box-shadow: 0 2px 15px 2px #a8a8a8; }
   #projects .website .hover-website {
     background-color: rgba(200, 200, 200, 0.8);
-    padding: 5vw;
-    -webkit-transition: all ease-in-out .3s;
-    -o-transition: all ease-in-out .3s;
-    transition: all ease-in-out .3s;
-    border-radius: inherit; }
+    padding: 10px;
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
     #projects .website .hover-website.show {
       opacity: 1; }
     #projects .website .hover-website.hidden {
@@ -682,6 +688,30 @@ html {
       margin: 20px 5px 10px;
       padding: 5px 10px;
       color: #f7f5f5; }
+
+@media (min-width: 576px) {
+  #projects .website {
+    width: 550px;
+    height: 300px;
+    margin: 55px auto; }
+    #projects .website .link-button {
+      margin: 20px 5px 10px; } }
+
+@media (min-width: 992px) {
+  #projects .website {
+    width: 700px;
+    height: 400px;
+    margin: 70px auto; }
+    #projects .website .link-button {
+      margin: 20px 5px 10px; } }
+
+@media (min-width: 1200px) {
+  #projects .website {
+    width: 850px;
+    height: 500px;
+    margin: 85px auto; }
+    #projects .website .link-button {
+      margin: 20px 5px 10px; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 #contact {

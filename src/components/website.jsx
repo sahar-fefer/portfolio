@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import useHover from '../hooks/useHover';
 
-const Website = ({ name, title, description, techs, web, git, language }) => {
+const Website = ({ name, title, techs, web, git, language }) => {
     const [hoverRef, isHovered] = useHover();
 
     const [techLi, setTechLi] = useState([]);
@@ -25,7 +25,6 @@ const Website = ({ name, title, description, techs, web, git, language }) => {
         <div className={`${name} website col-auto`} ref={hoverRef} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/media/projects/${name}/1.PNG)` }}>
             <div className={`hover-website ${isHovered ? 'show' : 'hidden'}`}>
                 <h1 className="header perfect-center">{title}</h1>
-                <p className="description perfect-center">{description}</p>
                 <div className="ul-wrapper perfect-center">
                     <ul className="perfect-center flex-wrap">
                         {techLi}
