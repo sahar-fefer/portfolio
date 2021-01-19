@@ -1,7 +1,6 @@
 /* /////////////////////////    colors    /////////////////////////// */
 body {
   color: #333;
-  width: 100%;
   font-family: 'Varela Round';
   text-align: unset; }
   body ul {
@@ -650,68 +649,297 @@ html {
       height: 45px; }
 
 /* /////////////////////////    colors    /////////////////////////// */
-#projects .website {
-  width: 400px;
-  height: 250px;
-  margin: 40px auto;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 2px 15px 2px #a8a8a8;
-  box-shadow: 0 2px 15px 2px #a8a8a8; }
-  #projects .website .hover-website {
-    background-color: rgba(200, 200, 200, 0.8);
-    padding: 10px;
-    -webkit-transition: all ease-in-out 0.3s;
-    -o-transition: all ease-in-out 0.3s;
-    transition: all ease-in-out 0.3s;
-    border-radius: inherit;
-    width: 100%;
-    height: 100%;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    #projects .website .hover-website.show {
-      opacity: 1; }
-    #projects .website .hover-website.hidden {
-      opacity: 0; }
-    #projects .website .hover-website .tech-pills {
-      border: #333 solid 1px;
-      background-color: #9f9f9f;
-      border-radius: 10px;
-      margin: 5px; }
-    #projects .website .hover-website .link-button {
-      border: #333 solid 1px;
-      background-color: rgba(50, 50, 50, 0.9);
-      border-radius: 5px;
-      margin: 20px 5px 10px;
-      padding: 5px 10px;
-      color: #f7f5f5; }
+#projects {
+  background-color: #e2e2e2;
+  padding-bottom: 10px; }
+  #projects .card {
+    width: 400px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 15px 2px #a8a8a8;
+    box-shadow: 0 2px 15px 2px #a8a8a8; }
+    #projects .card .hover-card {
+      background-color: rgba(200, 200, 200, 0.8);
+      padding: 10px;
+      -webkit-transition: all ease-in-out 0.3s;
+      -o-transition: all ease-in-out 0.3s;
+      transition: all ease-in-out 0.3s;
+      border-radius: inherit;
+      width: 100%;
+      height: 100%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: relative; }
+      #projects .card .hover-card .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .text .title {
+          font-size: 1.6rem; }
+        #projects .card .hover-card .text.show {
+          top: 20%;
+          -webkit-animation: show-text-s 0.3s;
+          animation: show-text-s 0.3s; }
+        #projects .card .hover-card .text.hidden {
+          top: 0;
+          -webkit-animation: hidden-text-s 0.3s;
+          animation: hidden-text-s 0.3s; }
+      #projects .card .hover-card .card-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .card-buttons.show {
+          bottom: 20%;
+          -webkit-animation: show-buttons-s 0.3s;
+          animation: show-buttons-s 0.3s; }
+        #projects .card .hover-card .card-buttons.hidden {
+          bottom: 0;
+          -webkit-animation: hidden-buttons-s 0.3s;
+          animation: hidden-buttons-s 0.3s; }
+      #projects .card .hover-card.show {
+        opacity: 1; }
+      #projects .card .hover-card.hidden {
+        opacity: 0; }
+      #projects .card .hover-card .tech-pills {
+        border: #333 solid 1px;
+        background-color: #9f9f9f;
+        border-radius: 10px;
+        margin: 5px; }
+      #projects .card .hover-card .link-button {
+        border: #333 solid 1px;
+        background-color: rgba(50, 50, 50, 0.9);
+        border-radius: 5px;
+        margin: 20px 5px 10px;
+        padding: 5px 10px;
+        color: #f7f5f5; }
+  @media (min-width: 576px) {
+    #projects .card {
+      width: 550px;
+      height: 300px;
+      margin: 55px auto; }
+      #projects .card .hover-card .text .title {
+        font-size: 2.5rem; }
+      #projects .card .hover-card .text .pills-wrapper {
+        margin-top: 10px; }
+      #projects .card .link-button {
+        margin: 20px 5px 10px; } }
+  @media (min-width: 992px) {
+    #projects .card {
+      width: 700px;
+      height: 400px;
+      margin: 70px auto; }
+      #projects .card .hover-card .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .text.show {
+          top: 25%;
+          -webkit-animation: show-text-m 0.3s;
+          animation: show-text-m 0.3s; }
+        #projects .card .hover-card .text.hidden {
+          top: 0;
+          -webkit-animation: hidden-text-m 0.3s;
+          animation: hidden-text-m 0.3s; }
+      #projects .card .hover-card .card-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .card-buttons.show {
+          bottom: 25%;
+          -webkit-animation: show-buttons-m 0.3s;
+          animation: show-buttons-m 0.3s; }
+        #projects .card .hover-card .card-buttons.hidden {
+          bottom: 0;
+          -webkit-animation: hidden-buttons-m 0.3s;
+          animation: hidden-buttons-m 0.3s; }
+      #projects .card .link-button {
+        margin: 20px 5px 10px; } }
+  @media (min-width: 1200px) {
+    #projects .card {
+      width: 850px;
+      height: 500px;
+      margin: 85px auto; }
+      #projects .card .hover-card .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .text.show {
+          top: 30%;
+          -webkit-animation: show-text-l 0.3s;
+          animation: show-text-l 0.3s; }
+        #projects .card .hover-card .text.hidden {
+          top: 0;
+          -webkit-animation: hidden-text-l 0.3s;
+          animation: hidden-text-l 0.3s; }
+      #projects .card .hover-card .card-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        #projects .card .hover-card .card-buttons.show {
+          bottom: 30%;
+          -webkit-animation: show-buttons-l 0.3s;
+          animation: show-buttons-l 0.3s; }
+        #projects .card .hover-card .card-buttons.hidden {
+          bottom: 0;
+          -webkit-animation: hidden-buttons-l 0.3s;
+          animation: hidden-buttons-l 0.3s; }
+      #projects .card .link-button {
+        margin: 20px 5px 10px; } }
 
-@media (min-width: 576px) {
-  #projects .website {
-    width: 550px;
-    height: 300px;
-    margin: 55px auto; }
-    #projects .website .link-button {
-      margin: 20px 5px 10px; } }
+@-webkit-keyframes show-text-s {
+  from {
+    top: 0; }
+  to {
+    top: 20%; } }
 
-@media (min-width: 992px) {
-  #projects .website {
-    width: 700px;
-    height: 400px;
-    margin: 70px auto; }
-    #projects .website .link-button {
-      margin: 20px 5px 10px; } }
+@keyframes show-text-s {
+  from {
+    top: 0; }
+  to {
+    top: 20%; } }
 
-@media (min-width: 1200px) {
-  #projects .website {
-    width: 850px;
-    height: 500px;
-    margin: 85px auto; }
-    #projects .website .link-button {
-      margin: 20px 5px 10px; } }
+@-webkit-keyframes hidden-text-s {
+  from {
+    top: 20%; }
+  to {
+    top: 0; } }
+
+@keyframes hidden-text-s {
+  from {
+    top: 20%; }
+  to {
+    top: 0; } }
+
+@-webkit-keyframes show-text-m {
+  from {
+    top: 0; }
+  to {
+    top: 25%; } }
+
+@keyframes show-text-m {
+  from {
+    top: 0; }
+  to {
+    top: 25%; } }
+
+@-webkit-keyframes hidden-text-m {
+  from {
+    top: 25%; }
+  to {
+    top: 0; } }
+
+@keyframes hidden-text-m {
+  from {
+    top: 25%; }
+  to {
+    top: 0; } }
+
+@-webkit-keyframes show-text-l {
+  from {
+    top: 0; }
+  to {
+    top: 20%; } }
+
+@keyframes show-text-l {
+  from {
+    top: 0; }
+  to {
+    top: 20%; } }
+
+@-webkit-keyframes hidden-text-l {
+  from {
+    top: 20%; }
+  to {
+    top: 0; } }
+
+@keyframes hidden-text-l {
+  from {
+    top: 20%; }
+  to {
+    top: 0; } }
+
+@-webkit-keyframes show-buttons-s {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@keyframes show-buttons-s {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@-webkit-keyframes hidden-buttons-s {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
+
+@keyframes hidden-buttons-s {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
+
+@-webkit-keyframes show-buttons-m {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@keyframes show-buttons-m {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@-webkit-keyframes hidden-buttons-m {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
+
+@keyframes hidden-buttons-m {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
+
+@-webkit-keyframes show-buttons-l {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@keyframes show-buttons-l {
+  from {
+    bottom: 0; }
+  to {
+    bottom: 20%; } }
+
+@-webkit-keyframes hidden-buttons-l {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
+
+@keyframes hidden-buttons-l {
+  from {
+    bottom: 20%; }
+  to {
+    bottom: 0; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 #contact {

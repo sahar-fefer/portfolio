@@ -33,11 +33,11 @@
         },
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
-            "CONNECT4": "Connect 4 game",
-            "SAHAR_ESTATE": "Real Estate Platforme", 
+            "CONNECT4": "Connect 4",
+            "SAHAR_ESTATE": "Real Estate", 
             "SALT_FEFER": "Catering Website", 
-            "READ_MY_LIPS": "Clear Mask Online Shop",
-            "PEPE": "Digital event producer"
+            "READ_MY_LIPS": "Clear Mask Shop",
+            "PEPE": "Event Producer"
         },
         "CONTACT": {
             "SECTION_TITLE": "Contact",
