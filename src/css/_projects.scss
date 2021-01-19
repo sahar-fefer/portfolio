@@ -1,10 +1,10 @@
 @import "./variables";
 
 #projects {
-    // background-color: #e2e2e2;
-    // background-image: url(https://www.transparenttextures.com/patterns/rocky-wall.png);
+    background-color: #e2e2e2;
+    padding-bottom: 10px;
 
-    .website {
+    .card {
         width: 400px;
         height: 250px;
         margin: 40px auto;
@@ -15,7 +15,7 @@
         border-radius: 10px;
         box-shadow: $shadow-card-dark;
 
-        .hover-website {
+        .hover-card {
             background-color: $opacity-background;
             padding: 10px;
             transition: all ease-in-out 0.3s;
@@ -23,6 +23,49 @@
             width: 100%;
             height: 100%;
             box-sizing: border-box;
+            position: relative;
+
+            .text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+
+                .title {
+                    font-size: 1.6rem;
+                }
+
+                &.show {
+                    top: 20%;
+                    animation: show-text-s 0.3s;
+                }
+
+                &.hidden {
+                    top: 0;
+                    animation: hidden-text-s 0.3s;
+                }
+                
+                .pills-wrapper {
+                    // margin-top: 0;
+                }
+            }
+
+            .card-buttons {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                &.show {
+                    bottom: 20%;
+                    animation: show-buttons-s 0.3s;
+                }
+
+                &.hidden {
+                    bottom: 0;
+                    animation: hidden-buttons-s 0.3s;
+                }
+            }
 
             &.show {
                 opacity: 1;
@@ -51,10 +94,21 @@
     }
 
     @media (min-width: 576px) {
-        .website {
+        .card {
             width: 550px;
             height: 300px;
             margin: 55px auto;
+
+            .hover-card {
+                .text {
+                    .title {
+                        font-size: 2.5rem;
+                    }
+                    .pills-wrapper {
+                        margin-top: 10px;
+                    }
+                }
+            }
 
             .link-button {
                 margin: 20px 5px 10px;
@@ -62,15 +116,47 @@
         }
     }
 
-    @media (min-width: 768px) {
-        
-    }
-
     @media (min-width: 992px) {
-        .website {
+        .card {
             width: 700px;
             height: 400px;
             margin: 70px auto;
+
+            .hover-card {
+                .text {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+
+                    &.show {
+                        top: 25%;
+                        animation: show-text-m 0.3s;
+                    }
+
+                    &.hidden {
+                        top: 0;
+                        animation: hidden-text-m 0.3s;
+                    }
+                }
+
+                .card-buttons {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    &.show {
+                        bottom: 25%;
+                        animation: show-buttons-m 0.3s;
+                    }
+
+                    &.hidden {
+                        bottom: 0;
+                        animation: hidden-buttons-m 0.3s;
+                    }
+                }
+            }
 
             .link-button {
                 margin: 20px 5px 10px;
@@ -79,14 +165,158 @@
     }
 
     @media (min-width: 1200px) {
-        .website {
+        .card {
             width: 850px;
             height: 500px;
             margin: 85px auto;
+
+            .hover-card {
+                .text {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+
+                    &.show {
+                        top: 30%;
+                        animation: show-text-l 0.3s;
+                    }
+
+                    &.hidden {
+                        top: 0;
+                        animation: hidden-text-l 0.3s;
+                    }
+                }
+
+                .card-buttons {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    &.show {
+                        bottom: 30%;
+                        animation: show-buttons-l 0.3s;
+                    }
+
+                    &.hidden {
+                        bottom: 0;
+                        animation: hidden-buttons-l 0.3s;
+                    }
+                }
+            }
 
             .link-button {
                 margin: 20px 5px 10px;
             }
         }
+    }
+}
+
+@keyframes show-text-s {
+    from {
+        top: 0;
+    }
+    to {
+        top: 20%;
+    }
+}
+
+@keyframes hidden-text-s {
+    from {
+        top: 20%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes show-text-m {
+    from {
+        top: 0;
+    }
+    to {
+        top: 25%;
+    }
+}
+
+@keyframes hidden-text-m {
+    from {
+        top: 25%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes show-text-l {
+    from {
+        top: 0;
+    }
+    to {
+        top: 20%;
+    }
+}
+
+@keyframes hidden-text-l {
+    from {
+        top: 20%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+@keyframes show-buttons-s {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 20%;
+    }
+}
+
+@keyframes hidden-buttons-s {
+    from {
+        bottom: 20%;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes show-buttons-m {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 20%;
+    }
+}
+
+@keyframes hidden-buttons-m {
+    from {
+        bottom: 20%;
+    }
+    to {
+        bottom: 0;
+    }
+}
+
+@keyframes show-buttons-l {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 20%;
+    }
+}
+
+@keyframes hidden-buttons-l {
+    from {
+        bottom: 20%;
+    }
+    to {
+        bottom: 0;
     }
 }

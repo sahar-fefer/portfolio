@@ -1,5 +1,5 @@
 import React from 'react';
-import Website from './website';
+import Card from './card';
 
 const Projects = ({ PROJECTS, language }) => {
     const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
@@ -7,22 +7,22 @@ const Projects = ({ PROJECTS, language }) => {
         <div id={'projects'} className={'container-fluid'}>
             <h1 className="component-header">{SECTION_TITLE}</h1>
             <div className="container">
-                <Website
+                <Card
                     name={'connect4'}
                     title={CONNECT4}
-                    techs={['React', 'Sass', 'React-Router', 'Git']}
+                    techs={['React.JS']}
                     web={''}
                     git={'https://github.com/saharovich/connect-4'}
                     language={language} />
-                <Website
+                <Card
                     name={'saharEstate'}
                     title={SAHAR_ESTATE}
                     description={''}
-                    techs={['React', 'Sass', 'React-Router', 'Node.JS', 'Git']}
+                    techs={['React.JS', 'Node.JS']}
                     web={''}
                     git={'https://github.com/saharovich/sahar-estate-web'}
                     language={language} />
-                <Website
+                <Card
                     name={'salt&fefer'}
                     title={SALT_FEFER}
                     description={''}
@@ -30,7 +30,7 @@ const Projects = ({ PROJECTS, language }) => {
                     web={'http://www.feferovich.co.il/'}
                     git={''}
                     language={language} />
-                <Website
+                <Card
                     name={'readMyLips'}
                     title={READ_MY_LIPS}
                     description={''}
@@ -38,7 +38,7 @@ const Projects = ({ PROJECTS, language }) => {
                     web={'https://www.readmylips-mask.com/'}
                     git={''}
                     language={language} />
-                <Website
+                <Card
                     name={'pepe'}
                     title={PEPE}
                     description={''}
