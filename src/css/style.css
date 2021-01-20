@@ -652,7 +652,9 @@ html {
 #projects {
   background-color: #e2e2e2;
   padding-bottom: 10px; }
-  #projects .card {
+  #projects .projects-wrapper :nth-child(1) {
+    margin-top: 0; }
+  #projects .projects-wrapper .project {
     width: 400px;
     height: 250px;
     margin: 40px auto;
@@ -663,7 +665,7 @@ html {
     border-radius: 10px;
     -webkit-box-shadow: 0 2px 15px 2px #a8a8a8;
     box-shadow: 0 2px 15px 2px #a8a8a8; }
-    #projects .card .hover-card {
+    #projects .projects-wrapper .project .hover-project {
       background-color: rgba(200, 200, 200, 0.8);
       padding: 10px;
       -webkit-transition: all ease-in-out 0.3s;
@@ -674,45 +676,47 @@ html {
       height: 100%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      position: relative; }
-      #projects .card .hover-card .text {
+      position: relative;
+      -webkit-box-shadow: 0 2px 15px 2px #888888;
+      box-shadow: 0 2px 15px 2px #888888; }
+      #projects .projects-wrapper .project .hover-project .text {
         position: absolute;
         top: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .text .title {
+        #projects .projects-wrapper .project .hover-project .text .title {
           font-size: 1.6rem; }
-        #projects .card .hover-card .text.show {
+        #projects .projects-wrapper .project .hover-project .text.show {
           top: 20%;
           -webkit-animation: show-text-s 0.3s;
           animation: show-text-s 0.3s; }
-        #projects .card .hover-card .text.hidden {
+        #projects .projects-wrapper .project .hover-project .text.hidden {
           top: 0;
           -webkit-animation: hidden-text-s 0.3s;
           animation: hidden-text-s 0.3s; }
-      #projects .card .hover-card .card-buttons {
+      #projects .projects-wrapper .project .hover-project .project-buttons {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .card-buttons.show {
+        #projects .projects-wrapper .project .hover-project .project-buttons.show {
           bottom: 20%;
           -webkit-animation: show-buttons-s 0.3s;
           animation: show-buttons-s 0.3s; }
-        #projects .card .hover-card .card-buttons.hidden {
+        #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
           bottom: 0;
           -webkit-animation: hidden-buttons-s 0.3s;
           animation: hidden-buttons-s 0.3s; }
-      #projects .card .hover-card.show {
+      #projects .projects-wrapper .project .hover-project.show {
         opacity: 1; }
-      #projects .card .hover-card.hidden {
+      #projects .projects-wrapper .project .hover-project.hidden {
         opacity: 0; }
-      #projects .card .hover-card .tech-pills {
+      #projects .projects-wrapper .project .hover-project .tech-pills {
         border: #333 solid 1px;
-        background-color: #9f9f9f;
+        background-color: transparent;
         border-radius: 10px;
         margin: 5px; }
-      #projects .card .hover-card .link-button {
+      #projects .projects-wrapper .project .hover-project .link-button {
         border: #333 solid 1px;
         background-color: rgba(50, 50, 50, 0.9);
         border-radius: 5px;
@@ -720,81 +724,81 @@ html {
         padding: 5px 10px;
         color: #f7f5f5; }
   @media (min-width: 576px) {
-    #projects .card {
+    #projects .projects-wrapper .project {
       width: 550px;
       height: 300px;
       margin: 55px auto; }
-      #projects .card .hover-card .text .title {
+      #projects .projects-wrapper .project .hover-project .text .title {
         font-size: 2.5rem; }
-      #projects .card .hover-card .text .pills-wrapper {
+      #projects .projects-wrapper .project .hover-project .text .pills-wrapper {
         margin-top: 10px; }
-      #projects .card .link-button {
+      #projects .projects-wrapper .project .link-button {
         margin: 20px 5px 10px; } }
   @media (min-width: 992px) {
-    #projects .card {
+    #projects .projects-wrapper .project {
       width: 700px;
       height: 400px;
       margin: 70px auto; }
-      #projects .card .hover-card .text {
+      #projects .projects-wrapper .project .hover-project .text {
         position: absolute;
         top: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .text.show {
+        #projects .projects-wrapper .project .hover-project .text.show {
           top: 25%;
           -webkit-animation: show-text-m 0.3s;
           animation: show-text-m 0.3s; }
-        #projects .card .hover-card .text.hidden {
+        #projects .projects-wrapper .project .hover-project .text.hidden {
           top: 0;
           -webkit-animation: hidden-text-m 0.3s;
           animation: hidden-text-m 0.3s; }
-      #projects .card .hover-card .card-buttons {
+      #projects .projects-wrapper .project .hover-project .project-buttons {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .card-buttons.show {
+        #projects .projects-wrapper .project .hover-project .project-buttons.show {
           bottom: 25%;
           -webkit-animation: show-buttons-m 0.3s;
           animation: show-buttons-m 0.3s; }
-        #projects .card .hover-card .card-buttons.hidden {
+        #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
           bottom: 0;
           -webkit-animation: hidden-buttons-m 0.3s;
           animation: hidden-buttons-m 0.3s; }
-      #projects .card .link-button {
+      #projects .projects-wrapper .project .link-button {
         margin: 20px 5px 10px; } }
   @media (min-width: 1200px) {
-    #projects .card {
+    #projects .projects-wrapper .project {
       width: 850px;
       height: 500px;
       margin: 85px auto; }
-      #projects .card .hover-card .text {
+      #projects .projects-wrapper .project .hover-project .text {
         position: absolute;
         top: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .text.show {
+        #projects .projects-wrapper .project .hover-project .text.show {
           top: 30%;
           -webkit-animation: show-text-l 0.3s;
           animation: show-text-l 0.3s; }
-        #projects .card .hover-card .text.hidden {
+        #projects .projects-wrapper .project .hover-project .text.hidden {
           top: 0;
           -webkit-animation: hidden-text-l 0.3s;
           animation: hidden-text-l 0.3s; }
-      #projects .card .hover-card .card-buttons {
+      #projects .projects-wrapper .project .hover-project .project-buttons {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0; }
-        #projects .card .hover-card .card-buttons.show {
+        #projects .projects-wrapper .project .hover-project .project-buttons.show {
           bottom: 30%;
           -webkit-animation: show-buttons-l 0.3s;
           animation: show-buttons-l 0.3s; }
-        #projects .card .hover-card .card-buttons.hidden {
+        #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
           bottom: 0;
           -webkit-animation: hidden-buttons-l 0.3s;
           animation: hidden-buttons-l 0.3s; }
-      #projects .card .link-button {
+      #projects .projects-wrapper .project .link-button {
         margin: 20px 5px 10px; } }
 
 @-webkit-keyframes show-text-s {
@@ -849,23 +853,23 @@ html {
   from {
     top: 0; }
   to {
-    top: 20%; } }
+    top: 30%; } }
 
 @keyframes show-text-l {
   from {
     top: 0; }
   to {
-    top: 20%; } }
+    top: 30%; } }
 
 @-webkit-keyframes hidden-text-l {
   from {
-    top: 20%; }
+    top: 30%; }
   to {
     top: 0; } }
 
 @keyframes hidden-text-l {
   from {
-    top: 20%; }
+    top: 30%; }
   to {
     top: 0; } }
 
@@ -897,23 +901,23 @@ html {
   from {
     bottom: 0; }
   to {
-    bottom: 20%; } }
+    bottom: 25%; } }
 
 @keyframes show-buttons-m {
   from {
     bottom: 0; }
   to {
-    bottom: 20%; } }
+    bottom: 25%; } }
 
 @-webkit-keyframes hidden-buttons-m {
   from {
-    bottom: 20%; }
+    bottom: 25%; }
   to {
     bottom: 0; } }
 
 @keyframes hidden-buttons-m {
   from {
-    bottom: 20%; }
+    bottom: 25%; }
   to {
     bottom: 0; } }
 
@@ -921,23 +925,23 @@ html {
   from {
     bottom: 0; }
   to {
-    bottom: 20%; } }
+    bottom: 30%; } }
 
 @keyframes show-buttons-l {
   from {
     bottom: 0; }
   to {
-    bottom: 20%; } }
+    bottom: 30%; } }
 
 @-webkit-keyframes hidden-buttons-l {
   from {
-    bottom: 20%; }
+    bottom: 30%; }
   to {
     bottom: 0; } }
 
 @keyframes hidden-buttons-l {
   from {
-    bottom: 20%; }
+    bottom: 30%; }
   to {
     bottom: 0; } }
 
@@ -1028,24 +1032,25 @@ html {
       #footer .wrapper .icons-wrapper .icon {
         font-size: 40px;
         margin: 10px 5px; }
-    #footer .wrapper .github {
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
-      #footer .wrapper .github:hover {
-        color: #24292e; }
-    #footer .wrapper .linkedin {
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
-      #footer .wrapper .linkedin:hover {
-        color: #0a66c2; }
-    #footer .wrapper .download {
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s; }
-      #footer .wrapper .download:hover {
-        color: #027e5b; }
+      #footer .wrapper .icons-wrapper .github {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        #footer .wrapper .icons-wrapper .github:hover {
+          color: #161a1d; }
+      #footer .wrapper .icons-wrapper .linkedin {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        #footer .wrapper .icons-wrapper .linkedin:hover {
+          color: #0a66c2; }
+      #footer .wrapper .icons-wrapper .download {
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        font-size: 45px; }
+        #footer .wrapper .icons-wrapper .download:hover {
+          color: #910667; }
 
 @media (min-width: 400px) {
   .wrapper {

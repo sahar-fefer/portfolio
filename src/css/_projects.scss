@@ -4,215 +4,221 @@
     background-color: #e2e2e2;
     padding-bottom: 10px;
 
-    .card {
-        width: 400px;
-        height: 250px;
-        margin: 40px auto;
-        padding: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        border-radius: 10px;
-        box-shadow: $shadow-card-dark;
+    .projects-wrapper {
+        :nth-child(1) {
+            margin-top: 0;
+        }
 
-        .hover-card {
-            background-color: $opacity-background;
-            padding: 10px;
-            transition: all ease-in-out 0.3s;
-            border-radius: inherit;
-            width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            position: relative;
+        .project {
+            width: 400px;
+            height: 250px;
+            margin: 40px auto;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: $shadow-card-light;
 
-            .text {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-
-                .title {
-                    font-size: 1.6rem;
-                }
-
-                &.show {
-                    top: 20%;
-                    animation: show-text-s 0.3s;
-                }
-
-                &.hidden {
-                    top: 0;
-                    animation: hidden-text-s 0.3s;
-                }
+            .hover-project {
+                background-color: $opacity-background;
+                padding: 10px;
+                transition: all ease-in-out 0.3s;
+                border-radius: inherit;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                position: relative;
+                box-shadow: $shadow-card-dark;
                 
-                .pills-wrapper {
-                    // margin-top: 0;
-                }
-            }
+                .text {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
 
-            .card-buttons {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
+                    .title {
+                        font-size: 1.6rem;
+                    }
+
+                    &.show {
+                        top: 20%;
+                        animation: show-text-s 0.3s;
+                    }
+
+                    &.hidden {
+                        top: 0;
+                        animation: hidden-text-s 0.3s;
+                    }
+
+                    .pills-wrapper {
+                        // margin-top: 0;
+                    }
+                }
+
+                .project-buttons {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+
+                    &.show {
+                        bottom: 20%;
+                        animation: show-buttons-s 0.3s;
+                    }
+
+                    &.hidden {
+                        bottom: 0;
+                        animation: hidden-buttons-s 0.3s;
+                    }
+                }
 
                 &.show {
-                    bottom: 20%;
-                    animation: show-buttons-s 0.3s;
+                    opacity: 1;
                 }
 
                 &.hidden {
-                    bottom: 0;
-                    animation: hidden-buttons-s 0.3s;
+                    opacity: 0;
+                }
+
+                .tech-pills {
+                    border: $text solid 1px;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    margin: 5px;
+                }
+
+                .link-button {
+                    border: $text solid 1px;
+                    background-color: $opacity-dark;
+                    border-radius: 5px;
+                    margin: 20px 5px 10px;
+                    padding: 5px 10px;
+                    color: $light;
                 }
             }
-
-            &.show {
-                opacity: 1;
-            }
-
-            &.hidden {
-                opacity: 0;
-            }
-
-            .tech-pills {
-                border: $text solid 1px;
-                background-color: $text-light;
-                border-radius: 10px;
-                margin: 5px;
-            }
-
-            .link-button {
-                border: $text solid 1px;
-                background-color: $opacity-dark;
-                border-radius: 5px;
-                margin: 20px 5px 10px;
-                padding: 5px 10px;
-                color: $light;
-            }
         }
-    }
 
-    @media (min-width: 576px) {
-        .card {
-            width: 550px;
-            height: 300px;
-            margin: 55px auto;
+        @media (min-width: 576px) {
+            .project {
+                width: 550px;
+                height: 300px;
+                margin: 55px auto;
 
-            .hover-card {
-                .text {
-                    .title {
-                        font-size: 2.5rem;
-                    }
-                    .pills-wrapper {
-                        margin-top: 10px;
+                .hover-project {
+                    .text {
+                        .title {
+                            font-size: 2.5rem;
+                        }
+                        .pills-wrapper {
+                            margin-top: 10px;
+                        }
                     }
                 }
-            }
 
-            .link-button {
-                margin: 20px 5px 10px;
+                .link-button {
+                    margin: 20px 5px 10px;
+                }
             }
         }
-    }
 
-    @media (min-width: 992px) {
-        .card {
-            width: 700px;
-            height: 400px;
-            margin: 70px auto;
+        @media (min-width: 992px) {
+            .project {
+                width: 700px;
+                height: 400px;
+                margin: 70px auto;
 
-            .hover-card {
-                .text {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-
-                    &.show {
-                        top: 25%;
-                        animation: show-text-m 0.3s;
-                    }
-
-                    &.hidden {
+                .hover-project {
+                    .text {
+                        position: absolute;
                         top: 0;
-                        animation: hidden-text-m 0.3s;
+                        left: 0;
+                        right: 0;
+
+                        &.show {
+                            top: 25%;
+                            animation: show-text-m 0.3s;
+                        }
+
+                        &.hidden {
+                            top: 0;
+                            animation: hidden-text-m 0.3s;
+                        }
                     }
-                }
 
-                .card-buttons {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-
-                    &.show {
-                        bottom: 25%;
-                        animation: show-buttons-m 0.3s;
-                    }
-
-                    &.hidden {
+                    .project-buttons {
+                        position: absolute;
                         bottom: 0;
-                        animation: hidden-buttons-m 0.3s;
+                        left: 0;
+                        right: 0;
+
+                        &.show {
+                            bottom: 25%;
+                            animation: show-buttons-m 0.3s;
+                        }
+
+                        &.hidden {
+                            bottom: 0;
+                            animation: hidden-buttons-m 0.3s;
+                        }
                     }
                 }
-            }
 
-            .link-button {
-                margin: 20px 5px 10px;
+                .link-button {
+                    margin: 20px 5px 10px;
+                }
             }
         }
-    }
 
-    @media (min-width: 1200px) {
-        .card {
-            width: 850px;
-            height: 500px;
-            margin: 85px auto;
+        @media (min-width: 1200px) {
+            .project {
+                width: 850px;
+                height: 500px;
+                margin: 85px auto;
 
-            .hover-card {
-                .text {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-
-                    &.show {
-                        top: 30%;
-                        animation: show-text-l 0.3s;
-                    }
-
-                    &.hidden {
+                .hover-project {
+                    .text {
+                        position: absolute;
                         top: 0;
-                        animation: hidden-text-l 0.3s;
+                        left: 0;
+                        right: 0;
+
+                        &.show {
+                            top: 30%;
+                            animation: show-text-l 0.3s;
+                        }
+
+                        &.hidden {
+                            top: 0;
+                            animation: hidden-text-l 0.3s;
+                        }
                     }
-                }
 
-                .card-buttons {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-
-                    &.show {
-                        bottom: 30%;
-                        animation: show-buttons-l 0.3s;
-                    }
-
-                    &.hidden {
+                    .project-buttons {
+                        position: absolute;
                         bottom: 0;
-                        animation: hidden-buttons-l 0.3s;
+                        left: 0;
+                        right: 0;
+
+                        &.show {
+                            bottom: 30%;
+                            animation: show-buttons-l 0.3s;
+                        }
+
+                        &.hidden {
+                            bottom: 0;
+                            animation: hidden-buttons-l 0.3s;
+                        }
                     }
                 }
-            }
 
-            .link-button {
-                margin: 20px 5px 10px;
+                .link-button {
+                    margin: 20px 5px 10px;
+                }
             }
         }
     }
 }
-
 @keyframes show-text-s {
     from {
         top: 0;
@@ -254,13 +260,13 @@
         top: 0;
     }
     to {
-        top: 20%;
+        top: 30%;
     }
 }
 
 @keyframes hidden-text-l {
     from {
-        top: 20%;
+        top: 30%;
     }
     to {
         top: 0;
@@ -290,13 +296,13 @@
         bottom: 0;
     }
     to {
-        bottom: 20%;
+        bottom: 25%;
     }
 }
 
 @keyframes hidden-buttons-m {
     from {
-        bottom: 20%;
+        bottom: 25%;
     }
     to {
         bottom: 0;
@@ -308,13 +314,13 @@
         bottom: 0;
     }
     to {
-        bottom: 20%;
+        bottom: 30%;
     }
 }
 
 @keyframes hidden-buttons-l {
     from {
-        bottom: 20%;
+        bottom: 30%;
     }
     to {
         bottom: 0;
