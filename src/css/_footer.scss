@@ -22,29 +22,30 @@
                 font-size: 40px;
                 margin: 10px 5px;
             }
-        }
 
-        .github {
-            transition: all 0.3s;
+            .github {
+                transition: all 0.3s;
 
-            &:hover {
-                color: $github-color;
+                &:hover {
+                    color: $github-color;
+                }
             }
-        }
 
-        .linkedin {
-            transition: all 0.3s;
+            .linkedin {
+                transition: all 0.3s;
 
-            &:hover {
-                color: $linkedin-color;
+                &:hover {
+                    color: $linkedin-color;
+                }
             }
-        }
 
-        .download {
-            transition: all 0.3s;
+            .download {
+                transition: all 0.3s;
+                font-size: 45px;
 
-            &:hover {
-                color: $secondary-dark;
+                &:hover {
+                    color: $primary;
+                }
             }
         }
     }
@@ -68,4 +69,3 @@
         }
     }
 }
-
