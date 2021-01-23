@@ -1,8 +1,14 @@
 import React from 'react';
 import Typical from 'react-typical';
+import { useSpring, animated, config } from 'react-spring';
 
 const Home = ({ HOME, language }) => {
-    const { TITLE, NAME, ABOUT, TYPING } = HOME;
+    const { TITLE, NAME, ABOUT } = HOME;
+
+    const fade = useSpring({
+        from: {opacity: 0},
+        to: {opacity: 1}
+    })
 
     const enTyping = [
         "text text",
@@ -19,7 +25,7 @@ const Home = ({ HOME, language }) => {
 
     return (
         <div id={'home'} className={'container-fluid'}>
-            <div className={'header-wrapper'}>
+            <animated.div style={fade} className={'header-wrapper'}>
                 <h1 className={'header'}>
                     {TITLE}<span className={'name'}>{NAME}</span>
                 </h1>
@@ -44,7 +50,7 @@ const Home = ({ HOME, language }) => {
                         wrapper="h2"
                     />
                 }
-            </div>
+            </animated.div>
         </div>
     );
 };
