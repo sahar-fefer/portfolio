@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Typical from 'react-typical';
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 const Home = ({ HOME, language }) => {
     const { TITLE, NAME, ABOUT } = HOME;
-    const mediaMatch = window.matchMedia('(min-width: 992px)');
-    const [matches, setMatches] = useState(mediaMatch.matches);
-
-    useEffect(() => {
-        const handler = e => setMatches(e.matches);
-        mediaMatch.addListener(handler);
-        return () => mediaMatch.removeListener(handler);
-    });
 
     const fade = useSpring({
         from: { opacity: 0 },
@@ -32,6 +24,7 @@ const Home = ({ HOME, language }) => {
     ]
 
     return (
+<<<<<<< HEAD
         <div id={'home'}
             className={'container-fluid'}
             style={{
@@ -39,6 +32,9 @@ const Home = ({ HOME, language }) => {
                     ? `url(${window.location.origin}/media/home_background.jpg)`
                     : `url(${window.location.origin}/media/home_background_mobile.jpg)`
             }}>
+=======
+        <div id={'home'} className={'container-fluid'}>
+>>>>>>> 283e3b1402ff13b530fad3971317a692e8cd5b0d
             <animated.div style={fade} className={'header-wrapper'}>
                 <div className={'header-wrapper'}>
                     <h1 className={'header'}>
