@@ -19,6 +19,10 @@
             width: 100%;
             display: grid;
             place-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
             // background-color: #e2e2e2;
             border-radius: 15px;
             padding-top: 20px;
@@ -53,6 +57,9 @@
                 &:hover {
                     background: $secondary;
                 }
+            }
+            .text-err {
+                color: rgb(105, 1, 1);
             }
         }
     }
