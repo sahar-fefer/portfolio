@@ -14,8 +14,8 @@ const Home = ({ HOME, language }) => {
     });
 
     const fade = useSpring({
-        from: {opacity: 0},
-        to: {opacity: 1}
+        from: { opacity: 0 },
+        to: { opacity: 1 }
     })
 
     const enTyping = [
@@ -34,37 +34,38 @@ const Home = ({ HOME, language }) => {
     return (
         <div id={'home'}
             className={'container-fluid'}
-            style={{ 
-                backgroundImage: matches 
-                ? `url(${window.location.origin}/media/home_background.jpg)`
-                : `url(${window.location.origin}/media/home_background_mobile.jpg)`
+            style={{
+                backgroundImage: matches
+                    ? `url(${window.location.origin}/media/home_background.jpg)`
+                    : `url(${window.location.origin}/media/home_background_mobile.jpg)`
             }}>
-      <animated.div style={fade} className={'header-wrapper'}>
-            <div className={'header-wrapper'}>
-                <h1 className={'header'}>
-                    {TITLE}<span className={'name'}>{NAME}</span>
-                </h1>
-                <h2 className={'about'}>
-                    {ABOUT}
-                </h2>
-                {
-                    language === 'en' &&
-                    <Typical
-                        loop={Infinity}
-                        className={'typing'}
-                        steps={enTyping}
-                        wrapper="h2"
-                    />
-                }
-                {
-                    language === 'he' &&
-                    <Typical
-                        loop={Infinity}
-                        className={'typing'}
-                        steps={heTyping}
-                        wrapper="h2"
-                    />
-                }
+            <animated.div style={fade} className={'header-wrapper'}>
+                <div className={'header-wrapper'}>
+                    <h1 className={'header'}>
+                        {TITLE}<span className={'name'}>{NAME}</span>
+                    </h1>
+                    <h2 className={'about'}>
+                        {ABOUT}
+                    </h2>
+                    {
+                        language === 'en' &&
+                        <Typical
+                            loop={Infinity}
+                            className={'typing'}
+                            steps={enTyping}
+                            wrapper="h2"
+                        />
+                    }
+                    {
+                        language === 'he' &&
+                        <Typical
+                            loop={Infinity}
+                            className={'typing'}
+                            steps={heTyping}
+                            wrapper="h2"
+                        />
+                    }
+                </div>
             </animated.div>
         </div>
     );
