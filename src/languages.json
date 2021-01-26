@@ -41,8 +41,10 @@
         },
         "CONTACT": {
             "SECTION_TITLE": "Contact",
-            "PARAGRAF1": "IT WOULD BE A PLEASURE",
-            "PARAGRAF2": "IF YOU CONTACT ME!",
+            "PARAGRAF1": "I'm eager to learn new things and improve myself.",
+            "PARAGRAF2": "I'm currently looking for my next challenge so feel free to reach out to me any time.",
+            "PARAGRAF3": "If you prefer to contact me directly, send your Email to: ",
+            "PARAGRAF4": "sahar-fefer@gmail.com!",
             "NAME": "Name",
             "EMAIL": "Email address",
             "MESSAGE": "Your massege",
@@ -61,6 +63,11 @@
                     "required": "Message is required",
                     "minLength": "Message should be no less than 10 characters",
                     "pattern": "Message invalid characters"
+                },
+                "submit": {
+                    "fillErr": "Please cheack all required fields before submitting.",
+                    "submitErr": "Oops! There was a problem sending the message, please try again.",
+                    "ok": "Your message was sent successfully. Thanks!"
                 }
             }
         },
@@ -111,8 +118,10 @@
         },
         "CONTACT": {
             "SECTION_TITLE": "צרו קשר",
-            "PARAGRAF1": "זה יהיה נפלא",
-            "PARAGRAF2": "לשמוע מכם!",
+            "PARAGRAF1": "אני מאוד אוהבת ללמוד דברים חדשים ולהוכיח את עצמי.",
+            "PARAGRAF2": "אני מחפשת את האתגר הבא שלי אז תרגישו בנוח ליצור איתי קשר בכל זמן.",
+            "PARAGRAF3": "אם תעדיפו ליצור איתי קשר ישירות, שלחו את הודעתכם לכאן:",
+            "PARAGRAF4": "sahar-fefer@gmail.com!",
             "NAME": "שם",
             "EMAIL": "כתובת אימייל",
             "MESSAGE": "ההודעה שלך",
@@ -131,6 +140,11 @@
                     "required": "נא רשום את הודעתך",
                     "minLength": "ההודעה צריכה להיות מורכבת מלפחות 10 תווים",
                     "pattern": "ההודעה מכילה תווים לא חוקיים"
+                },
+                "submit": {
+                    "fillErr": "אנא בדוק את כל השדות המבוקשים לפני שליחת הטופס.",
+                    "submitErr": "אופס! הייתה בעיה בשליחת ההודעהת בבקשה נסה שוב.",
+                    "ok": "ההודעה שלך נשלחה בהצלחה. תודה!"
                 }
             }
         },

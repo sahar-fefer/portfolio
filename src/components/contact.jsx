@@ -4,8 +4,8 @@ import emailjs from 'emailjs-com';
 import validate from './validator';
 import InputErrors from './inputErrors';
 
-const Contact = ({ CONTACT, language }) => {
-    const { SECTION_TITLE, PARAGRAF1, PARAGRAF2, NAME, EMAIL, MESSAGE, SUBMIT } = CONTACT;
+const Contact = ({ CONTACT }) => {
+    const { SECTION_TITLE, PARAGRAF1, PARAGRAF2, PARAGRAF3, PARAGRAF4, NAME, EMAIL, MESSAGE, SUBMIT, ERRORS } = CONTACT;
 
     const [isSubmmited, setIsSubmmited] = useState('')
 
@@ -54,7 +54,7 @@ const Contact = ({ CONTACT, language }) => {
     const handleBlur = (e) => {
         const { name, value } = e.target;
 
-        const errors = validate(name, value, values[name].validations, language);
+        const errors = validate(name, value, values[name].validations, ERRORS);
 
         setValues({
             ...values,
@@ -73,7 +73,7 @@ const Contact = ({ CONTACT, language }) => {
         for (const name in values) {
             console.log(name)
             const field = values[name];
-            const errors = validate(name, field.value, field.validations);
+            const errors = validate(name, field.value, field.validations, ERRORS);
             if (errors.length) {
                 isOK = false;
                 setIsSubmmited('fillErr')
@@ -131,8 +131,12 @@ const Contact = ({ CONTACT, language }) => {
                 <div className="container">
                     <div className={'wrapper row align-items-center'}>
                         <div className={'col-md-4 col-lg ml-4 mr-4 ml-sm-0 mr-sm-0'}>
-                            <h2>{PARAGRAF1}</h2>
-                            <h2>{PARAGRAF2}</h2>
+                            {/* <div className='contact-paragraf'>{PARAGRAF1}</div>
+                            <div className='contact-paragraf'>{PARAGRAF2}</div> */}
+                            <h3 style={{ marginBottom: '2rem' }}>{PARAGRAF1}</h3>
+                            <h3 style={{ marginBottom: '2rem' }}>{PARAGRAF2}</h3>
+                            <h3>{PARAGRAF3}</h3>
+                            <h3>{PARAGRAF4}</h3>
                         </div>
                         <form className={'form col'} onSubmit={handleSubmit}>
                             <input
@@ -174,19 +178,19 @@ const Contact = ({ CONTACT, language }) => {
                             {
                                 isSubmmited === 'fillErr' &&
                                 <div>
-                                    Please cheack all required fields before submitting.
+                                    {ERRORS['submit']['fillErr']}
                                 </div>
                             }
                             {
                                 isSubmmited === 'submitErr' &&
                                 <div>
-                                    Oops! There was a problem sending the message, please try again.
+                                    {ERRORS['submit']['submitErr']}
                                 </div>
                             }
                             {
                                 isSubmmited === 'ok' &&
                                 <div>
-                                    Your message was sent successfully. Thanks!
+                                    {ERRORS['submit']['ok']}
                                 </div>
                             }
                         </form>

@@ -956,8 +956,8 @@ html {
   background-size: cover; }
   #contact .wrapper {
     margin-bottom: 10px; }
-    #contact .wrapper h2 {
-      font-size: x-large; }
+    #contact .wrapper h3 {
+      font-size: xx-large; }
     #contact .wrapper .form {
       width: 100%;
       display: -ms-grid;
