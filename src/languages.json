@@ -34,8 +34,8 @@
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
             "CONNECT4": "Connect 4",
-            "SAHAR_ESTATE": "Real Estate", 
-            "SALT_FEFER": "Catering Website", 
+            "SAHAR_ESTATE": "Real Estate",
+            "SALT_FEFER": "Catering Website",
             "READ_MY_LIPS": "Clear Mask Shop",
             "PEPE": "Event Producer"
         },
@@ -43,15 +43,30 @@
             "SECTION_TITLE": "Contact",
             "PARAGRAF1": "IT WOULD BE A PLEASURE",
             "PARAGRAF2": "IF YOU CONTACT ME!",
-            "NAME": "name",
-            "PHONE": "phone",
-            "EMAIL": "mail",
-            "MESSAGE": "your massege",
-            "SUBMIT": "submit"
+            "NAME": "Name",
+            "EMAIL": "Email address",
+            "MESSAGE": "Your massege",
+            "SUBMIT": "submit",
+            "ERRORS": {
+                "name": {
+                    "required": "Name is required",
+                    "minLength": "Name should be no less than 2 characters",
+                    "pattern": "Name invalid characters"
+                },
+                "email": {
+                    "required": "Email is required",
+                    "pattern": "Email invalid characters"
+                },
+                "message": {
+                    "required": "Message is required",
+                    "minLength": "Message should be no less than 10 characters",
+                    "pattern": "Message invalid characters"
+                }
+            }
         },
         "FOOTER": {
             "NAME": "Sahar Feferovich",
-            "COPYRIGHT": "© 2020 "
+            "COPYRIGHT": "© 2021 "
         }
     },
     "he": {
@@ -89,7 +104,7 @@
         "PROJECTS": {
             "SECTION_TITLE": "פרוייקטים",
             "CONNECT4": "משחק 4 בשורה",
-            "SAHAR_ESTATE":  "אתר נדלן",
+            "SAHAR_ESTATE": "אתר נדלן",
             "SALT_FEFER": "אתר לקייטרינג",
             "READ_MY_LIPS": "חנות מסיכות שקופות",
             "PEPE": "מפיק אירועים דיגיטלי"
@@ -99,14 +114,29 @@
             "PARAGRAF1": "זה יהיה נפלא",
             "PARAGRAF2": "לשמוע מכם!",
             "NAME": "שם",
-            "PHONE": "טלפון",
-            "EMAIL": "מייל",
+            "EMAIL": "כתובת אימייל",
             "MESSAGE": "ההודעה שלך",
-            "SUBMIT": "שלח"
+            "SUBMIT": "שלח",
+            "ERRORS": {
+                "name": {
+                    "required": "נא רשום את שמך",
+                    "minLength": "שמך צריך להיות מורכב מלפחות 2 תווים",
+                    "pattern": "שמך מכיל תווים לא חוקיים"
+                },
+                "email": {
+                    "required": "נא רשום את כתובת המייל",
+                    "pattern": "מייל מכיל תווים לא חוקיים"
+                },
+                "message": {
+                    "required": "נא רשום את הודעתך",
+                    "minLength": "ההודעה צריכה להיות מורכבת מלפחות 10 תווים",
+                    "pattern": "ההודעה מכילה תווים לא חוקיים"
+                }
+            }
         },
         "FOOTER": {
             "NAME": "סהר פפרוביץ",
-            "COPYRIGHT": "© 2020 "
+            "COPYRIGHT": "© 2021 "
         }
     }
 }

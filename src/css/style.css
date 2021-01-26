@@ -992,6 +992,8 @@ html {
         border-radius: 10px; }
         #contact .wrapper .form .submit:hover {
           background: #00d99d; }
+      #contact .wrapper .form .text-err {
+        color: #690101; }
 
 @media (min-width: 576px) {
   #contact .wrapper h2 {
