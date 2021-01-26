@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Typical from 'react-typical';
 
 const Home = ({ HOME, language }) => {
     const { TITLE, NAME, ABOUT, TYPING } = HOME;
+    const mediaMatch = window.matchMedia('(min-width: 992px)');
+    const [matches, setMatches] = useState(mediaMatch.matches);
+
+    useEffect(() => {
+        const handler = e => setMatches(e.matches);
+        mediaMatch.addListener(handler);
+        return () => mediaMatch.removeListener(handler);
+    });
 
     const enTyping = [
         "text text",
@@ -18,7 +26,13 @@ const Home = ({ HOME, language }) => {
     ]
 
     return (
-        <div id={'home'} className={'container-fluid'}>
+        <div id={'home'}
+            className={'container-fluid'}
+            style={{ 
+                backgroundImage: matches 
+                ? `url(${window.location.origin}/media/home_background.jpg)`
+                : `url(${window.location.origin}/media/home_background_mobile.jpg)`
+            }}>
             <div className={'header-wrapper'}>
                 <h1 className={'header'}>
                     {TITLE}<span className={'name'}>{NAME}</span>
