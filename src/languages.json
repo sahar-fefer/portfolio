@@ -34,24 +34,46 @@
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
             "CONNECT4": "Connect 4",
-            "SAHAR_ESTATE": "Real Estate", 
-            "SALT_FEFER": "Catering Website", 
+            "SAHAR_ESTATE": "Real Estate",
+            "SALT_FEFER": "Catering Website",
             "READ_MY_LIPS": "Clear Mask Shop",
             "PEPE": "Event Producer"
         },
         "CONTACT": {
             "SECTION_TITLE": "Contact",
-            "PARAGRAF1": "IT WOULD BE A PLEASURE",
-            "PARAGRAF2": "IF YOU CONTACT ME!",
-            "NAME": "name",
-            "PHONE": "phone",
-            "EMAIL": "mail",
-            "MESSAGE": "your massege",
-            "SUBMIT": "submit"
+            "PARAGRAF1": "I'm eager to learn new things and improve myself.",
+            "PARAGRAF2": "I'm currently looking for my next challenge so feel free to reach out to me any time.",
+            "PARAGRAF3": "If you prefer to contact me directly, send your Email to: ",
+            "PARAGRAF4": "sahar-fefer@gmail.com!",
+            "NAME": "Name",
+            "EMAIL": "Email address",
+            "MESSAGE": "Your massege",
+            "SUBMIT": "submit",
+            "ERRORS": {
+                "name": {
+                    "required": "Name is required",
+                    "minLength": "Name should be no less than 2 characters",
+                    "pattern": "Name invalid characters"
+                },
+                "email": {
+                    "required": "Email is required",
+                    "pattern": "Email invalid characters"
+                },
+                "message": {
+                    "required": "Message is required",
+                    "minLength": "Message should be no less than 10 characters",
+                    "pattern": "Message invalid characters"
+                },
+                "submit": {
+                    "fillErr": "Please cheack all required fields before submitting.",
+                    "submitErr": "Oops! There was a problem sending the message, please try again.",
+                    "ok": "Your message was sent successfully. Thanks!"
+                }
+            }
         },
         "FOOTER": {
             "NAME": "Sahar Feferovich",
-            "COPYRIGHT": "© 2020 "
+            "COPYRIGHT": "© 2021 "
         }
     },
     "he": {
@@ -89,24 +111,46 @@
         "PROJECTS": {
             "SECTION_TITLE": "פרוייקטים",
             "CONNECT4": "משחק 4 בשורה",
-            "SAHAR_ESTATE":  "אתר נדלן",
+            "SAHAR_ESTATE": "אתר נדלן",
             "SALT_FEFER": "אתר לקייטרינג",
             "READ_MY_LIPS": "חנות מסיכות שקופות",
             "PEPE": "מפיק אירועים דיגיטלי"
         },
         "CONTACT": {
             "SECTION_TITLE": "צרו קשר",
-            "PARAGRAF1": "זה יהיה נפלא",
-            "PARAGRAF2": "לשמוע מכם!",
+            "PARAGRAF1": "אני מאוד אוהבת ללמוד דברים חדשים ולהוכיח את עצמי.",
+            "PARAGRAF2": "אני מחפשת את האתגר הבא שלי אז תרגישו בנוח ליצור איתי קשר בכל זמן.",
+            "PARAGRAF3": "אם תעדיפו ליצור איתי קשר ישירות, שלחו את הודעתכם לכאן:",
+            "PARAGRAF4": "sahar-fefer@gmail.com!",
             "NAME": "שם",
-            "PHONE": "טלפון",
-            "EMAIL": "מייל",
+            "EMAIL": "כתובת אימייל",
             "MESSAGE": "ההודעה שלך",
-            "SUBMIT": "שלח"
+            "SUBMIT": "שלח",
+            "ERRORS": {
+                "name": {
+                    "required": "נא רשום את שמך",
+                    "minLength": "שמך צריך להיות מורכב מלפחות 2 תווים",
+                    "pattern": "שמך מכיל תווים לא חוקיים"
+                },
+                "email": {
+                    "required": "נא רשום את כתובת המייל",
+                    "pattern": "מייל מכיל תווים לא חוקיים"
+                },
+                "message": {
+                    "required": "נא רשום את הודעתך",
+                    "minLength": "ההודעה צריכה להיות מורכבת מלפחות 10 תווים",
+                    "pattern": "ההודעה מכילה תווים לא חוקיים"
+                },
+                "submit": {
+                    "fillErr": "אנא בדוק את כל השדות המבוקשים לפני שליחת הטופס.",
+                    "submitErr": "אופס! הייתה בעיה בשליחת ההודעהת בבקשה נסה שוב.",
+                    "ok": "ההודעה שלך נשלחה בהצלחה. תודה!"
+                }
+            }
         },
         "FOOTER": {
             "NAME": "סהר פפרוביץ",
-            "COPYRIGHT": "© 2020 "
+            "COPYRIGHT": "© 2021 "
         }
     }
 }

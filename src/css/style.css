@@ -571,14 +571,15 @@ html {
     #home .header-wrapper .typing {
       font-size: 35px; } }
 
-#about .introduc {
-  margin: auto 0; }
-
-#about .skills-wrapper {
-  margin: 5vw 0; }
-  #about .skills-wrapper .img-wrapper .skill-img {
-    height: 8vw;
-    margin: 0.5rem; }
+#about {
+  overflow: hidden; }
+  #about .introduc {
+    margin: auto 0; }
+  #about .skills-wrapper {
+    margin: 5vw 0; }
+    #about .skills-wrapper .img-wrapper .skill-img {
+      height: 8vw;
+      margin: 0.5rem; }
 
 @media (min-width: 576px) {
   .skill-img {
@@ -952,8 +953,8 @@ html {
   background-size: cover; }
   #contact .wrapper {
     margin-bottom: 10px; }
-    #contact .wrapper h2 {
-      font-size: x-large; }
+    #contact .wrapper h3 {
+      font-size: xx-large; }
     #contact .wrapper .form {
       width: 100%;
       display: -ms-grid;
@@ -988,6 +989,8 @@ html {
         border-radius: 10px; }
         #contact .wrapper .form .submit:hover {
           background: #00d99d; }
+      #contact .wrapper .form .text-err {
+        color: #690101; }
 
 @media (min-width: 576px) {
   #contact .wrapper h2 {

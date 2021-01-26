@@ -5,10 +5,8 @@ import validate from './validator';
 import InputErrors from './inputErrors';
 
 const Contact = ({ CONTACT }) => {
-    const { SECTION_TITLE, PARAGRAF1, PARAGRAF2, PARAGRAF3, PARAGRAF4, NAME, EMAIL, MESSAGE, SUBMIT, ERRORS } = CONTACT;
-
-    const [isSubmmited, setIsSubmmited] = useState('')
-
+    const { SECTION_TITLE, PARAGRAF1, PARAGRAF2, NAME, EMAIL, MESSAGE, SUBMIT } = CONTACT;
+    const [isSubmmited, setIsSubmmited] = useState({})
     const [values, setValues] = useState({
         name: {
             value: '',
@@ -16,7 +14,7 @@ const Contact = ({ CONTACT }) => {
             validations: {
                 required: true,
                 minLength: 3,
-                pattern: /^[a-zא-תA-Z ]*$/
+                pattern: /^[a-zא-תA-Z0-9!?/(). _%+-]*$/
             }
         },
         email: {
@@ -34,27 +32,14 @@ const Contact = ({ CONTACT }) => {
             validations: {
                 required: true,
                 minLength: 10,
-                pattern: /^[a-zא-תA-Z0-9!?/(),. _%+-]*$/
+                pattern: /^[a-zא-תA-Z0-9!?/(). _%+-]*$/
             }
         }
     })
-
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-
-        setValues({
-            ...values,
-            [name]: {
-                ...values[name],
-                value
-            }
-        });
-    }
-
     const handleBlur = (e) => {
         const { name, value } = e.target;
 
-        const errors = validate(name, value, values[name].validations, ERRORS);
+        const errors = validate(name, value, values[name].validations);
 
         setValues({
             ...values,
@@ -69,34 +54,58 @@ const Contact = ({ CONTACT }) => {
     const handleSubmit = e => {
         e.preventDefault();
         let isOK = true;
+        
+        const nameField = values['name'];
+        const nameErrors = validate('name', nameField.value, nameField.validations);
+        if (nameErrors.length) {
+            isOK = false;
+            console.log('nameErrors', nameErrors)
+            setValues({
+                ...values,
+                ['name']: {
+                    ...values['name'],
+                    errors: nameErrors
+                }
+            })
+        }
 
-        for (const name in values) {
-            console.log(name)
-            const field = values[name];
-            const errors = validate(name, field.value, field.validations, ERRORS);
-            if (errors.length) {
-                isOK = false;
-                setIsSubmmited('fillErr')
-                console.log('errors', errors)
-                setValues({
-                    ...values,
-                    [name]: {
-                        ...values[name],
-                        errors
-                    }
-                })
-            }
+        const emailField = values['email'];
+        const emailErrors = validate('email', emailField.value, emailField.validations);
+        if (emailErrors.length) {
+            isOK = false;
+            console.log('emailErrors', emailErrors)
+            setValues({
+                ...values,
+                ['email']: {
+                    ...values['email'],
+                    errors: emailErrors
+                }
+            })
+        }
+
+        const messageField = values['message'];
+        const messageErrors = validate('message', messageField.value, messageField.validations);
+        console.log('messageErrors', messageErrors)
+        if (messageErrors.length) {
+            isOK = false;
+            setValues({
+                ...values,
+                ['message']: {
+                    ...values['message'],
+                    errors: messageErrors
+                }
+            })
         }
 
         if (isOK) {
-            emailjs.sendForm('service_56lr3eh', 'template_x4r5xea', e.target, "user_s4TwhJIxgZNXyXz3WcQwI")
-                .then((result) => {
-                    console.log('result', result);
-                    setIsSubmmited(result && 'ok')
-                }, (error) => {
-                    console.log('error', error);
-                    setIsSubmmited(error && 'submitErr')
-                });
+            // emailjs.sendForm('service_56lr3eh', 'template_x4r5xea', e.target, "user_s4TwhJIxgZNXyXz3WcQwI")
+            //     .then((result) => {
+            //         console.log('result', result);
+            //         setIsSubmmited(result)
+            //     }, (error) => {
+            //         console.log('error', error);
+            //         setIsSubmmited(error)
+            //     });
             setValues({
                 ...values,
                 ['name']: {
@@ -119,8 +128,22 @@ const Contact = ({ CONTACT }) => {
         }
     }
 
-    console.log('values', values);
+    // function sendEmail(e) {
+    //     e.preventDefault();
 
+    //     emailjs.sendForm('service_56lr3eh', 'template_x4r5xea', e.target, "user_s4TwhJIxgZNXyXz3WcQwI")
+    //         .then((result) => {
+    //             console.log(result.text);
+    //         }, (error) => {
+    //             console.log(error.text);
+    //         });
+    //     e.target.reset()
+    // }
+
+    console.log('values', values);
+    // console.log('values[name]', values['name'].errors);
+    // console.log('values[email]', values['email'].errors);
+    // console.log('values.message', values.message.errors);
     return (
         <div id={'contact'}>
             <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%">
@@ -131,70 +154,54 @@ const Contact = ({ CONTACT }) => {
                 <div className="container">
                     <div className={'wrapper row align-items-center'}>
                         <div className={'col-md-4 col-lg ml-4 mr-4 ml-sm-0 mr-sm-0'}>
-                            {/* <div className='contact-paragraf'>{PARAGRAF1}</div>
-                            <div className='contact-paragraf'>{PARAGRAF2}</div> */}
-                            <h3 style={{ marginBottom: '2rem' }}>{PARAGRAF1}</h3>
-                            <h3 style={{ marginBottom: '2rem' }}>{PARAGRAF2}</h3>
-                            <h3>{PARAGRAF3}</h3>
-                            <h3>{PARAGRAF4}</h3>
+                            <h2>{PARAGRAF1}</h2>
+                            <h2>{PARAGRAF2}</h2>
                         </div>
                         <form className={'form col'} onSubmit={handleSubmit}>
                             <input
                                 type="text"
                                 name={'name'}
-                                value={values['name'].value}
-                                onChange={handleChange}
+                                // value={values['name'].value}
                                 onBlur={handleBlur}
                                 placeholder={NAME} />
                             {
                                 values['name'].errors &&
+                                // console.log('values[name].errors')
                                 <InputErrors errors={values['name'].errors}></InputErrors>
                             }
                             <input
                                 type="email"
                                 name={'email'}
-                                value={values['email'].value}
-                                onChange={handleChange}
+                                // value={values['email'].value}
                                 onBlur={handleBlur}
                                 placeholder={EMAIL} />
                             {
                                 values.email.errors &&
+                                // console.log(values['email'].errors)
                                 <InputErrors errors={values['email'].errors}></InputErrors>
                             }
                             <textarea
                                 type="text"
                                 name={'message'}
-                                value={values['message'].value}
-                                onChange={handleChange}
+                                // value={values['message'].value}
                                 onBlur={handleBlur}
                                 placeholder={MESSAGE}
                                 rows="6"
                                 cols="50" />
                             {
                                 values['message'].errors &&
+                                // console.log(values['message'].errors)
                                 <InputErrors errors={values['message'].errors}></InputErrors>
                             }
                             <input type="submit" value={SUBMIT} className={'submit'} />
-                            {
-                                isSubmmited === 'fillErr' &&
-                                <div>
-                                    {ERRORS['submit']['fillErr']}
-                                </div>
-                            }
-                            {
-                                isSubmmited === 'submitErr' &&
-                                <div>
-                                    {ERRORS['submit']['submitErr']}
-                                </div>
-                            }
-                            {
-                                isSubmmited === 'ok' &&
-                                <div>
-                                    {ERRORS['submit']['ok']}
-                                </div>
-                            }
                         </form>
                     </div>
+                    {
+                        isSubmmited &&
+                        <div>
+                            Your message was sent successfully. Thanks!
+                        </div>
+                    }
                 </div>
             </div>
         </div>
