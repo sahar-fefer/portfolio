@@ -24,17 +24,7 @@ const Home = ({ HOME, language }) => {
     ]
 
     return (
-<<<<<<< HEAD
-        <div id={'home'}
-            className={'container-fluid'}
-            style={{
-                backgroundImage: matches
-                    ? `url(${window.location.origin}/media/home_background.jpg)`
-                    : `url(${window.location.origin}/media/home_background_mobile.jpg)`
-            }}>
-=======
         <div id={'home'} className={'container-fluid'}>
->>>>>>> 283e3b1402ff13b530fad3971317a692e8cd5b0d
             <animated.div style={fade} className={'header-wrapper'}>
                 <div className={'header-wrapper'}>
                     <h1 className={'header'}>
