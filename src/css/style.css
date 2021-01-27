@@ -652,7 +652,8 @@ html {
 /* /////////////////////////    colors    /////////////////////////// */
 #projects {
   background-color: #e2e2e2;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  overflow: hidden; }
   #projects .projects-wrapper :nth-child(1) {
     margin-top: 0; }
   #projects .projects-wrapper .project {
@@ -957,7 +958,10 @@ html {
   #contact .wrapper {
     margin-bottom: 10px; }
     #contact .wrapper h3 {
-      font-size: xx-large; }
+      font-size: xx-large;
+      margin: 0; }
+    #contact .wrapper .spasing {
+      margin: 20px; }
     #contact .wrapper .form {
       width: 100%;
       display: -ms-grid;

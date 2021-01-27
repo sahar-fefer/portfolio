@@ -12,7 +12,13 @@ const Contact = ({ CONTACT }) => {
 
     const [header, setHeadre] = useState(false);
     const [accordion1, setAccordion1] = useState(false);
-    const [bind, { height }] = useMeasure();
+    const [accordion2, setAccordion2] = useState(false);
+    const [accordion3, setAccordion3] = useState(false);
+    const [accordion4, setAccordion4] = useState(false);
+    const [bind1, { height1 }] = useMeasure();
+    const [bind2, { height2 }] = useMeasure();
+    const [bind3, { height3 }] = useMeasure();
+    const [bind4, { height4 }] = useMeasure();
 
     const [isSubmmited, setIsSubmmited] = useState('')
 
@@ -55,8 +61,25 @@ const Contact = ({ CONTACT }) => {
     })
 
     const accordion1Animation = useSpring({
-        height: accordion1 ? height : 0,
+        height: accordion1 ? height1 : 0,
         marginBottom: '2rem',
+        overflow: 'hidden'
+    })
+
+    const accordion2Animation = useSpring({
+        height: accordion2 ? height2 : 0,
+        marginBottom: '2rem',
+        overflow: 'hidden'
+    })
+
+    const accordion3Animation = useSpring({
+        height: accordion3 ? height3 : 0,
+        marginBottom: '2rem',
+        overflow: 'hidden'
+    })
+
+    const accordion4Animation = useSpring({
+        height: accordion4 ? height4 : 0,
         overflow: 'hidden'
     })
 
@@ -173,15 +196,43 @@ const Contact = ({ CONTACT }) => {
                                     }}
                                 />
                                 <animated.div style={accordion1Animation}>
-                                    <h3 {...bind}>
-                                        {PARAGRAF1}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF2}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF3}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF4}
-                                    </h3>
+                                    <h3 {...bind1}>{PARAGRAF1}</h3>
+                                </animated.div>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion2) setAccordion2(true);
+                                    }}
+                                />
+                                <animated.div style={accordion2Animation}>
+                                    <h3 {...bind2}>{PARAGRAF2}</h3>
+                                </animated.div>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion3) setAccordion3(true);
+                                    }}
+                                />
+                                <animated.div style={accordion3Animation}>
+                                    <h3 {...bind3}>{PARAGRAF3}</h3>
+                                </animated.div>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion4) setAccordion4(true);
+                                    }}
+                                />
+                                <animated.div style={accordion4Animation}>
+                                    <h3 {...bind4}>{PARAGRAF4}</h3>
                                 </animated.div>
                             </div>
                         </div>
