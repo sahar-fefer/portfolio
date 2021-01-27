@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
+
 import Linkedin from './linkedin';
 
 const About = ({ ABOUT }) => {
@@ -26,13 +27,13 @@ const About = ({ ABOUT }) => {
     const leftIntroduce = useSpring({
         transform: introduce
             ? `translate3d(0,0,0)`
-            : `translate3d(-50%,0,0)`
+            : `translate3d(-150%,0,0)`
     });
 
     const rightIntroduce = useSpring({
         transform: introduce
             ? `translate3d(0,0,0)`
-            : `translate3d(50%,0,0)`
+            : `translate3d(150%,0,0)`
     });
 
     const introduceSwipe = useSpring({
@@ -137,7 +138,6 @@ const About = ({ ABOUT }) => {
                             className="component-header">
                             {SECTION_TITLE}
                         </animated.h1>
-                        {/* <animated.div style={headrSwap} className="under-header-line" /> */}
                     </div>
                     <div className="row">
                         <Waypoint
