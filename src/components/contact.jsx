@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated, config } from 'react-spring';
-import useMeasure from "../hooks/useMeasure";
 
 import validate from './validator';
 import InputErrors from './inputErrors';
@@ -12,7 +11,9 @@ const Contact = ({ CONTACT }) => {
 
     const [header, setHeadre] = useState(false);
     const [accordion1, setAccordion1] = useState(false);
-    const [bind, { height }] = useMeasure();
+    const [accordion2, setAccordion2] = useState(false);
+    const [accordion3, setAccordion3] = useState(false);
+    const [accordion4, setAccordion4] = useState(false);
 
     const [isSubmmited, setIsSubmmited] = useState('')
 
@@ -54,10 +55,12 @@ const Contact = ({ CONTACT }) => {
             : `translate3d(-50%,0,0)`
     })
 
-    const accordion1Animation = useSpring({
-        height: accordion1 ? height : 0,
-        marginBottom: '2rem',
-        overflow: 'hidden'
+    const { y1, y2, y3, y4, marginBottom } = useSpring({
+        y1: accordion1 ? 0 : 1,
+        y2: accordion2 ? 0 : 1,
+        y3: accordion3 ? 0 : 1,
+        y4: accordion4 ? 0 : 1,
+        marginBottom: '20px'
     })
 
     const handleChange = (e) => {
@@ -172,17 +175,71 @@ const Contact = ({ CONTACT }) => {
                                         if (!accordion1) setAccordion1(true);
                                     }}
                                 />
-                                <animated.div style={accordion1Animation}>
-                                    <h3 {...bind}>
-                                        {PARAGRAF1}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF2}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF3}
-                                        <div className={'spasing'} />
-                                        {PARAGRAF4}
-                                    </h3>
-                                </animated.div>
+                                <animated.h3 style={{
+                                    transform: y1
+                                        .interpolate({
+                                            range: [0, 0.25, 0.5, 0.75, 1],
+                                            output: [0, 25, 50, 75, 100]
+                                        })
+                                        .interpolate(y1 => `translate3d(0, ${y1}px, 0)`),
+                                    marginBottom
+                                }}> {PARAGRAF1} </animated.h3>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion2) setAccordion2(true);
+                                    }}
+                                />
+                                <animated.h3 style={{
+                                    transform: y2
+                                        .interpolate({
+                                            range: [0, 0.25, 0.5, 0.75, 1],
+                                            output: [0, 25, 50, 75, 100]
+                                        })
+                                        .interpolate(y2 => `translate3d(0, ${y2}px, 0)`),
+                                    marginBottom
+                                }}> {PARAGRAF2} </animated.h3>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion3) setAccordion3(true);
+                                    }}
+                                />
+                                <animated.h3 style={{
+                                    transform: y3
+                                        .interpolate({
+                                            range: [0, 0.25, 0.5, 0.75, 1],
+                                            output: [0, 25, 50, 75, 100]
+                                        })
+                                        .interpolate(y3 => `translate3d(0, ${y3}px, 0)`),
+                                    marginBottom
+                                }}> {PARAGRAF3} </animated.h3>
+                            </div>
+                            <div>
+                                <Waypoint
+                                    bottomOffset="20%"
+                                    topOffset='-20%'
+                                    onEnter={() => {
+                                        if (!accordion4) setAccordion4(true);
+                                    }}
+                                />
+                                <animated.h3 style={{
+                                    transform: y4
+                                        .interpolate({
+                                            range: [0, 0.25, 0.5, 0.75, 1],
+                                            output: [0, 25, 50, 75, 100]
+                                        })
+                                        .interpolate(y4 => `translate3d(0, ${y4}px, 0)`),
+                                    marginBottom
+                                }}>
+                                    {PARAGRAF4}
+                                </animated.h3>
                             </div>
                         </div>
                         <form className={'form col'} onSubmit={handleSubmit}>

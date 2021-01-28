@@ -12,28 +12,81 @@
 
     .header-wrapper {
         flex-direction: column;
-        margin-top: 3.5vw;
+        margin-top: 1.5vw;
 
         .header {
             font-size: 4.2vw;
-            margin: .5vh;
+            margin: 0.5vh;
         }
 
         .about {
             font-size: 3.5vw;
-            margin: .5vh;
+            margin: 0.5vh;
         }
 
-        .typing {
-            font-size: 3.5vw;
-            margin: .5vh;
+        .about-spacer {
+            height: 3.5vw;
+            display: flex;
+        }
+
+        .cursor {
+            display: inline-block;
+            position: relative;
+            margin: 0 0.5vh;
+
+            &::after {
+                content: "";
+                margin: auto;
+                position: absolute;
+                top: 3px;
+                width: 1.5px;
+                height: 80%;
+                background-color: #666;
+                animation: cursor-animation 1.5s step-end infinite;
+            }
+
+            &.en {
+                &::after {
+                    right: -4px;
+                }
+            }
+
+            &.he {
+                &::after {
+                    left: -4px;
+                }
+            }
+        }
+    }
+
+    @keyframes cursor-animation {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .header-wrapper {
+            margin-top: 1.8vw;
+
+            .cursor {
+                &::after {
+                    top: 4px;
+                }
+            }
         }
     }
 
     @media only screen and (min-width: 992px) {
         background-image: url("../media/home_background.jpg");
         .header-wrapper {
-            margin-top: 2.5vw;
+            margin-top: 1.8vw;
 
             .header {
                 font-size: 4.5vh;
@@ -43,8 +96,10 @@
                 font-size: 3.8vh;
             }
 
-            .typing {
-                font-size: 3.8vh;
+            .cursor {
+                &::after {
+                    top: 5px;
+                }
             }
         }
     }

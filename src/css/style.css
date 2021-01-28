@@ -370,7 +370,7 @@ html {
       top: 29px;
       left: 5px; }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .burger-nav {
     display: none; } }
 
@@ -518,7 +518,7 @@ html {
   100% {
     opacity: 0.5; } }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   #header .link-wrapper {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -545,27 +545,68 @@ html {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: 3.5vw; }
+    margin-top: 1.5vw; }
     #home .header-wrapper .header {
       font-size: 4.2vw;
-      margin: .5vh; }
+      margin: 0.5vh; }
     #home .header-wrapper .about {
       font-size: 3.5vw;
-      margin: .5vh; }
-    #home .header-wrapper .typing {
-      font-size: 3.5vw;
-      margin: .5vh; }
+      margin: 0.5vh; }
+    #home .header-wrapper .about-spacer {
+      height: 3.5vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    #home .header-wrapper .cursor {
+      display: inline-block;
+      position: relative;
+      margin: 0 0.5vh; }
+      #home .header-wrapper .cursor::after {
+        content: "";
+        margin: auto;
+        position: absolute;
+        top: 3px;
+        width: 1.5px;
+        height: 80%;
+        background-color: #666;
+        -webkit-animation: cursor-animation 1.5s step-end infinite;
+        animation: cursor-animation 1.5s step-end infinite; }
+      #home .header-wrapper .cursor.en::after {
+        right: -4px; }
+      #home .header-wrapper .cursor.he::after {
+        left: -4px; }
+
+@-webkit-keyframes cursor-animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes cursor-animation {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+  @media (min-width: 768px) {
+    #home .header-wrapper {
+      margin-top: 1.8vw; }
+      #home .header-wrapper .cursor::after {
+        top: 4px; } }
   @media only screen and (min-width: 992px) {
     #home {
       background-image: url("../media/home_background.jpg"); }
       #home .header-wrapper {
-        margin-top: 2.5vw; }
+        margin-top: 1.8vw; }
         #home .header-wrapper .header {
           font-size: 4.5vh; }
         #home .header-wrapper .about {
           font-size: 3.8vh; }
-        #home .header-wrapper .typing {
-          font-size: 3.8vh; } }
+        #home .header-wrapper .cursor::after {
+          top: 5px; } }
   @media only screen and (min-width: 1300px) {
     #home .header-wrapper .header {
       font-size: 45px; }
@@ -954,7 +995,8 @@ html {
   border-radius: 35px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   #contact .wrapper {
     margin-bottom: 10px; }
     #contact .wrapper h3 {

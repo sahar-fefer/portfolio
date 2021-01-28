@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { IoIosArrowDropup } from 'react-icons/io';
 
 const Header = ({ handleChangeLanguage, HEADER, language }) => {
+    const { ABOUT, PROJECTS, CONTACT, LANGUAGE } = HEADER;
     const [showHeader, setShowHeader] = useState(false)
     const [headerBackground, setHeaderBackground] = useState(false)
     const [isBurgerOpen, setIsBurgerOpen] = useState(false)
@@ -27,12 +28,12 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
 
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        setIsBurgerOpen(false)
     };
 
     window.addEventListener('scroll', checkHeaderBackground)
     window.addEventListener('scroll', checkScrollTop)
 
-    const { ABOUT, PROJECTS, CONTACT, LANGUAGE } = HEADER;
     return (
         <header id={'header'} className={'container-fluid'}>
             <div className={'scroll-up-button'}>
@@ -124,7 +125,7 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                     </div>
                     <div className={'section'}>
                         <Link activeClass="active"
-                            to="portfolio"
+                            to="projects"
                             spy={true}
                             smooth={true}
                             hashSpy={true}
