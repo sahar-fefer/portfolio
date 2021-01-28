@@ -1,5 +1,4 @@
 import React from 'react';
-import Typical from 'react-typical';
 
 const Loader = () => {
     // Because only Chrome supports offset-path, feGaussianBlur for now
