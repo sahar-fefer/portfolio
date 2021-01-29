@@ -166,7 +166,7 @@ const Contact = ({ CONTACT }) => {
                 </div>
                 <div className="container">
                     <div className={'wrapper row align-items-center'}>
-                        <div className={'col-md-4 col-lg ml-4 mr-4 ml-sm-0 mr-sm-0'}>
+                        <div className={'col-md-6 col-lg ml-4 mr-4 ml-sm-0 mr-sm-0'}>
                             <div>
                                 <Waypoint
                                     bottomOffset="20%"
