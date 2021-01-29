@@ -612,8 +612,11 @@ html {
       font-size: 45px; }
     #home .header-wrapper .about {
       font-size: 35px; }
-    #home .header-wrapper .typing {
-      font-size: 35px; } }
+    #home .header-wrapper .about-spacer {
+      height: 35px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 #about {
   overflow: hidden; }
