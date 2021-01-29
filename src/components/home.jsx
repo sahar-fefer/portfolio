@@ -8,7 +8,7 @@ let index = 0;
 const Home = ({ HOME, language }) => {
     const { TITLE, NAME, ABOUT, TYPING } = HOME;
     const [curTyping, setCurTyping] = useState('')
-    const [curLanguage, setCurLanguage] = useState(language)
+    const [curLanguage, setCurLanguage] = useState('')
 
     const fade = useSpring({
         from: { opacity: 0 },
@@ -19,14 +19,13 @@ const Home = ({ HOME, language }) => {
     const typing = useTypewriter(curTyping);
     useEffect(
         () => {
-            const interval = setInterval(() => {
-                // index = index < TYPING.length / 2 ? ++index : 0;
+            intervalRef.current = setInterval(() => {
                 index = language !== curLanguage ? 0 : ++index;
                 setCurLanguage(language)
                 setCurTyping(TYPING[index]);
             }, TYPING[++index]);
             return () => {
-                clearInterval(interval);
+                clearInterval(intervalRef.current);
             };
         },
         [curTyping, TYPING]
