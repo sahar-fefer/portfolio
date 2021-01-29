@@ -35,13 +35,13 @@ const Project = ({ name, title, techs, web, git, language }) => {
                         web
                             ? <a className="link-button col-auto" href={web} target="_blank" >
                                 {language === 'en'
-                                    ? 'Vieu Sise'
+                                    ? 'View Site'
                                     : 'ראה אתר'
                                 }
                             </a>
                             : <div className="link-button col-auto" style={{ cursor: "context-menu" }}>
                                 {language === 'en'
-                                    ? 'Vieu Sise - soon'
+                                    ? 'View Site - soon'
                                     : 'ראה אתר - בקרוב'
                                 }
                             </div>
