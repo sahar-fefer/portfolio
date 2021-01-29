@@ -96,6 +96,10 @@
                 font-size: 3.8vh;
             }
 
+            .about-spacer {
+                height: 3.8vh;
+            }
+
             .cursor {
                 &::after {
                     top: 5px;
@@ -116,7 +120,6 @@
             
             .about-spacer {
                 height: 35px;
-                display: flex;
             }
         }
     }
