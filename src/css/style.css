@@ -605,6 +605,8 @@ html {
           font-size: 4.5vh; }
         #home .header-wrapper .about {
           font-size: 3.8vh; }
+        #home .header-wrapper .about-spacer {
+          height: 3.8vh; }
         #home .header-wrapper .cursor::after {
           top: 5px; } }
   @media only screen and (min-width: 1300px) {
@@ -613,10 +615,7 @@ html {
     #home .header-wrapper .about {
       font-size: 35px; }
     #home .header-wrapper .about-spacer {
-      height: 35px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      height: 35px; } }
 
 #about {
   overflow: hidden; }
