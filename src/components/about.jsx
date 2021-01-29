@@ -130,8 +130,8 @@ const About = ({ ABOUT, language }) => {
                     <div className="row">
                         <ul className={'skills-wrapper row'}>
                             <Waypoint
-                                bottomOffset="20%"
-                                topOffset='-20%'
+                                bottomOffset="10%"
+                                topOffset='-10%'
                                 onEnter={() => {
                                     if (!isSkill) setIsSkill(true);
                                 }}
