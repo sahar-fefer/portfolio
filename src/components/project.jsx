@@ -23,7 +23,10 @@ const Project = ({ name, title, techs, web, git, language }) => {
 
     return (
         <div className={`project col`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}.jpg)` }}>
-            <div className={`hover-project ${isHovered ? 'show' : 'hidden'}`}>
+            <div className={`hover-project ${isHovered ? 'show' : 'hidden'}`}
+                style={{
+                    pointerEvents: isHovered ? 'all' : 'none'
+                }}>
                 <div className={`text ${isHovered ? 'show' : 'hidden'}`}>
                     <h1 className="title perfect-center">{title}</h1>
                     <ul className="pills-wrapper perfect-center flex-wrap">

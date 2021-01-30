@@ -35,39 +35,40 @@ const Projects = ({ PROJECTS, language }) => {
                 <div className="projects-wrapper container">
                     <Project
                         name={'connect4'}
-                        title={CONNECT4}
+                        title={CONNECT4.name}
+                        description={CONNECT4.description}
                         techs={['React.JS']}
                         web={''}
                         git={'https://github.com/saharovich/connect-4'}
                         language={language} />
                     <Project
                         name={'saharEstate'}
-                        title={SAHAR_ESTATE}
-                        description={''}
+                        title={SAHAR_ESTATE.name}
+                        description={SAHAR_ESTATE.description}
                         techs={['React.JS', 'Node.JS']}
                         web={''}
                         git={'https://github.com/saharovich/sahar-estate-web'}
                         language={language} />
                     <Project
                         name={'salt&fefer'}
-                        title={SALT_FEFER}
-                        description={''}
+                        title={SALT_FEFER.name}
+                        description={SALT_FEFER.description}
                         techs={['WordPress']}
                         web={'http://www.feferovich.co.il/'}
                         git={''}
                         language={language} />
                     <Project
                         name={'readMyLips'}
-                        title={READ_MY_LIPS}
-                        description={''}
+                        title={READ_MY_LIPS.name}
+                        description={READ_MY_LIPS.description}
                         techs={['WIX']}
                         web={'https://www.readmylips-mask.com/'}
                         git={''}
                         language={language} />
                     <Project
                         name={'pepe'}
-                        title={PEPE}
-                        description={''}
+                        title={PEPE.name}
+                        description={PEPE.description}
                         techs={['WIX']}
                         web={'https://www.pepeimpresario.com/'}
                         git={''}
