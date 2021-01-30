@@ -70,18 +70,19 @@ const About = ({ ABOUT, language }) => {
     const leftIntroduce = useSpring({
         transform: introduce
             ? `translate3d(0,0,0)`
-            : `translate3d(-150%,0,0)`
+            : `translate3d(-150%,0,0)`,
+            config: config.slow
     });
 
     const rightIntroduce = useSpring({
         transform: introduce
             ? `translate3d(0,0,0)`
-            : `translate3d(150%,0,0)`
+            : `translate3d(150%,0,0)`,
+        config: config.slow
     });
 
     const introduceSwipe = useSpring({
-        opacity: introduce ? 1 : 0,
-        config: config.molasses
+        opacity: introduce ? 1 : 0
     })
 
     const skillsTrail = useTrail(skills.length, {

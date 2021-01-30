@@ -45,7 +45,7 @@
                 "NAME": "Sahar Feferovich",
                 "BUTTON": "View Profile"
             },
-            "TITLE": "So How Am I?",
+            "TITLE": "So Who Am I?",
             "ABOUT_ME_1": "I'm ",
             "NAME": "Sahar Feferovich",
             "ABOUT_ME_2": ", Full Stack Developer",
@@ -55,11 +55,26 @@
         },
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
-            "CONNECT4": "Connect 4",
-            "SAHAR_ESTATE": "Real Estate",
-            "SALT_FEFER": "Catering Website",
-            "READ_MY_LIPS": "Clear Mask Shop",
-            "PEPE": "Event Producer"
+            "CONNECT4": {
+                "name": "Connect 4",
+                "description": "one of my favorit short game, in this game you can play against friend or the computer."
+            },
+            "SAHAR_ESTATE": {
+                "name": "Real Estate",
+                "description": "a real estate website, you can search and filter after your new home, create account and so."
+            },
+            "SALT_FEFER": {
+                "name": "Catering Website",
+                "description": "a website I remack to catering business."
+            },
+            "READ_MY_LIPS": {
+                "name": "Clear Mask Shop",
+                "description": "online shop of transsparent mask, this mask halp to understand each other more clearly."
+            },
+            "PEPE": {
+                "name": "Event Producer",
+                "description": "online platform to build your event find all the suppliers you need and so."
+            }
         },
         "CONTACT": {
             "SECTION_TITLE": "Contact",
