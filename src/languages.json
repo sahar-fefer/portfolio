@@ -170,12 +170,30 @@
             "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
         },
         "PROJECTS": {
-            "SECTION_TITLE": "פרוייקטים",
-            "CONNECT4": "משחק 4 בשורה",
-            "SAHAR_ESTATE": "אתר נדלן",
-            "SALT_FEFER": "אתר לקייטרינג",
-            "READ_MY_LIPS": "חנות מסיכות שקופות",
-            "PEPE": "מפיק אירועים דיגיטלי"
+            "SECTION_TITLE": {
+                "name": "פרוייקטים",
+                "description": ""
+            },
+            "CONNECT4": {
+                "name": "משחק 4 בשורה",
+                "description": ""
+            },
+            "SAHAR_ESTATE": {
+                "name": "אתר נדלן",
+                "description": ""
+            },
+            "SALT_FEFER": {
+                "name": "אתר לקייטרינג",
+                "description": ""
+            },
+            "READ_MY_LIPS": {
+                "name": "חנות מסיכות שקופות",
+                "description": ""
+            },
+            "PEPE": {
+                "name": "מפיק אירועים דיגיטלי",
+                "description": ""
+            }
         },
         "CONTACT": {
             "SECTION_TITLE": "צרו קשר",
