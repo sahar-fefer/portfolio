@@ -999,6 +999,10 @@ html {
   background-position: center;
   background-size: cover;
   overflow: hidden; }
+  #contact .triangle {
+    position: absolute;
+    left: 0;
+    right: 0; }
   #contact .wrapper {
     margin-bottom: 10px; }
     #contact .wrapper h3 {
