@@ -9,6 +9,12 @@
     background-size: cover;
     overflow: hidden;
 
+    .triangle {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
     .wrapper {
         margin-bottom: 10px;
 
