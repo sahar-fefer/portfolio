@@ -83,8 +83,38 @@
         }
     }
 
+    @media (min-width: 635px) and (max-height: 700px) {
+        background-image: url("../media/home_background.jpg");
+        .header-wrapper {
+            margin-top: 1.8vw;
+
+            .header {
+                font-size: 4.5vh;
+            }
+
+            .about {
+                font-size: 3.8vh;
+            }
+
+            .about-spacer {
+                height: 3.8vh;
+            }
+
+            .cursor {
+                &::after {
+                    top: 5px;
+                }
+            }
+        }
+    }
+
+    // @media only screen and (min-height: 700px) {
+    //     background-image: url("../media/home_background.jpg");
+    // }
+
     @media only screen and (min-width: 992px) {
         background-image: url("../media/home_background.jpg");
+
         .header-wrapper {
             margin-top: 1.8vw;
 
@@ -117,7 +147,7 @@
             .about {
                 font-size: 35px;
             }
-            
+
             .about-spacer {
                 height: 35px;
             }

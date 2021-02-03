@@ -50,7 +50,7 @@ const Projects = ({ PROJECTS, language }) => {
                         git={'https://github.com/saharovich/sahar-estate-web'}
                         language={language} />
                     <Project
-                        name={'salt&fefer'}
+                        name={'saltNfefer'}
                         title={SALT_FEFER.name}
                         description={SALT_FEFER.description}
                         techs={['WordPress']}

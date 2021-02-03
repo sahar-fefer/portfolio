@@ -141,7 +141,7 @@ const About = ({ ABOUT, language }) => {
                                 skillsTrail.map((animation, key) =>
                                     < animated.li style={animation} className={`img-wrapper perfect-center col-4 col-md-3 col-lg-2`} >
                                         <a href={skills[key].href} target="_blank">
-                                            <img src={`/media/skills/${skills[key].name}.png`} alt={skills[key].name} className={`skill-img`} />
+                                            <img src={`/media/skills/${skills[key].name}.jpg`} alt={skills[key].name} className={`skill-img`} />
                                         </a>
                                     </ animated.li >
                                 )
