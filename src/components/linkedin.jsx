@@ -5,7 +5,8 @@ const Linkedin = ({ LINKEDIN }) => {
     return (
         <div id={'linkedin'}>
             <div className={"linkedin-cover-img"} />
-            <div className={"linkedin-profile-img"} />
+            <div className={"linkedin-profile-img"} 
+            style={{backgroundImage: `url(${process.env.PUBLIC_URL}/media/square.jpg)`}}/>
             <h1 className={"linkedin-name perfect-center"}>
                 {NAME}
             </h1>
