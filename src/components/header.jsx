@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from "react-scroll";
 import { IoIosArrowDropup } from 'react-icons/io';
+import { HiOutlineDocumentDownload } from 'react-icons/hi';
 
 const Header = ({ handleChangeLanguage, HEADER, language }) => {
-    const { ABOUT, PROJECTS, CONTACT, LANGUAGE } = HEADER;
+    const { ABOUT, PROJECTS, CONTACT, LANGUAGE, RESUME } = HEADER;
     const [showHeader, setShowHeader] = useState(false)
     const [headerBackground, setHeaderBackground] = useState(false)
     const [isBurgerOpen, setIsBurgerOpen] = useState(false)
@@ -42,9 +43,9 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                     onClick={scrollTop}
                     style={{ height: 40, display: showHeader ? 'flex' : 'none' }} />
             </div>
-            <div className={`burger-nav ${isBurgerOpen ? 'open' : ''}`} 
-            style={language === 'en' ? { right: '30px' } : { left: '30px' }}
-            onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
+            <div className={`burger-nav ${isBurgerOpen ? 'open' : ''}`}
+                style={language === 'en' ? { right: '30px' } : { left: '30px' }}
+                onClick={() => setIsBurgerOpen(!isBurgerOpen)}>
                 <span></span>
                 <span></span>
                 <span></span>
@@ -91,24 +92,25 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                         </Link>
                     </div>
                     {language === 'en' &&
-                        <div className={'leng col-auto'}>
+                        <div className={'link-wrapper leng col-auto'}>
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
                             </button>
                         </div>
                     }
                     {language === 'he' &&
-                        <div className={'leng col-auto ml-0'}>
+                        <div className={'link-wrapper leng col-auto ml-0'}>
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
                             </button>
                         </div>
                     }
+                    <a href={process.env.PUBLIC_URL + './media/Sahar Feferovich - Resume.pdf'} target='_blank'><HiOutlineDocumentDownload className={'link-wrapper col-auto'} /></a>
                 </div>
             </nav >
             <div className={`mobile-bar ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
                 <div className={'bar'}>
-                    <button className={"section leng"} onClick={handleChangeLanguage}>
+                    <button className={"section leng link-wrapper"} onClick={handleChangeLanguage}>
                         {LANGUAGE}
                     </button>
                     <div className={'section'}>
@@ -146,6 +148,9 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                             onSetActive={() => setIsBurgerOpen(false)} >
                             {CONTACT}
                         </Link>
+                    </div>
+                    <div className="section">
+                        <a href={process.env.PUBLIC_URL + './media/Sahar Feferovich - Resume.pdf'} target='_blank'><HiOutlineDocumentDownload />{RESUME}</a>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,8 @@
             "ABOUT": "About",
             "PROJECTS": "Projects",
             "CONTACT": "Contact",
-            "LANGUAGE": "HE"
+            "LANGUAGE": "HE",
+            "RESUME": "Resume"
         },
         "HOME": {
             "TITLE": "Hey! I'm ",
@@ -81,7 +82,7 @@
             "PARAGRAF1": "I'm eager to learn new things and improve myself.",
             "PARAGRAF2": "I'm currently looking for my next challenge so feel free to reach out to me any time.",
             "PARAGRAF3": "If you prefer to contact me directly, send your Email to: ",
-            "PARAGRAF4": "sahar-fefer@gmail.com",
+            "PARAGRAF4": "sahar.fefer@gmail.com",
             "NAME": "Name",
             "EMAIL": "Email address",
             "MESSAGE": "Your massege",
@@ -118,7 +119,8 @@
             "ABOUT": "קצת עלי",
             "PROJECTS": "פרוייקטים",
             "CONTACT": "צור קשר",
-            "LANGUAGE": "EN"
+            "LANGUAGE": "EN",
+            "RESUME": "קורות חיים"
         },
         "HOME": {
             "TITLE": "היי! אני ",
@@ -200,7 +202,7 @@
             "PARAGRAF1": "אני מאוד אוהבת ללמוד דברים חדשים ולהוכיח את עצמי.",
             "PARAGRAF2": "אני מחפשת את האתגר הבא שלי אז תרגישו בנוח ליצור איתי קשר בכל זמן.",
             "PARAGRAF3": "אם תעדיפו ליצור איתי קשר ישירות, שלחו את הודעתכם לכאן:",
-            "PARAGRAF4": "sahar-fefer@gmail.com",
+            "PARAGRAF4": "sahar.fefer@gmail.com",
             "NAME": "שם",
             "EMAIL": "כתובת אימייל",
             "MESSAGE": "ההודעה שלך",

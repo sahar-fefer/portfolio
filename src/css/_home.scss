@@ -13,17 +13,18 @@
     .header-wrapper {
         flex-direction: column;
         margin-top: 1.5vw;
+        .headers {
+            
+            .header {
+                font-size: 4.2vw;
+                margin: 0.5vh;
+            }
 
-        .header {
-            font-size: 4.2vw;
-            margin: 0.5vh;
+            .about {
+                font-size: 3.5vw;
+                margin: 0.5vh;
+            }
         }
-
-        .about {
-            font-size: 3.5vw;
-            margin: 0.5vh;
-        }
-
         .about-spacer {
             height: 3.5vw;
             display: flex;

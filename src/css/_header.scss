@@ -42,7 +42,6 @@
             }
 
             .leng {
-                display: none;
                 margin-left: 20px;
             }
         }
@@ -99,7 +98,6 @@
 
                 &.leng {
                     display: block;
-                    margin-bottom: 100px;
                 }
             }
         }
@@ -140,7 +138,7 @@
     }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
     #header {
         .link-wrapper {
             display: flex !important;
@@ -149,6 +147,7 @@
 
         .leng {
             display: block !important;
+            justify-content: flex-start;
         }
     }
 }

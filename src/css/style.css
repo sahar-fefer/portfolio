@@ -369,7 +369,7 @@ html {
       top: 29px;
       left: 5px; }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   .burger-nav {
     display: none; } }
 
@@ -418,7 +418,6 @@ html {
       #header .nav-bar .regular-header .link-wrapper:hover {
         font-size: 35px; }
     #header .nav-bar .regular-header .leng {
-      display: none;
       margin-left: 20px; }
 
 #header .nav-bar-scroll {
@@ -473,8 +472,7 @@ html {
       width: fit-content;
       cursor: pointer; }
       #header .mobile-bar .bar .section.leng {
-        display: block;
-        margin-bottom: 100px; }
+        display: block; }
 
 #header .scroll-up-button {
   position: fixed;
@@ -517,7 +515,7 @@ html {
   100% {
     opacity: 0.5; } }
 
-@media (min-width: 650px) {
+@media (min-width: 700px) {
   #header .link-wrapper {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -526,7 +524,10 @@ html {
     -ms-flex-pack: end;
     justify-content: flex-end; }
   #header .leng {
-    display: block !important; } }
+    display: block !important;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; } }
 
 /* /////////////////////////    colors    /////////////////////////// */
 #home {
@@ -545,10 +546,10 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 1.5vw; }
-    #home .header-wrapper .header {
+    #home .header-wrapper .headers .header {
       font-size: 4.2vw;
       margin: 0.5vh; }
-    #home .header-wrapper .about {
+    #home .header-wrapper .headers .about {
       font-size: 3.5vw;
       margin: 0.5vh; }
     #home .header-wrapper .about-spacer {
