@@ -25,14 +25,8 @@ const App = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false)
-    }, 3000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  useEffect(() => {
     setContent(translate[language])
+    setLoading(false)
   }, [language]);
 
   const handleChangeLanguage = () => {
