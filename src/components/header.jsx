@@ -50,7 +50,7 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                 <span></span>
                 <span></span>
             </div>
-            <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}`}>
+            <nav className={`nav-bar ${headerBackground && 'nav-bar-scroll'}  ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
                 <div className={`regular-header row ${headerBackground && 'header-scroll'}`}>
                     <div className={`col`}>
                         <div className={`logo ${headerBackground && 'logo-scroll'}  ${language === 'en' ? 'mr-auto' : 'ml-auto'}`}

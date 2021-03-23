@@ -58,7 +58,7 @@
             "SECTION_TITLE": "Projects",
             "CONNECT4": {
                 "name": "Connect 4",
-                "description": "one of my favorit short game, in this game you can play against friend or the computer."
+                "description": "one of my favorite short game, in this game you can play against friend or the computer."
             },
             "SAHAR_ESTATE": {
                 "name": "Real Estate",
@@ -70,7 +70,7 @@
             },
             "READ_MY_LIPS": {
                 "name": "Clear Mask Shop",
-                "description": "online shop of transsparent mask, this mask halp to understand each other more clearly."
+                "description": "online shop of transparent mask, this mask help to understand each other more clearly."
             },
             "PEPE": {
                 "name": "Event Producer",
@@ -85,7 +85,7 @@
             "PARAGRAF4": "sahar.fefer@gmail.com",
             "NAME": "Name",
             "EMAIL": "Email address",
-            "MESSAGE": "Your massege",
+            "MESSAGE": "Your message",
             "SUBMIT": "submit",
             "ERRORS": {
                 "name": {
@@ -103,7 +103,7 @@
                     "pattern": "Message invalid characters"
                 },
                 "submit": {
-                    "fillErr": "Please cheack all required fields before submitting.",
+                    "fillErr": "Please check all required fields before submitting.",
                     "submitErr": "Oops! There was a problem sending the message, please try again.",
                     "ok": "Your message was sent successfully. Thanks!"
                 }
