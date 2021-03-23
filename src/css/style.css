@@ -546,10 +546,10 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 1.5vw; }
-    #home .header-wrapper .headers .header {
+    #home .header-wrapper .header {
       font-size: 4.2vw;
       margin: 0.5vh; }
-    #home .header-wrapper .headers .about {
+    #home .header-wrapper .about {
       font-size: 3.5vw;
       margin: 0.5vh; }
     #home .header-wrapper .about-spacer {

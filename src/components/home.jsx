@@ -34,16 +34,14 @@ const Home = ({ HOME, language }) => {
     return (
         <div id={'home'} className={'container-fluid'}>
             <animated.div style={fade} className={'header-wrapper'}>
-                <div className={'header-wrapper'}>
-                    <h1 className={'header'}>
-                        {TITLE}<span className={'name'}>{NAME}</span>
-                    </h1>
-                    <h2 className={'about'}>
-                        {ABOUT}
-                    </h2>
-                    <div className={`about-spacer`}>
-                        <h2 className={`about cursor ${language}`}>{typing}</h2>
-                    </div>
+                <h1 className={'header'}>
+                    {TITLE}<span className={'name'}>{NAME}</span>
+                </h1>
+                <h2 className={'about'}>
+                    {ABOUT}
+                </h2>
+                <div className={`about-spacer`}>
+                    <h2 className={`about cursor ${language}`}>{typing}</h2>
                 </div>
             </animated.div>
         </div>
