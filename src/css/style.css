@@ -386,7 +386,12 @@ html {
   -webkit-box-shadow: 0px 0px 0px 0px #333;
   box-shadow: 0px 0px 0px 0px #333;
   background-color: transparent;
-  padding: 0 20px; }
+  padding: 0 20px;
+  transition: all ease 0.3s; }
+  #header .nav-bar.open-screen {
+    z-index: 1 !important; }
+  #header .nav-bar.close-screen {
+    z-index: 2 !important; }
   #header .nav-bar .active {
     color: #910667;
     font-size: 35px; }
@@ -459,7 +464,7 @@ html {
   transition: all ease 0.3s; }
   #header .mobile-bar.open-screen {
     opacity: 1 !important;
-    z-index: 1 !important; }
+    z-index: 10 !important; }
   #header .mobile-bar.close-screen {
     opacity: 0 !important;
     z-index: -1 !important; }
@@ -1015,6 +1020,8 @@ html {
     position: absolute;
     left: 0;
     right: 0; }
+  #contact .component-header {
+    margin-top: 75px; }
   #contact .wrapper {
     margin-bottom: 10px; }
     #contact .wrapper h3 {
