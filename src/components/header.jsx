@@ -91,7 +91,7 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                             {CONTACT}
                         </Link>
                     </div>
-                    {language === 'en' &&
+                    {/* {language === 'en' &&
                         <div className={'link-wrapper leng col-auto'}>
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
@@ -104,15 +104,15 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                                 {LANGUAGE}
                             </button>
                         </div>
-                    }
+                    } */}
                     <a href={process.env.PUBLIC_URL + './media/Sahar Feferovich - Resume.pdf'} target='_blank'><HiOutlineDocumentDownload className={'link-wrapper col-auto'} /></a>
                 </div>
             </nav >
             <div className={`mobile-bar ${isBurgerOpen ? 'open-screen' : 'close-screen'}`}>
                 <div className={'bar'}>
-                    <button className={"section leng link-wrapper"} onClick={handleChangeLanguage}>
+                    {/* <button className={"section leng link-wrapper"} onClick={handleChangeLanguage}>
                         {LANGUAGE}
-                    </button>
+                    </button> */}
                     <div className={'section'}>
                         <Link activeClass="active"
                             to="about"
