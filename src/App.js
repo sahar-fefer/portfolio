@@ -31,6 +31,7 @@ const App = () => {
 
   const handleChangeLanguage = () => {
     setLanguage(language === 'en' ? 'he' : 'en');
+    setLoading(true);
   }
 
   const fade = useSpring({

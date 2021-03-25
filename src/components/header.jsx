@@ -91,14 +91,14 @@ const Header = ({ handleChangeLanguage, HEADER, language }) => {
                             {CONTACT}
                         </Link>
                     </div>
-                    {/* {language === 'en' &&
+                    {/* {language === 'en' && */}
                         <div className={'link-wrapper leng col-auto'}>
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
                             </button>
                         </div>
-                    }
-                    {language === 'he' &&
+                    {/* } */}
+                    {/* {language === 'he' &&
                         <div className={'link-wrapper leng col-auto ml-0'}>
                             <button onClick={handleChangeLanguage}>
                                 {LANGUAGE}
