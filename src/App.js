@@ -39,6 +39,7 @@ const App = () => {
     to: { opacity: 1 }
   })
 
+  console.log('content', content)
   return (
     <Router>
       <Helmet>
