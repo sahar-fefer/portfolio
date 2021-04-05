@@ -66,7 +66,7 @@
             },
             "SALT_FEFER": {
                 "name": "Catering Website",
-                "description": "a website I remack to catering business."
+                "description": "a website I remak to catering business, in the original this website build by website builder company and the catering owner didn't like how it looks."
             },
             "READ_MY_LIPS": {
                 "name": "Clear Mask Shop",
@@ -172,29 +172,32 @@
             "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
         },
         "PROJECTS": {
-            "SECTION_TITLE": {
-                "name": "פרוייקטים",
-                "description": ""
-            },
+            "SECTION_TITLE": "פרוייקטים",
             "CONNECT4": {
                 "name": "משחק 4 בשורה",
-                "description": ""
+                "description": "אחד מהמשחקים הקצרים האהובים עלי, במשחק תוכל לשחק מול חבר או מול המחשב."
             },
             "SAHAR_ESTATE": {
                 "name": "אתר נדלן",
-                "description": ""
+                "description2": "a real estate website, you can search and filter after your new home, create account and so.",
+                "description": "באתר אפשר לערוך חיפוש אחר בתים לפי כל מיני קטגוריות, ליצור חשבון ועוד."
+
             },
             "SALT_FEFER": {
                 "name": "אתר לקייטרינג",
-                "description": ""
+                "description": "אתר שחברת בניית אתרים בנתה לעסק, בעלי העסק לא אהבו את התוצאה ופנו אלי לשכתב אותו."
+
             },
             "READ_MY_LIPS": {
                 "name": "חנות מסיכות שקופות",
-                "description": ""
+                "description": "בנית חנות אינטרנתית לחברה שמייצרת ומשווקת מסיכות שקופות."
+
             },
             "PEPE": {
                 "name": "מפיק אירועים דיגיטלי",
-                "description": ""
+                "description2": "online platform to build your event find all the suppliers you need and so.",
+                "description": "online platform to build your event find all the suppliers you need and so."
+
             }
         },
         "CONTACT": {
