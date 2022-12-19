@@ -56,26 +56,31 @@
         },
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
-            "CONNECT4": {
-                "name": "Connect 4",
-                "description": "one of my favorite short game, in this game you can play against friend or the computer."
-            },
-            "SAHAR_ESTATE": {
-                "name": "Real Estate",
-                "description": "a real estate website, you can search and filter after your new home, create account and so."
-            },
-            "SALT_FEFER": {
-                "name": "Catering Website",
-                "description": "a website I remak to catering business, in the original this website build by website builder company and the catering owner didn't like how it looks."
-            },
-            "READ_MY_LIPS": {
-                "name": "Clear Mask Shop",
-                "description": "online shop of transparent mask, this mask help to understand each other more clearly."
-            },
-            "PEPE": {
-                "name": "Event Producer",
-                "description": "online platform to build your event find all the suppliers you need and so."
-            }
+            "ALL_PROJECTS": [{
+                "name": "filaRevel",
+                "title": "Fila & Revel Tune",
+                "techs": ["HTML", "SASS", "Vanilla.JS"],
+                "web": "https://optimaxdev.github.io/landing-pages/fila-revel-smart-audio-glasses/",
+                "git": "https://github.com/optimaxdev/landing-pages/tree/main/fila-revel-smart-audio-glasses"
+            }, {
+                "name": "omerHouse",
+                "title": "Omer's House",
+                "techs": ["Gatsby", "Hooks", "Typescript", "SASS"],
+                "web": "https://sahar-fefer.github.io/butterfly/",
+                "git": "https://github.com/sahar-fefer/butterfly"
+            }, {
+                "name": "ottotoVinyl",
+                "title": "Ottoto Vinyl Collection",
+                "techs": ["HTML", "SASS", "Vanilla.JS"],
+                "web": "https://optimaxdev.github.io/landing-pages/ottoto-vinyl-collection/",
+                "git": "https://github.com/optimaxdev/landing-pages/tree/main/ottoto-vinyl-collection"
+            }, {
+                "name": "optimaxEyewear",
+                "title": "Optimax Eyewear",
+                "techs": ["Gatsby", "Hooks", "Typescript", "SASS"],
+                "web": "https://optimaxdev.github.io/optimaxeyewear/",
+                "git": "https://github.com/optimaxdev/optimaxeyewear"
+            }]
         },
         "CONTACT": {
             "SECTION_TITLE": "Contact",

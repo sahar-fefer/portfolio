@@ -1,4 +1,4 @@
-/* /////////////////////////    colors    /////////////////////////// */
+/* ////////////////  colors  //////////////// */
 $text: #333;
 $text-light: #9f9f9f;
 $text-dark: #000000;
@@ -10,14 +10,14 @@ $link-hover: #24538f;
 $primary: #910667;
 $primary-light: #fc11b5;
 $primary-dark: #440330;
-$primary-hover: #790556;
+$primary-hover: #b8288d;
 $secondary: #00d99d;
 $secondary-light: #00ffbf;
 $secondary-dark: #027e5b;
 $secondary-hover: #02a174;
 $light: #f7f5f5;
 $home-background: #f8f8f8;
-$opacity-background: rgba(200, 200, 200, 0.8);
+$opacity-background: rgba(0, 0, 0, 0.8);
 $opacity-dark: rgba(50, 50, 50, 0.9);
 
 $github-color: #161a1d;
@@ -25,3 +25,40 @@ $linkedin-color: #0a66c2;
 
 $shadow-card-light: 0 2px 15px 2px #a8a8a8;
 $shadow-card-dark: 0 2px 15px 2px #888888;
+
+/* ////////////////  sizes  //////////////// */
+$mobile: '767px';
+$tablet: '768px';
+$tablet-large: '1024px';
+$desktop: '1280px';
+$desktop-large: '1440px';
+
+@mixin mobile {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet-large {
+    @media(min-width: $tablet-large) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin desktop-large {
+    @media(min-width: $desktop-large) {
+        @content;
+    }
+}

@@ -34,27 +34,15 @@ const Project = ({ name, title, techs, web, git, language }) => {
                     </ul>
                 </div>
                 <div className={`project-buttons ${isHovered ? 'show' : 'hidden'} row justify-content-center`}>
-                    {
-                        web
-                            ? <a className="link-button col-auto" href={web} target="_blank" >
-                                {language === 'en'
-                                    ? 'View Site'
-                                    : 'ראה אתר'
-                                }
-                            </a>
-                            : <div className="link-button col-auto" style={{ cursor: "context-menu" }}>
-                                {language === 'en'
-                                    ? 'View Site - soon'
-                                    : 'ראה אתר - בקרוב'
-                                }
-                            </div>
-                    }
-                    {
-                        git
-                        && <a className="link-button col-auto" href={git} target="_blank" >
-                            GitHub
-                        </a>
-                    }
+                    <a className="link-button col-auto" href={web} target="_blank" >
+                        {language === 'en'
+                            ? 'View Site'
+                            : 'ראה אתר'
+                        }
+                    </a>
+                    <a className="link-button col-auto" href={git} target="_blank" >
+                        GitHub
+                    </a>
                 </div>
             </div>
         </div>

@@ -5,7 +5,8 @@ import { useSpring, animated, config } from 'react-spring';
 import Project from './project';
 
 const Projects = ({ PROJECTS, language }) => {
-    const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
+    const { SECTION_TITLE, ALL_PROJECTS } = PROJECTS;
+    // const { SECTION_TITLE, CONNECT4, SAHAR_ESTATE, SALT_FEFER, READ_MY_LIPS, PEPE } = PROJECTS;
     const [header, setHeadre] = useState(false);
 
     const headrSwap = useSpring({
@@ -33,7 +34,20 @@ const Projects = ({ PROJECTS, language }) => {
                     </animated.h1>
                 </div>
                 <div className="projects-wrapper container">
-                    <Project
+                    {
+                        ALL_PROJECTS.map((project) => {
+                            return (
+                                <Project
+                                    name={project.name}
+                                    title={project.title}
+                                    techs={project.techs}
+                                    web={project.web}
+                                    git={project.git}
+                                    language={language} />
+                            )
+                        })
+                    }
+                    {/* <Project
                         name={'connect4'}
                         title={CONNECT4.name}
                         description={CONNECT4.description}
@@ -72,7 +86,7 @@ const Projects = ({ PROJECTS, language }) => {
                         techs={['WIX']}
                         web={'https://www.pepeimpresario.com/'}
                         git={''}
-                        language={language} />
+                        language={language} /> */}
                 </div>
             </div>
         </div>

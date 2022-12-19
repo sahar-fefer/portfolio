@@ -6,20 +6,20 @@
         top: 0;
         left: 0;
         right: 0;
-        transition: all ease 0.3s;
+        transition: all ease .2s;
         color: $text;
         box-shadow: 0px 0px 0px 0px #333;
         background-color: transparent;
         padding: 0 20px;
-        transition: all ease 0.3s;
+        transition: all ease .2s;
 
-            &.open-screen {
-                z-index: 1 !important;
-            }
+        &.open-screen {
+            z-index: 1 !important;
+        }
 
-            &.close-screen {
-                z-index: 2 !important;
-            }
+        &.close-screen {
+            z-index: 2 !important;
+        }
 
         .active {
             color: $primary;
@@ -41,7 +41,7 @@
             }
 
             .link-wrapper {
-                transition: all ease 0.3s;
+                transition: all ease .2s;
                 display: none;
                 cursor: pointer;
 
@@ -85,7 +85,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transition: all ease 0.3s;
+        transition: all ease .2s;
 
         &.open-screen {
             opacity: 1 !important;
@@ -127,7 +127,7 @@
             cursor: pointer;
             margin: auto;
             opacity: 0.5;
-            animation: fadeIn 0.3s;
+            animation: fadeIn .2s;
             transition: opacity 0.4s;
             z-index: 12;
 
@@ -140,6 +140,7 @@
             0% {
                 opacity: 0;
             }
+
             100% {
                 opacity: 0.5;
             }

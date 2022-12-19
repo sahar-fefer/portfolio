@@ -9,54 +9,18 @@ const About = ({ ABOUT, language }) => {
     const [introduce, setIntroduce] = useState(false);
 
     const skills = [
-        {
-            name: 'javascript',
-            href: 'https://en.wikipedia.org/wiki/JavaScript'
-        },
-        {
-            name: 'html',
-            href: 'https://en.wikipedia.org/wiki/HTML'
-        },
-        {
-            name: 'css',
-            href: 'https://en.wikipedia.org/wiki/CSS'
-        },
-        {
-            name: 'sass',
-            href: 'https://en.wikipedia.org/wiki/Sass_(stylesheet_language)'
-        },
-        {
-            name: 'react',
-            href: 'https://en.wikipedia.org/wiki/React_(web_framework)'
-        },
-        {
-            name: 'bootstrap',
-            href: 'https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)'
-        },
-        {
-            name: 'mySQL',
-            href: 'https://en.wikipedia.org/wiki/MySQL'
-        },
-        {
-            name: 'express',
-            href: 'https://en.wikipedia.org/wiki/Express.js'
-        },
-        {
-            name: 'node',
-            href: 'https://en.wikipedia.org/wiki/Node.js'
-        },
-        {
-            name: 'postman',
-            href: 'https://www.postman.com/'
-        },
-        {
-            name: 'python',
-            href: 'https://en.wikipedia.org/wiki/Python_(programming_language)'
-        },
-        {
-            name: 'flask',
-            href: 'https://en.wikipedia.org/wiki/Flask_(web_framework)'
-        }
+        'javascript',
+        'html',
+        'css',
+        'sass',
+        'react',
+        'bootstrap',
+        'mySQL',
+        'express',
+        'node',
+        'postman',
+        'python',
+        'flask'
     ]
 
     const headrSwap = useSpring({
@@ -71,7 +35,7 @@ const About = ({ ABOUT, language }) => {
         transform: introduce
             ? `translate3d(0,0,0)`
             : `translate3d(-150%,0,0)`,
-            config: config.slow
+        config: config.slow
     });
 
     const rightIntroduce = useSpring({
@@ -120,7 +84,7 @@ const About = ({ ABOUT, language }) => {
                             className="col-sm-auto linkedin-wrapper perfect-center">
                             <Linkedin LINKEDIN={LINKEDIN} />
                         </animated.div>
-                        <animated.div style={introduceSwipe,  language === 'en' ? rightIntroduce : leftIntroduce} className="introduc col">
+                        <animated.div style={introduceSwipe, language === 'en' ? rightIntroduce : leftIntroduce} className="introduc col">
                             <h1 className={'d-none d-md-block'}>{TITLE}</h1>
                             <h2 className={'d-none d-md-block'}>{ABOUT_ME_1}<span className="name">{NAME}</span>{ABOUT_ME_2}</h2>
                             <h4>{DESCRIPTION_1}</h4>
@@ -128,26 +92,22 @@ const About = ({ ABOUT, language }) => {
                             <h4>{DESCRIPTION_3}</h4>
                         </animated.div>
                     </div>
-                    <div className="row">
-                        <ul className={'skills-wrapper row'}>
-                            <Waypoint
-                                bottomOffset="10%"
-                                topOffset='-10%'
-                                onEnter={() => {
-                                    if (!isSkill) setIsSkill(true);
-                                }}
-                            />
-                            {
-                                skillsTrail.map((animation, key) =>
-                                    < animated.li style={animation} className={`img-wrapper perfect-center col-4 col-md-3 col-lg-2`} >
-                                        <a href={skills[key].href} target="_blank">
-                                            <img src={`/media/skills/${skills[key].name}.jpg`} alt={skills[key].name} className={`skill-img`} />
-                                        </a>
-                                    </ animated.li >
-                                )
-                            }
-                        </ul>
-                    </div>
+                    <Waypoint
+                        bottomOffset="10%"
+                        topOffset='-10%'
+                        onEnter={() => {
+                            if (!isSkill) setIsSkill(true);
+                        }}
+                    />
+                    <ul className={'skills-wrapper'}>
+                        {
+                            skillsTrail.map((animation, i) =>
+                                < animated.li style={animation} className={`img-wrapper perfect-center`} key={i}>
+                                    <img src={`/media/skills/${skills[i]}.jpg`} alt={skills[i]} className={`skill-img`} />
+                                </ animated.li >
+                            )
+                        }
+                    </ul>
                 </div>
             </div>
         </div >

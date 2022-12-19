@@ -19,30 +19,30 @@
             margin-bottom: 15px;
 
             .icon {
-                font-size: 40px;
+                font-size: 30px;
                 margin: 10px 5px;
+                transition: all .2s;
+            }
+
+            .codepen {
+                &:hover {
+                    color: $light;
+                }
             }
 
             .github {
-                transition: all 0.3s;
-
                 &:hover {
                     color: $github-color;
                 }
             }
 
             .linkedin {
-                transition: all 0.3s;
-
                 &:hover {
                     color: $linkedin-color;
                 }
             }
 
             .download {
-                transition: all 0.3s;
-                font-size: 45px;
-
                 &:hover {
                     color: $primary;
                 }
