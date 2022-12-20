@@ -80,11 +80,11 @@ const About = ({ ABOUT, language }) => {
                                 if (!introduce) setIntroduce(true);
                             }}
                         />
-                        <animated.div style={introduceSwipe, language === 'en' ? leftIntroduce : rightIntroduce}
+                        <animated.div style={(introduceSwipe, language === 'en' ? leftIntroduce : rightIntroduce)}
                             className="col-sm-auto linkedin-wrapper perfect-center">
                             <Linkedin LINKEDIN={LINKEDIN} />
                         </animated.div>
-                        <animated.div style={introduceSwipe, language === 'en' ? rightIntroduce : leftIntroduce} className="introduc col">
+                        <animated.div style={(introduceSwipe, language === 'en' ? rightIntroduce : leftIntroduce)} className="introduc col">
                             <h1 className={'d-none d-md-block'}>{TITLE}</h1>
                             <h2 className={'d-none d-md-block'}>{ABOUT_ME_1}<span className="name">{NAME}</span>{ABOUT_ME_2}</h2>
                             <h4>{DESCRIPTION_1}</h4>

@@ -5,7 +5,8 @@ import {
   Route,
   Redirect
 } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+// import { Helmet } from "react-helmet";
 import { useSpring, animated } from 'react-spring';
 
 import translate from './languages.json';
@@ -41,10 +42,12 @@ const App = () => {
 
   return (
     <Router>
-      <Helmet>
-        <html lang={language} />
-        <body dir={language === 'en' ? "ltr" : "rtl"} />
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <html lang={language} />
+          <body dir={language === 'en' ? "ltr" : "rtl"} />
+        </Helmet>
+      </HelmetProvider>
       {loading
         ? <Loader />
         : <animated.div style={fade} className={'header-wrapper'}>

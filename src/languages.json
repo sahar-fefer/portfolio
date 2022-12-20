@@ -116,7 +116,7 @@
         },
         "FOOTER": {
             "NAME": "Sahar Feferovich",
-            "COPYRIGHT": "© 2021 "
+            "COPYRIGHT": "© 2023 "
         }
     },
     "he": {
@@ -177,33 +177,32 @@
             "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
         },
         "PROJECTS": {
-            "SECTION_TITLE": "פרוייקטים",
-            "CONNECT4": {
-                "name": "משחק 4 בשורה",
-                "description": "אחד מהמשחקים הקצרים האהובים עלי, במשחק תוכל לשחק מול חבר או מול המחשב."
-            },
-            "SAHAR_ESTATE": {
-                "name": "אתר נדלן",
-                "description2": "a real estate website, you can search and filter after your new home, create account and so.",
-                "description": "באתר אפשר לערוך חיפוש אחר בתים לפי כל מיני קטגוריות, ליצור חשבון ועוד."
-
-            },
-            "SALT_FEFER": {
-                "name": "אתר לקייטרינג",
-                "description": "אתר שחברת בניית אתרים בנתה לעסק, בעלי העסק לא אהבו את התוצאה ופנו אלי לשכתב אותו."
-
-            },
-            "READ_MY_LIPS": {
-                "name": "חנות מסיכות שקופות",
-                "description": "בנית חנות אינטרנתית לחברה שמייצרת ומשווקת מסיכות שקופות."
-
-            },
-            "PEPE": {
-                "name": "מפיק אירועים דיגיטלי",
-                "description2": "online platform to build your event find all the suppliers you need and so.",
-                "description": "online platform to build your event find all the suppliers you need and so."
-
-            }
+            "SECTION_TITLE": "Projects",
+            "ALL_PROJECTS": [{
+                "name": "filaRevel",
+                "title": "Fila & Revel Tune",
+                "techs": ["HTML", "SASS", "Vanilla.JS"],
+                "web": "https://optimaxdev.github.io/landing-pages/fila-revel-smart-audio-glasses/",
+                "git": "https://github.com/optimaxdev/landing-pages/tree/main/fila-revel-smart-audio-glasses"
+            }, {
+                "name": "omerHouse",
+                "title": "Omer's House",
+                "techs": ["Gatsby", "Hooks", "Typescript", "SASS"],
+                "web": "https://sahar-fefer.github.io/butterfly/",
+                "git": "https://github.com/sahar-fefer/butterfly"
+            }, {
+                "name": "ottotoVinyl",
+                "title": "Ottoto Vinyl Collection",
+                "techs": ["HTML", "SASS", "Vanilla.JS"],
+                "web": "https://optimaxdev.github.io/landing-pages/ottoto-vinyl-collection/",
+                "git": "https://github.com/optimaxdev/landing-pages/tree/main/ottoto-vinyl-collection"
+            }, {
+                "name": "optimaxEyewear",
+                "title": "Optimax Eyewear",
+                "techs": ["Gatsby", "Hooks", "Typescript", "SASS"],
+                "web": "https://optimaxdev.github.io/optimaxeyewear/",
+                "git": "https://github.com/optimaxdev/optimaxeyewear"
+            }]
         },
         "CONTACT": {
             "SECTION_TITLE": "צרו קשר",
@@ -239,7 +238,7 @@
         },
         "FOOTER": {
             "NAME": "סהר פפרוביץ",
-            "COPYRIGHT": "© 2021 "
+            "COPYRIGHT": "© 2023 "
         }
     }
 }
