@@ -35,9 +35,10 @@ const Projects = ({ PROJECTS, language }) => {
                 </div>
                 <div className="projects-wrapper container">
                     {
-                        ALL_PROJECTS.map((project) => {
+                        ALL_PROJECTS.map((project, key) => {
                             return (
                                 <Project
+                                    key={key}
                                     name={project.name}
                                     title={project.title}
                                     techs={project.techs}

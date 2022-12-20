@@ -6,7 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 import translate from './languages.json';
 
@@ -39,14 +39,13 @@ const App = () => {
     to: { opacity: 1 }
   })
 
-  console.log('content', content)
   return (
     <Router>
       <Helmet>
         <html lang={language} />
         <body dir={language === 'en' ? "ltr" : "rtl"} />
       </Helmet>
-      { loading
+      {loading
         ? <Loader />
         : <animated.div style={fade} className={'header-wrapper'}>
           <Switch>

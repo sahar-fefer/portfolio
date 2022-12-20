@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, useTrail, animated, config } from 'react-spring';
 import Linkedin from './linkedin';

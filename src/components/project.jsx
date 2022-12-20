@@ -6,20 +6,18 @@ const Project = ({ name, title, techs, web, git, language }) => {
 
     const [techLi, setTechLi] = useState([]);
 
-    const techGenerator = () => {
-        setTechLi([])
-        for (const techName of techs) {
-            setTechLi(old => [...old,
-            < li className={`tech-pills perfect-center col-auto`} >
-                {techName}
-            </li >
-            ])
-        }
-    }
-
     useEffect(() => {
-        techGenerator()
-    }, [])
+        setTechLi([])
+        techs.map((techName, i) => {
+            return (
+                setTechLi(old => [...old,
+                < li key={i} className={`tech-pills perfect-center col-auto`} >
+                    {techName}
+                </li >
+                ])
+            )
+        })
+    }, [techs])
 
     return (
         <div className={`project col`} ref={hoverRef} style={{ backgroundImage: `url(${window.location.origin}/media/projects/${name}.jpg)` }}>
@@ -34,13 +32,13 @@ const Project = ({ name, title, techs, web, git, language }) => {
                     </ul>
                 </div>
                 <div className={`project-buttons ${isHovered ? 'show' : 'hidden'} row justify-content-center`}>
-                    <a className="link-button col-auto" href={web} target="_blank" >
+                    <a className="link-button col-auto" href={web} target="_blank" rel='noreferrer' >
                         {language === 'en'
                             ? 'View Site'
                             : 'ראה אתר'
                         }
                     </a>
-                    <a className="link-button col-auto" href={git} target="_blank" >
+                    <a className="link-button col-auto" href={git} target="_blank" rel='noreferrer' >
                         GitHub
                     </a>
                 </div>
