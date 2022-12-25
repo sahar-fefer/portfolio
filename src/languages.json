@@ -10,7 +10,7 @@
         "HOME": {
             "TITLE": "Hey! I'm ",
             "NAME": "Sahar Feferovich",
-            "ABOUT": "I'm A Fullstack Developer",
+            "ABOUT": "I'm A Frontend Developer",
             "TYPING": [
                 "Welcome to my portfolio website!",
                 6000,
@@ -49,10 +49,10 @@
             "TITLE": "So Who Am I?",
             "ABOUT_ME_1": "I'm ",
             "NAME": "Sahar Feferovich",
-            "ABOUT_ME_2": ", Full Stack Developer",
-            "DESCRIPTION_1": "As A Full Stack Developer, I enjoy thinking, learning, and building in creative and unique ways.",
+            "ABOUT_ME_2": ", Frontend Developer",
+            "DESCRIPTION_1": "As A Frontend Developer, I enjoy thinking, learning, and building in creative and unique ways.",
             "DESCRIPTION_2": "Programming is my playground and where I get to execute my visions.",
-            "DESCRIPTION_3": "I focus on planning, designing and developing both Back-End and Front-End."
+            "DESCRIPTION_3": "I focus on planning, designing and developing."
         },
         "PROJECTS": {
             "SECTION_TITLE": "Projects",
@@ -130,7 +130,7 @@
         "HOME": {
             "TITLE": "היי! אני ",
             "NAME": "סהר פפרוביץ",
-            "ABOUT": "ואני Fullstack Developer",
+            "ABOUT": "ואני Frontend Developer",
             "TYPING": [
                 "ברוכים הבאים לאתר שלי!",
                 5000,
@@ -171,10 +171,10 @@
             "TITLE": "אז מי אני?",
             "ABOUT_ME_1": "אני ",
             "NAME": "סהר פפרוביץ",
-            "ABOUT_ME_2": ", Full Stack Developer",
+            "ABOUT_ME_2": ", Frontend Developer",
             "DESCRIPTION_1": "בתור מפתחת אני נהנת לחשוב, ללמוד ולבנות דברים יצירתיים ומעניינים.",
             "DESCRIPTION_2": "תכנות זה עולם היצירה שלי ואיפה שאני יכולה להוציא לפועל את פירות דמיוני.",
-            "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח צד השרת וצד הלקוח."
+            "DESCRIPTION_3": "אני שמה דגש על תכנון, עיצוב ופיתוח."
         },
         "PROJECTS": {
             "SECTION_TITLE": "Projects",

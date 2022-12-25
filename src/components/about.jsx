@@ -10,17 +10,17 @@ const About = ({ ABOUT, language }) => {
 
     const skills = [
         'javascript',
+        'typescript',
         'html',
         'css',
         'sass',
         'react',
+        'gatsby',
         'bootstrap',
         'mySQL',
         'express',
         'node',
-        'postman',
-        'python',
-        'flask'
+        'postman'
     ]
 
     const headrSwap = useSpring({
