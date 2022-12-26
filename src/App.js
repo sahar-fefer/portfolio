@@ -6,7 +6,6 @@ import {
   Redirect
 } from "react-router-dom";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-// import { Helmet } from "react-helmet";
 import { useSpring, animated } from 'react-spring';
 
 import translate from './languages.json';

@@ -99,6 +99,17 @@
         .bar {
             font-size: 40px;
 
+            .section,
+            a {
+                color: $light;
+            }
+
+            svg {
+                font-size: .85em;
+                margin-bottom: 6px;
+                margin-right: 4px;
+            }
+
             .section {
                 margin: 60px auto;
                 width: fit-content;
@@ -113,7 +124,7 @@
 
     .scroll-up-button {
         position: fixed;
-        bottom: 5px;
+        bottom: 10px;
         left: 45%;
         right: 45%;
         height: fit-content;
@@ -121,6 +132,10 @@
         align-items: center;
         justify-content: center;
         z-index: 10;
+
+        @include tablet {
+            bottom: 5px;
+        }
 
         .scrollTop {
             cursor: pointer;

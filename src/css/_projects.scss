@@ -23,6 +23,10 @@
             color: $light;
 
 
+            &:first-child {
+                background-color: black;
+            }
+
             .hover-project {
                 background-color: $opacity-background;
                 padding: 10px;
@@ -34,25 +38,38 @@
                 position: relative;
                 box-shadow: $shadow-card-dark;
 
+                // &:nth-child(2) .text .show {
+                //     @include mobile {
+                //         top: 10%;
+                //     }
+                // }
+
                 .text {
                     position: absolute;
                     top: 0;
                     left: 0;
                     right: 0;
                     z-index: 2;
+                    transition: all .2s;
 
                     .title {
                         font-size: 1.6rem;
+                        text-align: center;
                     }
 
                     &.show {
-                        top: 20%;
-                        animation: show-text-s .2s;
+                        top: 15%;
+                        // animation: show-text-m .2s;
+
+                        @include tablet {
+                            // animation: show-text-s .2s;
+                            top: 20%;
+                        }
                     }
 
                     &.hidden {
                         top: 0;
-                        animation: hidden-text-s .2s;
+                        // animation: hidden-text-s .2s;
                     }
                 }
 
@@ -61,15 +78,21 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
+                    transition: all .2s;
 
                     &.show {
-                        bottom: 20%;
-                        animation: show-buttons-s .2s;
+                        bottom: 15%;
+                        // animation: show-buttons-m .2s;
+
+                        @include tablet {
+                            // animation: show-buttons-s .2s;
+                            bottom: 20%;
+                        }
                     }
 
                     &.hidden {
                         bottom: 0;
-                        animation: hidden-buttons-s .2s;
+                        // animation: hidden-buttons-s .2s;
                     }
                 }
 
@@ -138,12 +161,12 @@
 
                         &.show {
                             top: 25%;
-                            animation: show-text-m .2s;
+                            // animation: show-text-m .2s;
                         }
 
                         &.hidden {
                             top: 0;
-                            animation: hidden-text-m .2s;
+                            // animation: hidden-text-m .2s;
                         }
                     }
 
@@ -155,12 +178,12 @@
 
                         &.show {
                             bottom: 25%;
-                            animation: show-buttons-m .2s;
+                            // animation: show-buttons-m .2s;
                         }
 
                         &.hidden {
                             bottom: 0;
-                            animation: hidden-buttons-m .2s;
+                            // animation: hidden-buttons-m .2s;
                         }
                     }
                 }
@@ -186,12 +209,12 @@
 
                         &.show {
                             top: 30%;
-                            animation: show-text-l .2s;
+                            // animation: show-text-l .2s;
                         }
 
                         &.hidden {
                             top: 0;
-                            animation: hidden-text-l .2s;
+                            // animation: hidden-text-l .2s;
                         }
                     }
 
@@ -203,12 +226,12 @@
 
                         &.show {
                             bottom: 30%;
-                            animation: show-buttons-l .2s;
+                            // animation: show-buttons-l .2s;
                         }
 
                         &.hidden {
                             bottom: 0;
-                            animation: hidden-buttons-l .2s;
+                            // animation: hidden-buttons-l .2s;
                         }
                     }
                 }

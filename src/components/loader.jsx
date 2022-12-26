@@ -1,21 +1,17 @@
 import React from 'react';
 
 const Loader = () => {
-    // Because only Chrome supports offset-path, feGaussianBlur for now
-
     const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-      
+
     return (
         <div id={"loader"}>
             {
                 isChrome
-                    // {/* <!-- Google Chrome --> */}
                     ? < div className={"infinityChrome"}>
                         <div></div>
                         <div></div>
                         <div></div>
                     </div>
-                    // {/* <!-- Safari and others --> */}
                     : <div className={"infinity"}>
                         <div>
                             <span></span>
@@ -28,7 +24,6 @@ const Loader = () => {
                         </div>
                     </div>
             }
-            {/* <!-- Stuff --> */}
             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style={{ display: 'none' }}>
                 <defs>
                     <filter id={"goo"}>

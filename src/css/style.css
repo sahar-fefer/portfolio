@@ -291,7 +291,8 @@ body .component-header {
 }
 
 @-webkit-keyframes move {
-  0%, 50% {
+  0%,
+  50% {
     left: -8px;
   }
   25% {
@@ -308,7 +309,8 @@ body .component-header {
 }
 
 @keyframes move {
-  0%, 50% {
+  0%,
+  50% {
     left: -8px;
   }
   25% {
@@ -593,6 +595,17 @@ html {
   font-size: 40px;
 }
 
+#header .mobile-bar .bar .section,
+#header .mobile-bar .bar a {
+  color: #f0f0f0;
+}
+
+#header .mobile-bar .bar svg {
+  font-size: .85em;
+  margin-bottom: 6px;
+  margin-right: 4px;
+}
+
 #header .mobile-bar .bar .section {
   margin: 60px auto;
   width: -webkit-fit-content;
@@ -607,7 +620,7 @@ html {
 
 #header .scroll-up-button {
   position: fixed;
-  bottom: 5px;
+  bottom: 10px;
   left: 45%;
   right: 45%;
   height: -webkit-fit-content;
@@ -621,6 +634,12 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
+}
+
+@media (min-width: 768px) {
+  #header .scroll-up-button {
+    bottom: 5px;
+  }
 }
 
 #header .scroll-up-button .scrollTop {
@@ -984,6 +1003,10 @@ html {
   color: #f0f0f0;
 }
 
+#projects .projects-wrapper .project:first-child {
+  background-color: black;
+}
+
 #projects .projects-wrapper .project .hover-project {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
@@ -1005,22 +1028,27 @@ html {
   left: 0;
   right: 0;
   z-index: 2;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 #projects .projects-wrapper .project .hover-project .text .title {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 #projects .projects-wrapper .project .hover-project .text.show {
-  top: 20%;
-  -webkit-animation: show-text-s .2s;
-          animation: show-text-s .2s;
+  top: 15%;
+}
+
+@media (min-width: 768px) {
+  #projects .projects-wrapper .project .hover-project .text.show {
+    top: 20%;
+  }
 }
 
 #projects .projects-wrapper .project .hover-project .text.hidden {
   top: 0;
-  -webkit-animation: hidden-text-s .2s;
-          animation: hidden-text-s .2s;
 }
 
 #projects .projects-wrapper .project .hover-project .project-buttons {
@@ -1028,18 +1056,22 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 #projects .projects-wrapper .project .hover-project .project-buttons.show {
-  bottom: 20%;
-  -webkit-animation: show-buttons-s .2s;
-          animation: show-buttons-s .2s;
+  bottom: 15%;
+}
+
+@media (min-width: 768px) {
+  #projects .projects-wrapper .project .hover-project .project-buttons.show {
+    bottom: 20%;
+  }
 }
 
 #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
   bottom: 0;
-  -webkit-animation: hidden-buttons-s .2s;
-          animation: hidden-buttons-s .2s;
 }
 
 #projects .projects-wrapper .project .hover-project.show {
@@ -1097,13 +1129,9 @@ html {
   }
   #projects .projects-wrapper .project .hover-project .text.show {
     top: 25%;
-    -webkit-animation: show-text-m .2s;
-            animation: show-text-m .2s;
   }
   #projects .projects-wrapper .project .hover-project .text.hidden {
     top: 0;
-    -webkit-animation: hidden-text-m .2s;
-            animation: hidden-text-m .2s;
   }
   #projects .projects-wrapper .project .hover-project .project-buttons {
     position: absolute;
@@ -1113,13 +1141,9 @@ html {
   }
   #projects .projects-wrapper .project .hover-project .project-buttons.show {
     bottom: 25%;
-    -webkit-animation: show-buttons-m .2s;
-            animation: show-buttons-m .2s;
   }
   #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
     bottom: 0;
-    -webkit-animation: hidden-buttons-m .2s;
-            animation: hidden-buttons-m .2s;
   }
   #projects .projects-wrapper .project .link-button {
     margin: 20px 5px 10px;
@@ -1140,13 +1164,9 @@ html {
   }
   #projects .projects-wrapper .project .hover-project .text.show {
     top: 30%;
-    -webkit-animation: show-text-l .2s;
-            animation: show-text-l .2s;
   }
   #projects .projects-wrapper .project .hover-project .text.hidden {
     top: 0;
-    -webkit-animation: hidden-text-l .2s;
-            animation: hidden-text-l .2s;
   }
   #projects .projects-wrapper .project .hover-project .project-buttons {
     position: absolute;
@@ -1156,13 +1176,9 @@ html {
   }
   #projects .projects-wrapper .project .hover-project .project-buttons.show {
     bottom: 30%;
-    -webkit-animation: show-buttons-l .2s;
-            animation: show-buttons-l .2s;
   }
   #projects .projects-wrapper .project .hover-project .project-buttons.hidden {
     bottom: 0;
-    -webkit-animation: hidden-buttons-l .2s;
-            animation: hidden-buttons-l .2s;
   }
   #projects .projects-wrapper .project .link-button {
     margin: 20px 5px 10px;
